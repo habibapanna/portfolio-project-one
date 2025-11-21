@@ -1,102 +1,114 @@
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
+import { BiSolidRightArrowAlt } from "react-icons/bi";
+import { RiArrowRightUpFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
-    const items = new Array(6).fill(0).map((_, i) => ({
-title: `Project ${i + 1}`,
-subtitle: 'Product design, UI/UX',
-img: `https://picsum.photos/seed/portfolio-${i}/800/600`,
-}));
+  // ✅ Your images (corrected array)
+  const projectImages = [
+    { img: "https://framerusercontent.com/images/qaXP9CBTkpCNVvyTQ6Uxc8kN5ts.png" },
+    { img: "https://framerusercontent.com/images/jQO0HIIQMx84s1lMLD7tOLhn9pc.png" },
+    { img: "https://framerusercontent.com/images/jQO0HIIQMx84s1lMLD7tOLhn9pc.png?scale-down-to=2048" },
+    { img: "https://framerusercontent.com/images/luuFCS3wrDtTqDV4Kd1Adkkk.jpg" },
+    { img: "https://framerusercontent.com/images/tWaZY7WBmJ3rT5y8Tc6cmJefJk.jpeg" },
+    { img: "https://framerusercontent.com/images/tWaZY7WBmJ3rT5y8Tc6cmJefJk.jpeg?scale-down-to=512" },
+  ];
+
   return (
-    <div>
-        <section
-      id="home"
-      className="bg-violet-100 pt-20"
-    >
-      <div className="mx-auto px-6 text-center">
-        {/* HEADING WITH IMAGES */}
-        <motion.h1
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          className="text-4xl md:text-5xl font-serif leading-tight text-slate-900 flex flex-col items-center gap-2"
-        >
-          {/* LINE 1 */}
-          <div className="flex items-center gap-3">
-            <img
-              className="h-12 w-12 rounded object-cover"
-              src="https://framerusercontent.com/images/F8rOBHbbIkzGRluKefWlxCX9WI.png?scale-down-to=512&width=1200&height=1200"
-              alt=""
-            />
-            <span className="text-3xl md:text-7xl">I'm Sanwar Hosen Limon</span>
-          </div>
+    <div className="bg-violet-100" style={{
+    backgroundImage:
+      "url('https://framerusercontent.com/images/dDB4JCGfoX5DJBUD3qohcdOK9U.png')",
+       backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
+  }}>
+      <section id="home" className="bg-violet-10 pt-20"
+       >
+        <div className="mx-auto px-6 text-center">
 
-          {/* LINE 2 */}
-          <div className="flex items-center gap-3">
-            <span className="text-3xl md:text-7xl">Remote Designer</span>
-
-            {/* IMAGE 1 */}
-            <img
-              className="h-12 w-12 rounded object-cover"
-              src="https://framerusercontent.com/images/F8rOBHbbIkzGRluKefWlxCX9WI.png?scale-down-to=512&width=1200&height=1200"
-              alt=""
-            />
-
-            {/* IMAGE 2 */}
-            <img
-              className="h-12 w-12 rounded object-cover"
-              src="https://framerusercontent.com/images/XJP6N21SKyA8OD0sTiV9H2m0.jpg?scale-down-to=1024&width=900&height=1200"
-              alt=""
-            />
-          </div>
-        </motion.h1>
-
-        {/* PARAGRAPH */}
-        <p className="mt-6 text-gray-600 max-w-xl mx-auto">
-          I specialize in clean beautiful product and web interfaces — designing
-          delightful experiences across brands. I craft high-fidelity designs,
-          prototypes, and accessible systems.
-        </p>
-
-        {/* BUTTONS */}
-        <div className="mt-8 flex justify-center gap-4">
-          <a
-            href="#projects"
-            className="px-4 py-2 rounded-md bg-slate-800 text-white text-sm"
+          {/* HEADING */}
+          <motion.h1
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="text-4xl md:text-5xl font-serif leading-tight text-slate-900 flex flex-col items-center gap-2"
           >
-            View Projects
-          </a>
-          <a
-            href="#contact"
-            className="px-4 py-2 rounded-md border bg-slate-300 text-sm shadow-2xl"
-          >
-            Get In Touch
-          </a>
+            {/* LINE 1 */}
+            <div className="flex items-center gap-3">
+              <img
+                className="h-12 w-12 rounded object-cover"
+                src="https://framerusercontent.com/images/F8rOBHbbIkzGRluKefWlxCX9WI.png?scale-down-to=512"
+              />
+              <span className="text-3xl md:text-7xl">I'm Sanwar Hosen Limon</span>
+            </div>
+
+            {/* LINE 2 */}
+            <div className="flex items-center gap-3">
+              <span className="text-3xl md:text-7xl">Remote Designer</span>
+
+              <img
+                className="h-12 w-12 rounded object-cover"
+                src="https://framerusercontent.com/images/F8rOBHbbIkzGRluKefWlxCX9WI.png?scale-down-to=512"
+              />
+              <img
+                className="h-12 w-12 rounded object-cover"
+                src="https://framerusercontent.com/images/XJP6N21SKyA8OD0sTiV9H2m0.jpg?scale-down-to=1024"
+              />
+            </div>
+          </motion.h1>
+
+          {/* PARAGRAPH */}
+          <p className="mt-6 text-black text-sm max-w-xl mx-auto">
+            I specialize in clean beautiful product and web interfaces —
+            designing delightful experiences across brands. I craft high-fidelity
+            designs, prototypes, and accessible systems.
+          </p>
+
+         {/* BUTTONS */}
+                 <div className="text-center mt-14 flex justify-center gap-6">
+                   {/* Dark Button */}
+                   <button className="px-8 py-3 rounded-xl bg-[#1f2d5c] text-white font-medium shadow-md hover:-translate-y-1 hover:shadow-lg
+                  transition flex items-center justify-center text-sm">
+                     <RiArrowRightUpFill className='mr-2 text-xl' />
+                     Get in Touch
+                   </button>
+         
+                   {/* White Button */}
+                   <button className="px-8 py-3 rounded-xl bg-white font-medium shadow-md border border-gray-300 hover:-translate-y-1 hover:shadow-lg transition flex items-center justify-center text-sm">
+                     <BiSolidRightArrowAlt className='mr-2 text-xl' />
+                     See Projects
+                   </button>
+                 </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-{/* Projects */}
-<section id="projects" className="bg-violet-100 py-12 overflow-hidden">
-  <div className="mx-auto px-6">
-    <motion.div
-      className="flex gap-6"
-      animate={{ x: ["0%", "-100%"] }}
-      transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
-    >
-      {items.concat(items).map((p, i) => (
-        <article
-          key={i}
-          className="border rounded-xl overflow-hidden shadow min-w-[300px] p-5 bg-violet-100"
-        >
-          <img src={p.img} alt={p.title} className="w-full h-44 object-cover rounded-xl" />
-        </article>
-      ))}
-    </motion.div>
-  </div>
-</section>
+      {/* PROJECTS MARQUEE */}
+      <section id="projects" className="bg-violet-10 py-12 overflow-hidden">
+        <div className="mx-auto px-6">
+
+          <Marquee
+            speed={30}         // smooth & slow
+            gradient={false}   // no fade edges
+            pauseOnHover={true}
+          >
+            {projectImages.map((p, i) => (
+              <article
+                key={i}
+                className="rounded-xl overflow-hidden shadow-sm min-w-[350px] mx-4 pt-3 pb-10 px-3 bg-violet-100 border border-gray-300 cursor-pointer"
+              >
+                <img
+                  src={p.img}
+                  alt={`Project ${i + 1}`}
+                  className="w-full h-64 object-cover rounded-xl border-b border-gray-500 shadow-lg shadow-gray-500"
+                />
+              </article>
+            ))}
+          </Marquee>
+
+        </div>
+      </section>
     </div>
-
   );
 };
 

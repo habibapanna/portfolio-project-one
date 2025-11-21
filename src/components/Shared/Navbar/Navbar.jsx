@@ -13,7 +13,7 @@ const Navbar = () => {
         
         {/* Left */}
         <div className="flex items-center gap-4">
-          <div className="text-xl font-semibold"><Link to="/">Sanwar Limon</Link></div>
+          <div className="text-xl font-semibold font-serif"><Link to="/">Sanwar Limon</Link></div>
 
          
         </div>
