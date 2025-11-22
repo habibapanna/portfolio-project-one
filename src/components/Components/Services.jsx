@@ -7,10 +7,11 @@ import {
   PiPaintBrushFill,
 } from "react-icons/pi";
 import { RiArrowRightUpFill, RiBox2Fill } from "react-icons/ri";
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 bg-violet-200 rounded-[100px] mt-10">
+    <motion.section id="services" className="py-20 bg-violet-200 rounded-[100px] mt-10">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Title */}
@@ -142,7 +143,7 @@ const Services = () => {
                  </button>
                </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

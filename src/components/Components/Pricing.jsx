@@ -2,11 +2,12 @@ import React from 'react';
 import { FaArrowRightArrowLeft } from 'react-icons/fa6';
 import { RiBox2Fill } from 'react-icons/ri';
 import { TiTick } from 'react-icons/ti';
+import { motion } from "framer-motion";
 
 const Pricing = () => {
     return (
         <div>
-            <section id="pricing" className=" text-center py-20 bg-violet-200 rounded-[100px] mt-10">
+            <motion.section id="pricing" className=" text-center py-20 bg-violet-200 rounded-[100px] mt-10">
                 <div className="mx-auto inline-flex items-center rounded-full px-4 py-2 bg-[#eef6f9] border border-gray-300 shadow-sm">
             {/* small white square with icon */}
             <span className="w-8 h-8 flex items-center justify-center rounded-md ">
@@ -84,7 +85,7 @@ const Pricing = () => {
 </div>
 
 </div>
-</section>
+</motion.section>
         </div>
     );
 };

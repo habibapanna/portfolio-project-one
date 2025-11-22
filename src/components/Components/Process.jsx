@@ -3,6 +3,7 @@ import { BiSolidRightArrowAlt } from 'react-icons/bi';
 import { FaArrowRightArrowLeft } from 'react-icons/fa6';
 import { GiStairs } from 'react-icons/gi';
 import { RiArrowRightUpFill } from 'react-icons/ri';
+import { motion } from "framer-motion";
 
 const Process = () => {
     
@@ -18,7 +19,7 @@ const steps = [
 
     return (
         <div>
-            <section id="process" className="py-16 bg-violet-100 text-center">
+            <motion.section id="process" className="py-16 bg-violet-100 text-center">
                   <div className="mx-auto inline-flex items-center rounded-full px-4 py-2 bg-[#eef6f9] border border-gray-300 shadow-sm">
                             {/* small white square with icon */}
                             <span className="w-8 h-8 flex items-center justify-center rounded-md ">
@@ -65,7 +66,7 @@ const steps = [
           </button>
         </div>
 </div>
-</section>
+</motion.section>
         </div>
     );
 };

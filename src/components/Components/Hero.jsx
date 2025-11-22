@@ -4,6 +4,7 @@ import { BiSolidRightArrowAlt } from "react-icons/bi";
 import { RiArrowRightUpFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
+
 const Hero = () => {
   // ✅ Your images (corrected array)
   const projectImages = [
@@ -16,7 +17,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="bg-violet-100" style={{
+    <motion.div className="bg-violet-100" style={{
     backgroundImage:
       "url('https://framerusercontent.com/images/dDB4JCGfoX5DJBUD3qohcdOK9U.png')",
        backgroundSize: "cover",
@@ -105,7 +106,7 @@ I specialize in creating thoughtful and impactful products, collaborating with s
 
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 
