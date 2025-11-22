@@ -37,32 +37,30 @@ const Hero = () => {
             {/* LINE 1 */}
             <div className="flex items-center gap-3">
               <img
-                className="h-12 w-12 rounded object-cover"
-                src="https://framerusercontent.com/images/F8rOBHbbIkzGRluKefWlxCX9WI.png?scale-down-to=512"
+                className="h-20 w-20 rounded-xl object-cover"
+                src="https://i.postimg.cc/VsM4VNZp/Gemini-Generated-Image-r04xalr04xalr04x.png"
               />
-              <span className="text-3xl md:text-7xl">I'm Sanwar Hosen Limon</span>
+              <span className="text-3xl md:text-8xl">I'm Limon</span>
             </div>
 
             {/* LINE 2 */}
             <div className="flex items-center gap-3">
-              <span className="text-3xl md:text-7xl">Remote Designer</span>
+              <span className="text-3xl md:text-8xl">Remote Designer</span>
 
               <img
-                className="h-12 w-12 rounded object-cover"
+                className="h-20 w-20 rounded-xl object-cover"
                 src="https://framerusercontent.com/images/F8rOBHbbIkzGRluKefWlxCX9WI.png?scale-down-to=512"
               />
               <img
-                className="h-12 w-12 rounded object-cover"
+                className="h-20 w-20 rounded-xl object-cover"
                 src="https://framerusercontent.com/images/XJP6N21SKyA8OD0sTiV9H2m0.jpg?scale-down-to=1024"
               />
             </div>
           </motion.h1>
 
           {/* PARAGRAPH */}
-          <p className="mt-6 text-black text-sm max-w-xl mx-auto">
-            I specialize in clean beautiful product and web interfaces —
-            designing delightful experiences across brands. I craft high-fidelity
-            designs, prototypes, and accessible systems.
+          <p className="mt-6 text-black max-w-xl mx-auto">
+I specialize in creating thoughtful and impactful products, collaborating with startups and leading brands
           </p>
 
          {/* BUTTONS */}
