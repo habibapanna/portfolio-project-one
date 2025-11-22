@@ -3,7 +3,7 @@ import { BsQuestionCircle, BsQuestionCircleFill } from 'react-icons/bs';
 import { GiStairs } from 'react-icons/gi';
 import { IoIosArrowDown } from 'react-icons/io';
 import { RiArrowRightUpFill } from 'react-icons/ri';
-import { motion } from "framer-motion";
+import { Fade } from "react-awesome-reveal";
 
 const Faq = () => {
   // --- 5 FAQs (replace text with the exact ones from your screenshot if needed) ---
@@ -32,7 +32,8 @@ const Faq = () => {
 
   return (
     <div>
-      <motion.section id="faq" className="py-16 text-center bg-violet-200 rounded-[100px]">
+    <Fade>
+          <section id="faq" className="py-16 text-center bg-violet-200 rounded-[100px]">
         <div className="mx-auto inline-flex items-center rounded-full px-4 py-2 bg-[#eef6f9] border border-gray-300 shadow-sm">
           <span className="w-8 h-8 flex items-center justify-center rounded-md ">
             <BsQuestionCircleFill className="text-[#1f2d5c] text-lg" />
@@ -109,7 +110,8 @@ const Faq = () => {
 
           </div>
         </div>
-      </motion.section>
+      </section>
+    </Fade>
     </div>
   );
 };

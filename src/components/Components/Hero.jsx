@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 import { BiSolidRightArrowAlt } from "react-icons/bi";
 import { RiArrowRightUpFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
-
+import { Fade } from "react-awesome-reveal";
 
 const Hero = () => {
   // ✅ Your images (corrected array)
@@ -17,14 +17,15 @@ const Hero = () => {
   ];
 
   return (
-    <motion.div className="bg-violet-100" style={{
+    <div className="bg-violet-100" style={{
     backgroundImage:
       "url('https://framerusercontent.com/images/dDB4JCGfoX5DJBUD3qohcdOK9U.png')",
        backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
   }}>
-      <section id="home" className="bg-violet-10 pt-20"
+    <Fade>
+        <section id="home" className="bg-violet-10 pt-20"
        >
         <div className="mx-auto px-6 text-center">
 
@@ -106,7 +107,8 @@ I specialize in creating thoughtful and impactful products, collaborating with s
 
         </div>
       </section>
-    </motion.div>
+    </Fade>
+    </div>
   );
 };
 

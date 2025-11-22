@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
-
+import { Fade } from "react-awesome-reveal";
 // Projects Data With Categories
 const projects = [
   {
@@ -50,9 +50,9 @@ const Projects = () => {
   });
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-slate-50 to-slate-100">
-
-
+    <div>
+      <Fade>
+        <section className="py-20 px-6 bg-gradient-to-b from-slate-50 to-slate-100">
       {/* WRAPPER */}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 mx-auto">
 
@@ -166,6 +166,8 @@ const Projects = () => {
         </div>
       </div>
     </section>
+      </Fade>
+    </div>
   );
 };
 
