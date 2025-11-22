@@ -34,7 +34,7 @@ const Navbar = () => {
             <NavLink to="/">Home</NavLink>
             <NavLink to="projects">Projects</NavLink>
           </div>
-          <button className="px-3 py-1 bg-gradient-to-br from-slate-900 to-slate-700 text-white rounded-md text-sm">
+          <button className="px-6 py-2 rounded-lg bg-[#1f2d5c] text-white font-medium shadow-md">
             Get in Touch
           </button>
         </div>

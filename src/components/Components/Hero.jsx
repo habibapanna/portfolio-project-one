@@ -68,14 +68,13 @@ const Hero = () => {
          {/* BUTTONS */}
                  <div className="text-center mt-14 flex justify-center gap-6">
                    {/* Dark Button */}
-                   <button className="px-8 py-3 rounded-xl bg-[#1f2d5c] text-white font-medium shadow-md hover:-translate-y-1 hover:shadow-lg
-                  transition flex items-center justify-center text-sm">
+                   <button className="px-8 py-3 rounded-lg bg-[#1f2d5c] text-white font-medium shadow-md flex items-center justify-center text-sm">
                      <RiArrowRightUpFill className='mr-2 text-xl' />
-                     Get in Touch
+                     Contact Me
                    </button>
          
                    {/* White Button */}
-                   <button className="px-8 py-3 rounded-xl bg-white font-medium shadow-md border border-gray-300 hover:-translate-y-1 hover:shadow-lg transition flex items-center justify-center text-sm">
+                   <button className="px-6 py-3 rounded-lg font-medium shadow-lg bg-gradient-to-br from-[#f9fcff] to-[#e0e7ef] text-[#1c2026] flex items-center justify-center text-sm">
                      <BiSolidRightArrowAlt className='mr-2 text-xl' />
                      See Projects
                    </button>
