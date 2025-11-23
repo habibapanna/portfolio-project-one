@@ -29,7 +29,7 @@ const totalWidth = marqueeItems.length * 220;
 
     return (
         <div>
-            <Fade>
+          
               <section id="pricing" className=" text-center py-20 bg-violet-200 rounded-[100px] mt-10">
                 <div className="mx-auto inline-flex items-center rounded-full px-4 py-2 bg-[#eef6f9] border border-gray-300 shadow-sm">
             {/* small white square with icon */}
@@ -142,7 +142,6 @@ const totalWidth = marqueeItems.length * 220;
 
 </section>
 
-            </Fade>
             
         </div>
     );

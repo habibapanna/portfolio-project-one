@@ -19,7 +19,7 @@ const steps = [
 
     return (
         <div>
-           <Fade>
+          
              <section id="process" className="py-16 bg-violet-100 text-center">
                   <div className="mx-auto inline-flex items-center rounded-full px-4 py-2 bg-[#eef6f9] border border-gray-300 shadow-sm">
                             {/* small white square with icon */}
@@ -67,7 +67,6 @@ const steps = [
         </div>
 </div>
 </section>
-           </Fade>
         </div>
     );
 };

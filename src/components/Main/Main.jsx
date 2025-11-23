@@ -7,27 +7,26 @@ import FloatingNav from '../FloatingNav/FloatingNav';
 
 
 const Main = () => {
-    const location = useLocation();
-    return (
-        <div  className="min-h-screen mx-auto flex flex-col">
-            <Navbar></Navbar>
-           <AnimatePresence mode="wait">
-      <motion.div
-        key={location.pathname}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -20 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="flex-grow">
-            <Outlet></Outlet>
-            </div>
-      </motion.div>
-    </AnimatePresence>
-            <Footer></Footer>
-<FloatingNav />
-        </div>
-    );
+  const location = useLocation();
+  return (
+    <div className="min-h-screen mx-auto flex flex-col">
+      <Navbar></Navbar>
+     <motion.div
+  key={location.pathname}
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  exit={{ opacity: 0, y: -30 }}
+  transition={{ duration: 3.0, ease: "easeInOut" }}
+>
+  <div className="flex-grow">
+    <Outlet />
+  </div>
+</motion.div>
+
+      <Footer></Footer>
+      <FloatingNav />
+    </div>
+  );
 };
 
 export default Main;

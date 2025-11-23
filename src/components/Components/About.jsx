@@ -1,11 +1,12 @@
 import { Fade } from "react-awesome-reveal";
 import { CiFacebook } from "react-icons/ci";
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 const About = () => {
     return (
         <div>
-           <Fade>
+           
              <section id="about" className="py-24 bg-violet-100" 
         >
   <div className="max-w-7xl mx-auto px-6 grid xl:grid-cols-3 gap-10 bg-violet-100"
@@ -20,10 +21,30 @@ const About = () => {
       />
 
       {/* STATUS */}
-      <div className="flex items-center gap-2 mt-4 text-sm text-center mx-auto justify-center">
-        <span className="w-2 h-2 bg-green-500 rounded-full text-center items-center "></span>
-        <p className="text-gray-600 text-center items-center">available for work</p>
+       <div className="flex items-center gap-2 mt-4 text-sm text-center mx-auto justify-center">
+      <div className="relative w-4 h-4 flex items-center justify-center">
+        {/* Ripples */}
+        {[0, 0.5, 1].map((delay, i) => (
+          <motion.span
+            key={i}
+            className="absolute w-4 h-4 bg-green-500 rounded-full"
+            initial={{ scale: 0.5, opacity: 0.6 }}
+            animate={{ scale: [0.2, 2], opacity: [0.6, 0] }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              delay: delay,
+              ease: "easeOut",
+            }}
+          />
+        ))}
+
+        {/* Center Dot */}
+        <span className="w-2 h-2 bg-green-500 rounded-full z-10"></span>
       </div>
+
+      <p className="text-gray-600 text-center items-center">available for work</p>
+    </div>
 
       {/* NAME */}
       <h2 className="text-3xl font-semibold mt-4 text-center">Sanwar Limon</h2>
@@ -107,7 +128,6 @@ const About = () => {
     </div>
   </div>
 </section>
-           </Fade>
             
 
         </div>

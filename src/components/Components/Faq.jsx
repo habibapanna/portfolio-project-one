@@ -32,14 +32,16 @@ const Faq = () => {
 
   return (
     <div>
-    <Fade>
+    
           <section id="faq" className="py-16 text-center bg-violet-200 rounded-[100px]">
-        <div className="mx-auto inline-flex items-center rounded-full px-4 py-2 bg-[#eef6f9] border border-gray-300 shadow-sm">
+       <Fade>
+         <div className="mx-auto inline-flex items-center rounded-full px-4 py-2 bg-[#eef6f9] border border-gray-300 shadow-sm">
           <span className="w-8 h-8 flex items-center justify-center rounded-md ">
             <BsQuestionCircleFill className="text-[#1f2d5c] text-lg" />
           </span>
           <span className="text-[#0f1724] ml-2">FAQS</span>
         </div>
+       </Fade>
 
         <div className="max-w-6xl mx-auto px-6">
           <h4 className="text-2xl md:text-5xl font-semibold text-center my-5">Questions? Answers!</h4>
@@ -111,7 +113,6 @@ const Faq = () => {
           </div>
         </div>
       </section>
-    </Fade>
     </div>
   );
 };

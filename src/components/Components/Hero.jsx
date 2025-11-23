@@ -24,7 +24,7 @@ const Hero = () => {
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
   }}>
-    <Fade>
+
         <section id="home" className="bg-violet-10 pt-20"
        >
         <div className="mx-auto px-6 text-center">
@@ -37,15 +37,15 @@ const Hero = () => {
             className="text-4xl md:text-5xl font-serif leading-tight text-slate-900 flex flex-col items-center gap-2"
           >
             {/* LINE 1 */}
-            <div className="flex items-center gap-3">
+            <Fade direction="down"> <div className="flex items-center gap-3">
               <img
                 className="h-20 w-20 rounded-xl object-cover"
                 src="https://i.postimg.cc/VsM4VNZp/Gemini-Generated-Image-r04xalr04xalr04x.png"
               />
               <span className="text-3xl md:text-8xl bg-gradient-to-b from-[#334155] to-[#1e293b] text-transparent bg-clip-text drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]">I'm Limon</span>
-            </div>
-
-            {/* LINE 2 */}
+            </div></Fade>
+           <Fade direction="up">
+             {/* LINE 2 */}
             <div className="flex items-center gap-3">
               <span className="text-3xl md:text-8xl bg-gradient-to-b from-[#334155] to-[#1e293b] text-transparent bg-clip-text drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]">Remote Designer</span>
 
@@ -58,17 +58,23 @@ const Hero = () => {
                 src="https://framerusercontent.com/images/XJP6N21SKyA8OD0sTiV9H2m0.jpg?scale-down-to=1024"
               />
             </div>
+           </Fade>
+
+           
           </motion.h1>
 
           {/* PARAGRAPH */}
-          <p className="mt-6 text-gray-800 max-w-xl mx-auto">
+          <Fade>
+            <p className="mt-6 text-gray-800 max-w-xl mx-auto">
 I specialize in creating thoughtful and impactful products, collaborating with startups and leading brands
           </p>
+          </Fade>
 
          <div className="mt-14 flex justify-center gap-6">
 
   {/* Dark Button */}
-  <button
+ <Fade direction="up">
+   <button
     className="
       px-6 py-3 rounded-lg text-sm
       bg-gradient-to-br from-[#1f2740] to-[#152032]
@@ -78,9 +84,10 @@ I specialize in creating thoughtful and impactful products, collaborating with s
     <RiArrowRightUpFill className="mr-2 text-xl" />
     Get in Touch
   </button>
+ </Fade>
 
   {/* Light Button */}
-  <button
+ <Fade direction="up"> <button
     className="
      px-6 py-3 rounded-lg font-medium shadow-lg bg-gradient-to-br from-[#f9fcff] to-[#e0e7ef] text-[#1c2026] flex items-center justify-center text-sm
     "
@@ -88,7 +95,7 @@ I specialize in creating thoughtful and impactful products, collaborating with s
     <BiSolidRightArrowAlt className="mr-2 text-xl" />
     See Projects
   </button>
-
+</Fade>
 </div>
 
         </div>
@@ -119,7 +126,7 @@ I specialize in creating thoughtful and impactful products, collaborating with s
 
         </div>
       </section>
-    </Fade>
+
     </div>
   );
 };
