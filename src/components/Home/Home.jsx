@@ -15,20 +15,13 @@ const t = [
 
   return (
     <section className="bg-violet-100">
-   <Hero></Hero>
-
-<Services></Services>
-
-<About></About>
-
-<Pricing></Pricing>
-
-<Process></Process>
-
-<Faq></Faq>
-
-
-    </section>
+   <section id="home"><Hero /></section>
+<section id="services"><Services /></section>
+<section id="about"><About /></section>
+<section id="pricing"><Pricing /></section>
+<section id="process"><Process /></section>
+<section id="faq"><Faq /></section>
+</section>
   );
 };
 

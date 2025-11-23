@@ -3,6 +3,7 @@ import Navbar from '../Shared/Navbar/Navbar';
 import { Outlet, useLocation } from "react-router-dom";
 import Footer from '../Shared/Footer/Footer';
 import { AnimatePresence, motion } from "framer-motion";
+import FloatingNav from '../FloatingNav/FloatingNav';
 
 
 const Main = () => {
@@ -24,6 +25,7 @@ const Main = () => {
       </motion.div>
     </AnimatePresence>
             <Footer></Footer>
+<FloatingNav />
         </div>
     );
 };
