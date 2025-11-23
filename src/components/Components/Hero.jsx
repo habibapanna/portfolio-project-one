@@ -42,12 +42,12 @@ const Hero = () => {
                 className="h-20 w-20 rounded-xl object-cover"
                 src="https://i.postimg.cc/VsM4VNZp/Gemini-Generated-Image-r04xalr04xalr04x.png"
               />
-              <span className="text-3xl md:text-8xl">I'm Limon</span>
+              <span className="text-3xl md:text-8xl bg-gradient-to-b from-[#334155] to-[#1e293b] text-transparent bg-clip-text drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]">I'm Limon</span>
             </div>
 
             {/* LINE 2 */}
             <div className="flex items-center gap-3">
-              <span className="text-3xl md:text-8xl">Remote Designer</span>
+              <span className="text-3xl md:text-8xl bg-gradient-to-b from-[#334155] to-[#1e293b] text-transparent bg-clip-text drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]">Remote Designer</span>
 
               <img
                 className="h-20 w-20 rounded-xl object-cover"
@@ -61,24 +61,36 @@ const Hero = () => {
           </motion.h1>
 
           {/* PARAGRAPH */}
-          <p className="mt-6 text-black max-w-xl mx-auto">
+          <p className="mt-6 text-gray-800 max-w-xl mx-auto">
 I specialize in creating thoughtful and impactful products, collaborating with startups and leading brands
           </p>
 
-         {/* BUTTONS */}
-                 <div className="text-center mt-14 flex justify-center gap-6">
-                   {/* Dark Button */}
-                   <button className="px-8 py-3 rounded-lg bg-[#1f2d5c] text-white font-medium shadow-md flex items-center justify-center text-sm">
-                     <RiArrowRightUpFill className='mr-2 text-xl' />
-                     Contact Me
-                   </button>
-         
-                   {/* White Button */}
-                   <button className="px-6 py-3 rounded-lg font-medium shadow-lg bg-gradient-to-br from-[#f9fcff] to-[#e0e7ef] text-[#1c2026] flex items-center justify-center text-sm">
-                     <BiSolidRightArrowAlt className='mr-2 text-xl' />
-                     See Projects
-                   </button>
-                 </div>
+         <div className="mt-14 flex justify-center gap-6">
+
+  {/* Dark Button */}
+  <button
+    className="
+      px-6 py-3 rounded-lg text-sm
+      bg-gradient-to-br from-[#1f2740] to-[#152032]
+      text-white shadow-md flex items-center justify-center 
+    "
+  >
+    <RiArrowRightUpFill className="mr-2 text-xl" />
+    Get in Touch
+  </button>
+
+  {/* Light Button */}
+  <button
+    className="
+     px-6 py-3 rounded-lg font-medium shadow-lg bg-gradient-to-br from-[#f9fcff] to-[#e0e7ef] text-[#1c2026] flex items-center justify-center text-sm
+    "
+  >
+    <BiSolidRightArrowAlt className="mr-2 text-xl" />
+    See Projects
+  </button>
+
+</div>
+
         </div>
       </section>
 

@@ -1,10 +1,32 @@
 import React from 'react';
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
 import { FaArrowRightArrowLeft } from 'react-icons/fa6';
 import { RiBox2Fill } from 'react-icons/ri';
 import { TiTick } from 'react-icons/ti';
 import { Fade } from "react-awesome-reveal";
+import { PiNotePencil, PiSlideshow, PiVideo } from 'react-icons/pi';
+import { IoSearchOutline } from 'react-icons/io5';
+import { CiDollar } from 'react-icons/ci';
+import { LuArrowRightLeft } from 'react-icons/lu';
+import { FiZap } from 'react-icons/fi';
+import { MdOutlineSpaceDashboard } from 'react-icons/md';
 
+
+const marqueeItems = [
+  { text: "Video & Motion Graphics", icon: <PiVideo /> },
+  { text: "Slide Decks", icon: <PiSlideshow /> },
+  { text: "SEO", icon: <IoSearchOutline /> },
+  { text: "Landing Pages", icon: <MdOutlineSpaceDashboard /> },
+  { text: "Framer Migration", icon: <LuArrowRightLeft /> },
+  { text: "Copywriting", icon: <PiNotePencil /> },
+  { text: "Cost Effective", icon: <CiDollar /> },
+  { text: "Optimization", icon: <FiZap /> },
+];
 const Pricing = () => {
+
+const totalWidth = marqueeItems.length * 220; 
+
     return (
         <div>
             <Fade>
@@ -53,7 +75,7 @@ const Pricing = () => {
 
   {/* Contact Button */}
   <div className="mt-6">
-    <button className="w-full px-4 py-3 rounded-lg bg-slate-900 text-white hover:bg-slate-800 transition">
+    <button className="w-full px-4 py-3 rounded-lg text-white bg-gradient-to-br from-[#1f2740] to-[#152032]">
       Contact Me
     </button>
   </div>
@@ -86,8 +108,42 @@ const Pricing = () => {
 </div>
 
 </div>
+{/* 🔥 Marquee Section */}
+ <div className="relative overflow-hidden py-6 max-w-5xl mx-auto mt-10">
+      {/* Edge fade effect */}
+      <div className="absolute top-0 left-0 h-full w-20 bg-gradient-to-r from-violet-200/100 to-white/0 z-20 pointer-events-none" />
+      <div className="absolute top-0 right-0 h-full w-20 bg-gradient-to-l from-violet-200/100 to-white/0 z-20 pointer-events-none" />
+
+      <motion.div
+        className="flex gap-6"
+        animate={{ x: ["-50%", "0%"] }} // left to right, adjust negative to match content width
+        transition={{
+          repeat: Infinity,
+          repeatType: "loop",
+          ease: "linear",
+          duration: 40, // slower movement
+        }}
+      >
+        {[...marqueeItems, ...marqueeItems].map((item, idx) => (
+          <motion.div
+            key={idx}
+            className="px-5 py-2 rounded-full border border-gray-300 bg-blue-50 shadow text-gray-800 flex items-center gap-2"
+            initial={{ opacity: 0, filter: "blur(10px)" }}
+            animate={{ opacity: 1, filter: "blur(0px)" }}
+            exit={{ opacity: 0, filter: "blur(10px)" }}
+            transition={{ duration: 2 }}
+          >
+            <span className="text-lg">{item.icon}</span>
+            <span className="font-medium whitespace-nowrap">{item.text}</span>
+          </motion.div>
+        ))}
+      </motion.div>
+    </div>
+
 </section>
+
             </Fade>
+            
         </div>
     );
 };

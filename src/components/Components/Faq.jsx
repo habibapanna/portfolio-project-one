@@ -57,7 +57,7 @@ const Faq = () => {
                 Still have questions? Feel free to get in touch with us today!
               </p>
 
-              <button className="mt-6 px-5 py-3 bg-[#1f2d5c] hover:bg-[#121a36] transition text-white rounded-xl shadow flex items-center justify-center">
+              <button className="mt-6 px-5 py-3 bg-gradient-to-br from-[#1f2740] to-[#152032] text-white rounded-lg shadow flex items-center justify-center">
                 <RiArrowRightUpFill className="mr-2 text-xl" />
                 Ask A Question
               </button>

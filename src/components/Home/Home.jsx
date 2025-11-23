@@ -21,7 +21,9 @@ const t = [
 <section id="pricing"><Pricing /></section>
 <section id="process"><Process /></section>
 <section id="faq"><Faq /></section>
-</section>
+
+
+    </section>
   );
 };
 

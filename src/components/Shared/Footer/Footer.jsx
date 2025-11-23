@@ -31,7 +31,7 @@ const Footer = () => {
     {/* BUTTONS */}
             <div className="text-center mt-14 flex justify-center gap-6">
               {/* Dark Button */}
-              <button className="px-8 py-3 rounded-lg bg-[#1f2d5c] text-white font-medium shadow-md flex items-center justify-center text-sm">
+              <button className="px-8 py-3 rounded-lg bg-gradient-to-br from-[#1f2740] to-[#152032] shadow-md flex items-center justify-center text-sm text-white">
                 <RiArrowRightUpFill className='mr-2 text-xl' />
                 Contact Me
               </button>

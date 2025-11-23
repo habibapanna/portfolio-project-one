@@ -1,4 +1,6 @@
 import { Fade } from "react-awesome-reveal";
+import { CiFacebook } from "react-icons/ci";
+import { FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 const About = () => {
     return (
@@ -10,11 +12,11 @@ const About = () => {
   >
 
     {/* LEFT CARD */}
-    <div className="bg-gradient-to-tr from-blue-100 via-blue-50 to-blue-100 p-3 rounded-3xl shadow-xl shadow-gray-400 border border-gray-300">
+    <div className="bg-gradient-to-tr from-blue-100 via-blue-50 to-blue-100 p-3 rounded-xl shadow-xl shadow-gray-400 border border-gray-300">
       <img
         src="https://framerusercontent.com/images/bnJJiW5Vfixlrz7M2pzoeyHBU.png?width=2048&height=2048"
         alt="Profile"
-        className="rounded-2xl w-full object-cover"
+        className="rounded-xl w-full object-cover"
       />
 
       {/* STATUS */}
@@ -31,7 +33,7 @@ const About = () => {
 
       {/* SOCIAL ICONS */}
       <div className="flex gap-5 mt-6 text-center justify-center">
-        {["✕", "📷", "◎"].map((icon, i) => (
+        {[<FaXTwitter />, <FaInstagram />, <CiFacebook />].map((icon, i) => (
           <button
             key={i}
             className="w-12 h-12 bg-violet-200 rounded-full flex items-center justify-center text-xl text-slate-700"
@@ -42,7 +44,7 @@ const About = () => {
       </div>
 
       {/* CONTACT BUTTON */}
-      <button className="mt-8 w-full flex items-center justify-center gap-2 py-3 bg-slate-800 hover:bg-slate-900 text-white rounded-xl shadow-lg">
+      <button className="mt-8 w-full flex items-center justify-center gap-2 py-3 bg-gradient-to-br from-[#1f2740] to-[#152032] text-white rounded-lg shadow-lg">
         <span className="text-lg"></span>
         Contact Me
       </button>
