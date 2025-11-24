@@ -8,7 +8,11 @@ const Navbar = () => {
   // You can change these names based on your section IDs.
 
   return (
-    <header className="sticky top-0 z-50 bg-violet-200/50 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 bg-violet-200/50 backdrop-blur-sm"
+    style={{
+        backdropFilter: "blur(10px)", // glassy effect
+        WebkitBackdropFilter: "blur(10px)", // Safari support
+      }}>
       <nav className="mx-auto px-6 py-3 flex items-center justify-between max-w-6xl">
         
         {/* Left */}
@@ -21,7 +25,7 @@ const Navbar = () => {
         {/* Right */}
         <div className="flex items-center gap-8">
            {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-6 text-sm text-black">
+          <div className="hidden md:flex items-center gap-6 text-black">
             {/* {navItems.map((n) => (
               <a 
                 key={n} 
@@ -31,8 +35,8 @@ const Navbar = () => {
                 {n}
               </a>
             ))} */}
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="projects">Projects</NavLink>
+            <NavLink className=" hover:underline" to="/">Home</NavLink>
+            <NavLink className=" hover:underline" to="projects">Projects</NavLink>
           </div>
           <button className="px-6 py-3 rounded-lg bg-[#1f2d5c] text-white shadow-md">
             Get in Touch

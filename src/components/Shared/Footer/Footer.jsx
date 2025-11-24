@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
     return (
-        <div>
-<section className="bg-violet-100 py-32 px-5 text-center font-inter">
+        <div className="bg-violet-100">
+<section className="bg-violet-100 py-32 px-5 text-center font-inter rounded-[100px]">
       <motion.div
       className="rounded-full w-20 h-20 flex items-center justify-center shadow-xl shadow-gray-400 bg-gray-800 mx-auto mb-5"
       animate={{ y: [0, 15, 0] }} // move down 10px and back
