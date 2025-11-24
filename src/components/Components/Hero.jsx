@@ -44,7 +44,7 @@ const Hero = () => {
               />
               <span className="text-3xl md:text-8xl bg-gradient-to-b from-[#334155] to-[#1e293b] text-transparent bg-clip-text drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]">I'm Limon</span>
             </div></Fade>
-           <Fade direction="up">
+           <Fade direction="">
              {/* LINE 2 */}
             <div className="flex items-center gap-3">
               <span className="text-3xl md:text-8xl bg-gradient-to-b from-[#334155] to-[#1e293b] text-transparent bg-clip-text drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]">Remote Designer</span>
@@ -113,12 +113,12 @@ I specialize in creating thoughtful and impactful products, collaborating with s
             {projectImages.map((p, i) => (
               <article
                 key={i}
-                className="rounded-xl overflow-hidden shadow-sm min-w-[350px] mx-4 pt-3 pb-10 px-3 bg-violet-100 border border-gray-300 cursor-pointer"
+                className="rounded-xl overflow-hidden shadow-sm min-w-[350px] mx-4 pt-5 pb-16 px-5 bg-violet-100 border border-gray-300 cursor-pointer"
               >
                 <img
                   src={p.img}
                   alt={`Project ${i + 1}`}
-                  className="w-full h-64 object-cover rounded-xl border-b border-gray-500 shadow-lg shadow-gray-500"
+                  className="w-full h-[400px] object-cover rounded-xl border-b border-gray-500 shadow-lg shadow-gray-500"
                 />
               </article>
             ))}

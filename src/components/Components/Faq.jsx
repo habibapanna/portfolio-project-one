@@ -4,6 +4,7 @@ import { GiStairs } from 'react-icons/gi';
 import { IoIosArrowDown } from 'react-icons/io';
 import { RiArrowRightUpFill } from 'react-icons/ri';
 import { Fade } from "react-awesome-reveal";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Faq = () => {
   // --- 5 FAQs (replace text with the exact ones from your screenshot if needed) ---
@@ -65,50 +66,58 @@ const Faq = () => {
               </button>
             </div>
 
-            {/* ---------- UPDATED ACCORDION (drop-in) ---------- */}
-            <div className="mt-6 md:mt-0 space-y-4 text-left col-span-2">
-              {faqs.map((f, i) => {
-                const isOpen = openIndex === i;
-                return (
-                  <div
-                    key={f.q}
-                    className="bg-blue-50 rounded-xl shadow border border-gray-200 overflow-hidden"
-                  >
-                    {/* Question button */}
-                    <button
-                      onClick={() => toggleIndex(i)}
-                      aria-expanded={isOpen}
-                      className="w-full px-5 py-3 flex items-center justify-between gap-4 text-left"
-                    >
-                      <span className="font-medium text-gray-800">{f.q}</span>
+          <div className="mt-6 md:mt-0 space-y-4 text-left col-span-2">
+  {faqs.map((f, i) => {
+    const isOpen = openIndex === i;
 
-                      {/* right-side arrow */}
-                      <span
-                        className={`transform transition-transform duration-300 text-gray-600 ${isOpen ? 'rotate-90' : 'rotate-0'}`}
-                        aria-hidden="true"
-                      >
-                       <IoIosArrowDown />
-                      </span>
-                    </button>
+    return (
+      <div
+        key={f.q}
+        className="bg-blue-50 rounded-xl shadow border border-gray-200 overflow-hidden"
+      >
+        {/* Question Button */}
+        <button
+          onClick={() => toggleIndex(i)}
+          className="w-full px-5 py-3 flex items-center justify-between gap-4"
+        >
+          <span className="font-medium text-gray-800">{f.q}</span>
 
-                    {/* Answer content with smooth height transition */}
-                    <div
-                      ref={(el) => (contentRefs.current[i] = el)}
-                      style={{
-                        maxHeight: isOpen && contentRefs.current[i] ? `${contentRefs.current[i].scrollHeight}px` : '0px',
-                        transition: 'max-height 350ms ease',
-                      }}
-                      className="px-5 overflow-hidden"
-                    >
-                      <div className="py-3 text-gray-700">
-                        {f.a}
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-            {/* ---------- end accordion ---------- */}
+          {/* Arrow icon animation */}
+          <motion.span
+            animate={{ rotate: isOpen ? 180 : 0 }}
+            transition={{ duration: 0.3 }}
+            className="text-gray-600"
+          >
+            <IoIosArrowDown />
+          </motion.span>
+        </button>
+
+        {/* Answer Animation */}
+        <AnimatePresence initial={false}>
+          {isOpen && (
+            <motion.div
+              key="content"
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.35, ease: "easeInOut" }}
+              className="overflow-hidden px-5"
+            >
+              <motion.div
+                initial={{ y: -5 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 0.2 }}
+                className="py-3 text-gray-700"
+              >
+                {f.a}
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    );
+  })}
+</div>
 
           </div>
         </div>
