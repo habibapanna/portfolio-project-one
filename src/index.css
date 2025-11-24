@@ -1,8 +1,9 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Locomotive Scroll */
+@import "locomotive-scroll/dist/locomotive-scroll.css";
 
 html {
   scroll-behavior: smooth;
@@ -16,5 +17,3 @@ html {
 .animate-marquee {
   animation: marquee 50s linear infinite;
 }
-
-

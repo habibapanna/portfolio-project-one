@@ -4,7 +4,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import Footer from '../Shared/Footer/Footer';
 import { AnimatePresence, motion } from "framer-motion";
 import FloatingNav from '../FloatingNav/FloatingNav';
-
+import LocomotiveScroll from "locomotive-scroll";
 
 const Main = () => {
   const location = useLocation();
@@ -16,7 +16,7 @@ const Main = () => {
   initial={{ opacity: 0, y: 30 }}
   animate={{ opacity: 1, y: 0 }}
   exit={{ opacity: 0, y: -30 }}
-  transition={{ duration: 3.0, ease: "easeInOut" }}
+  transition={{ duration: 1.5, ease: "easeInOut" }}
 >
   <div className="flex-grow">
     <Outlet />
