@@ -48,78 +48,80 @@ const Faq = () => {
           <h4 className="text-2xl md:text-5xl font-semibold text-center my-5">Questions? Answers!</h4>
           <p className="mb-10">Find quick answers to the most common questions about the services offered</p>
 
-          <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-10 ">
-            {/* left card */}
-            <div className="bg-blue-50 rounded-2xl shadow p-10 flex flex-col justify-center text-center">
-              <div className="rounded-xl w-12 h-12 flex items-center justify-center shadow-xl shadow-gray-400 bg-white mx-auto">
-                <BsQuestionCircle className="text-2xl text-gray-700" />
-              </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
-              <h3 className="text-3xl font-semibold mt-5 mb-3">Get In Touch Now!</h3>
-              <p className="text-gray-800 mt-2">
-                Still have questions? Feel free to get in touch with us today!
-              </p>
-
-              <button className="mt-6 px-5 py-3 bg-gradient-to-br from-[#1f2740] to-[#152032] text-white rounded-lg shadow flex items-center justify-center">
-                <RiArrowRightUpFill className="mr-2 text-xl" />
-                Ask A Question
-              </button>
+          {/* LEFT CARD — moves to bottom on mobile */}
+          <div className="order-2 lg:order-1 bg-blue-50 rounded-2xl shadow p-8 md:p-10 flex flex-col text-center">
+            <div className="rounded-xl w-12 h-12 flex items-center justify-center shadow-xl shadow-gray-400 bg-white mx-auto">
+              <BsQuestionCircle className="text-2xl text-gray-700" />
             </div>
 
-          <div className="mt-6 md:mt-0 space-y-4 text-left col-span-2">
-  {faqs.map((f, i) => {
-    const isOpen = openIndex === i;
+            <h3 className="text-2xl md:text-3xl font-semibold mt-5 mb-3">
+              Get In Touch Now!
+            </h3>
+            <p className="text-gray-800 mt-2 text-sm md:text-base">
+              Still have questions? Feel free to get in touch with us today!
+            </p>
 
-    return (
-      <div
-        key={f.q}
-        className="bg-blue-50 rounded-xl shadow border border-gray-200 overflow-hidden"
-      >
-        {/* Question Button */}
-        <button
-          onClick={() => toggleIndex(i)}
-          className="w-full px-5 py-3 flex items-center justify-between gap-4"
-        >
-          <span className="font-medium text-gray-800">{f.q}</span>
-
-          {/* Arrow icon animation */}
-          <motion.span
-            animate={{ rotate: isOpen ? 180 : 0 }}
-            transition={{ duration: 0.3 }}
-            className="text-gray-600"
-          >
-            <IoIosArrowDown />
-          </motion.span>
-        </button>
-
-        {/* Answer Animation */}
-        <AnimatePresence initial={false}>
-          {isOpen && (
-            <motion.div
-              key="content"
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.35, ease: "easeInOut" }}
-              className="overflow-hidden px-5"
-            >
-              <motion.div
-                initial={{ y: -5 }}
-                animate={{ y: 0 }}
-                transition={{ duration: 0.2 }}
-                className="py-3 text-gray-700"
-              >
-                {f.a}
-              </motion.div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-    );
-  })}
-</div>
-
+            <button className="mt-6 px-5 py-3 bg-gradient-to-br from-[#1f2740] to-[#152032] text-white rounded-lg shadow flex items-center justify-center">
+              <RiArrowRightUpFill className="mr-2 text-xl" />
+              Ask A Question
+            </button>
           </div>
+
+          {/* RIGHT — FAQ accordion */}
+          <div className="order-1 lg:order-2 lg:col-span-2 space-y-4">
+            {faqs.map((f, i) => {
+              const isOpen = openIndex === i;
+
+              return (
+                <div
+                  key={f.q}
+                  className="bg-blue-50 rounded-xl shadow border border-gray-200 overflow-hidden"
+                >
+                  <button
+                    onClick={() => toggleIndex(i)}
+                    className="w-full px-5 py-3 flex items-center justify-between"
+                  >
+                    <span className="font-medium text-gray-800 text-sm md:text-base">
+                      {f.q}
+                    </span>
+
+                    <motion.span
+                      animate={{ rotate: isOpen ? 180 : 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="text-gray-600"
+                    >
+                      <IoIosArrowDown />
+                    </motion.span>
+                  </button>
+
+                  <AnimatePresence initial={false}>
+                    {isOpen && (
+                      <motion.div
+                        key="content"
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.35 }}
+                        className="overflow-hidden px-5"
+                      >
+                        <motion.div
+                          initial={{ y: -5 }}
+                          animate={{ y: 0 }}
+                          transition={{ duration: 0.25 }}
+                          className="py-3 text-gray-700 text-sm md:text-base"
+                        >
+                          {f.a}
+                        </motion.div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              );
+            })}
+          </div>
+        </div>
         </div>
       </section>
     </div>
