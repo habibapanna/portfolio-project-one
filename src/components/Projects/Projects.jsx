@@ -132,7 +132,7 @@ const Projects = () => {
               />
 
               {/* FILTER BUTTONS */}
-              <div className="">
+              <div className="space-y-5">
                 {categories.map((cat) => (
                   <button
                     key={cat}
