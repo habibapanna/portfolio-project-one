@@ -140,7 +140,7 @@ const Projects = () => {
                     className={`w-full text-left px-4 py-2 transition rounded-lg ${
                       selectedCategory === cat
                         ? "bg-violet-200"
-                        : "bg-violet-50 hover:bg-violet-100"
+                        : "bg-violet-50 hover:bg-gray-200"
                     }`}
                   >
                     {cat}
