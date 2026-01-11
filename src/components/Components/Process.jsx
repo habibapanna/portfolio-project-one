@@ -9,26 +9,26 @@ import { Link } from 'react-router-dom';
 const Process = () => {
   const steps = [
     {
-      title: "Let's Get In Touch",
-      desc: 'Start by reaching out through our contact page. Fill out the form or book a call to discuss your project.',
+      title: "Let’s Connect",
+      desc: 'Start by reaching out through the contact form or booking a call. I’ll discuss your goals, challenges, and expectations to ensure we’re aligned from day one.',
       num: '01',
       steps: 'step1',
     },
     {
-      title: "Grab Your Designs",
-      desc: 'Tell me your unique vision, and I’ll create stunning, functional designs that perfectly align with your goals.',
+      title: "Design with Purpose",
+      desc: 'Share your vision, and I’ll craft intuitive, user-focused designs that balance creativity, usability, and performance — refined with insights and smart tools for efficiency.',
       num: '02',
       steps: 'step2',
     },
     {
-      title: "Kickstart Development",
-      desc: 'I expertly transform your designs into a powerful, scalable solution, fully ready to launch.',
+      title: "Build & Launch",
+      desc: 'Your designs are transformed into a fast, scalable, and reliable digital solution. Development is clean, optimized, and fully prepared for real-world use.',
       num: '03',
       steps: 'step3',
     },
     {
-      title: "And Hand Over",
-      desc: 'Receive a fully tested, polished, and high-quality product tailored to your needs with ongoing support.',
+      title: "Deliver & Support",
+      desc: 'Receive a polished, thoroughly tested product tailored to your needs — with ongoing support and optimization to help you grow confidently.',
       num: '04',
       steps: 'step4',
     },
@@ -124,7 +124,7 @@ const Process = () => {
          <div className="mt-14 flex justify-center gap-6">
 
   {/* Dark Button */}
- <Fade direction="up">
+ {/* <Fade direction="up">
    <button
     className="px-4 py-2
       md:px-6 md:py-3 rounded-lg text-sm
@@ -135,7 +135,7 @@ const Process = () => {
     <RiArrowRightUpFill className="mr-2 text-xl" />
     Get in Touch
   </button>
- </Fade>
+ </Fade> */}
 
   {/* Light Button */}
  <Fade direction="up"> <button

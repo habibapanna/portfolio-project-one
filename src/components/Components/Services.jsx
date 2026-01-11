@@ -6,7 +6,19 @@ import {
   PiFramerLogo,
   PiPaintBrushFill,
 } from "react-icons/pi";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaPhp,
+  FaLaravel,
+  FaWordpress,
+} from "react-icons/fa";
+
+import { SiNextdotjs } from "react-icons/si";
 import { RiArrowRightUpFill, RiBox2Fill } from "react-icons/ri";
+import { SiFigma, SiAdobexd } from "react-icons/si";
 import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 
@@ -72,51 +84,71 @@ const Services = () => {
                   </div>
 
                   <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 my-3 sm:my-5">
-                    UX & UI
+                    UI/UX Design
                   </h3>
 
                   <p className="text-gray-800 font-semibold text-sm sm:text-base">
-                    Crafting seamless, user-friendly interfaces that enhance
-                    engagement and usability.
+                     User-centered interfaces crafted through research, testing, and experience — with AI assisting usability analysis, pattern recognition, and faster iteration while preserving design quality.
                   </p>
                 </div>
               </div>
 
               {/* Right Small Card */}
-              <div className="bg-blue-50 p-5 rounded-2xl shadow hover:shadow-lg transition">
-                <div className="rounded-full w-14 h-14 flex items-center justify-center shadow-xl shadow-gray-400 bg-gray-800">
-                  <PiFramerLogo className="text-4xl text-white" />
-                </div>
+<div className="bg-blue-50 p-5 rounded-2xl shadow hover:shadow-lg transition">
+  <div className="grid grid-cols-3 gap-5 place-items-center">
 
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 my-3 sm:my-5">
-                  Framer Development
-                </h3>
+    {[
+      SiFigma,
+      SiAdobexd,
+      PiFramerLogo,
+    ].map((Icon, idx) => (
+      <div
+        key={idx}
+        className="rounded-full w-16 h-16 flex items-center justify-center
+                   shadow-xl shadow-gray-400 bg-gray-800
+                   hover:scale-115 transition-transform duration-300"
+      >
+        <Icon className="text-4xl text-white" />
+      </div>
+    ))}
 
-                <p className="text-gray-800 font-semibold text-sm sm:text-base">
-                  Building high-performance, interactive websites using
-                  Framer’s design + dev tools.
-                </p>
-              </div>
+  </div>
+</div>
+
+
             </div>
 
             {/* BOTTOM ROW */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-              {/* Bottom Small Card */}
-              <div className="p-5 rounded-2xl shadow hover:shadow-lg transition bg-blue-50">
-                <div className="rounded-full w-14 h-14 flex items-center justify-center shadow-xl shadow-gray-400 bg-gray-800">
-                  <LuTvMinimal className="text-4xl text-white" />
-                </div>
+            {/* Bottom Small Card */}
+<div className="p-5 rounded-2xl shadow hover:shadow-lg transition bg-blue-50">
+  <div className="grid grid-cols-3 gap-5 place-items-center">
 
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 my-3 sm:my-5">
-                  Interactive Web Experiences
-                </h3>
+    {[
+      FaHtml5,
+      FaCss3Alt,
+      FaJs,
+      FaReact,
+      SiNextdotjs,
+      FaPhp,
+      FaLaravel,
+      FaWordpress,
+    ].map((Icon, idx) => (
+      <div
+        key={idx}
+        className="rounded-full w-16 h-16 flex items-center justify-center
+                   shadow-xl shadow-gray-400 bg-gray-800
+                   hover:scale-115 transition-transform duration-300"
+      >
+        <Icon className="text-4xl text-white" />
+      </div>
+    ))}
 
-                <p className="text-gray-800 font-semibold text-sm sm:text-base">
-                  Interactive websites with advanced design and development
-                  tools for smooth user experiences.
-                </p>
-              </div>
+  </div>
+</div>
+
+
 
               {/* Wide Right Card */}
               <div className="col-span-1 md:col-span-2 flex flex-col lg:flex-row gap-5 bg-blue-50 p-5 rounded-2xl shadow">
@@ -132,12 +164,11 @@ const Services = () => {
                   </div>
 
                   <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 my-3 sm:my-5">
-                    Design & Creativity
+                    Web Design & Development
                   </h3>
 
                   <p className="text-gray-800 font-semibold text-sm sm:text-base">
-                    Creating visually compelling designs that resonate with
-                    your audience and brand.
+                    High-performance websites designed and built for clarity, speed, and scalability — combining modern design, clean development, and AI-enhanced testing and performance optimization.
                   </p>
                 </div>
               </div>

@@ -38,9 +38,9 @@ const Navbar = () => {
             <NavLink className=" hover:underline" to="/">Home</NavLink>
             <NavLink className=" hover:underline" to="projects">Projects</NavLink>
           </div>
-          <button className="px-6 py-3 rounded-lg bg-[#1f2d5c] text-white shadow-md">
+          {/* <button className="px-6 py-3 rounded-lg bg-[#1f2d5c] text-white shadow-md">
             Get in Touch
-          </button>
+          </button> */}
         </div>
 
       </nav>

@@ -25,20 +25,19 @@ const Footer = () => {
 
         {/* Heading */}
         <h1 className="text-2xl sm:text-4xl md:text-6xl font-semibold text-[#1b1e24] leading-[1.4] md:leading-[1.2]">
-          Tell Me About Your Next <br /> Creative Project
+         Let’s Build Something That Actually Performs
         </h1>
 
         {/* Description */}
         <p className="text-sm sm:text-base md:text-lg max-w-xl mx-auto mt-4 md:mt-6 mb-8 md:mb-12 text-gray-800 leading-relaxed">
-          Let's create captivating digital experiences that engage audiences and
-          drive meaningful brand interactions across diverse platforms.
+         Whether you’re launching something new or scaling what you already have, I help turn ideas into high-performance digital solutions — designed with intention and built to grow.
         </p>
 
        {/* button */}
             <div className="mt-14 flex justify-center gap-6">
    
      {/* Dark Button */}
-    <Fade direction="up">
+    {/* <Fade direction="up">
       <button
        className="px-4 py-2
          md:px-6 md:py-3 rounded-lg text-sm
@@ -49,7 +48,7 @@ const Footer = () => {
        <RiArrowRightUpFill className="mr-2 text-xl" />
        Get in Touch
      </button>
-    </Fade>
+    </Fade> */}
    
      {/* Light Button */}
     <Fade direction="up"> <button

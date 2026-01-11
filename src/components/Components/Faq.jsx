@@ -8,13 +8,37 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Faq = () => {
   // --- 5 FAQs (replace text with the exact ones from your screenshot if needed) ---
-  const faqs = [
-    { q: 'What services do you provide?', a: 'I provide UI/UX design, product design, prototypes and front-end implementations using React and Tailwind.' },
-    { q: 'How can I hire you?', a: 'Use the contact form or email to discuss scope, timeline and budget.' },
-    { q: 'How long does a typical project take?', a: 'Project duration depends on scope — small tasks can be 1–2 weeks, full product designs 4+ weeks.' },
-    { q: 'What is your pricing model?', a: 'I offer fixed-price proposals for well-defined scopes and hourly for open-ended work.' },
-    { q: 'Do you offer revisions and support?', a: 'Yes — every project includes a revision period and a short handover/support window after delivery.' },
-  ];
+const faqs = [
+  {
+    q: "What services do you offer?",
+    a: "I help in UI/UX design, web design & development, SEO (including AEO and modern search optimization), AI automations and AI agents, digital marketing, and business growth strategy. Each service is tailored to your specific goals.",
+  },
+  {
+    q: "How do you use AI in your work?",
+    a: "AI is used as a support tool to improve research, speed up analysis, enhance accuracy, and scale results. All strategy, creativity, and decision-making remain human-led.",
+  },
+  {
+    q: "Do you work with startups or established businesses?",
+    a: "Both. I work with startups building from the ground up and established businesses looking to optimize, scale, or modernize their digital presence.",
+  },
+  {
+    q: "What tools and technologies do you use?",
+    a: "Depending on the project, I work with tools like Figma, Framer, Webflow, modern web frameworks, analytics platforms, and AI-assisted research and optimization tools.",
+  },
+  {
+    q: "How long does a typical project take?",
+    a: "Timelines vary based on scope and complexity. Smaller projects can take a few weeks, while larger, more strategic builds may take longer. Clear timelines are shared before starting.",
+  },
+  {
+    q: "Do you provide ongoing support after delivery?",
+    a: "Yes. I offer post-launch support, optimization, and guidance to ensure your product continues to perform and grow effectively.",
+  },
+  {
+    q: "How do we get started?",
+    a: "Simply click the button LET’S TALK. We’ll discuss your project, goals, and next steps.",
+  },
+];
+
 
   // --- accordion state: which index is open (0 = first open by default) ---
   const [openIndex, setOpenIndex] = useState(0);
@@ -45,13 +69,13 @@ const Faq = () => {
        </Fade>
 
         <div className="max-w-6xl mx-auto px-6">
-          <h4 className="text-2xl md:text-5xl font-semibold text-center my-5">Questions? Answers!</h4>
+          <h4 className="text-2xl md:text-5xl font-semibold text-center my-5">Frequently Asked Questions</h4>
           <p className="mb-10">Find quick answers to the most common questions about the services offered</p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <div className="">
 
           {/* LEFT CARD — moves to bottom on mobile */}
-          <div className="order-2 lg:order-1 bg-blue-50 rounded-2xl shadow p-8 md:p-10 flex flex-col text-center">
+          {/* <div className="order-2 lg:order-1 bg-blue-50 rounded-2xl shadow p-8 md:p-10 flex flex-col text-center">
             <div className="rounded-xl w-12 h-12 flex items-center justify-center shadow-xl shadow-gray-400 bg-white mx-auto">
               <BsQuestionCircle className="text-2xl text-gray-700" />
             </div>
@@ -67,7 +91,7 @@ const Faq = () => {
               <RiArrowRightUpFill className="mr-2 text-xl" />
               Ask A Question
             </button>
-          </div>
+          </div> */}
 
           {/* RIGHT — FAQ accordion */}
           <div className="order-1 lg:order-2 lg:col-span-2 space-y-4">
@@ -110,7 +134,7 @@ const Faq = () => {
                           initial={{ y: -5 }}
                           animate={{ y: 0 }}
                           transition={{ duration: 0.25 }}
-                          className="py-3 text-gray-700 text-sm md:text-base"
+                          className="py-3 text-gray-700 text-left text-sm md:text-base"
                         >
                           {f.a}
                         </motion.div>

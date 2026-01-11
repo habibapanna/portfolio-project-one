@@ -39,15 +39,25 @@ const Hero = () => {
             {/* LINE 1 */}
             <Fade direction="down"> <div className="flex items-center gap-3">
               <img
-                className="h-14 w-14 md:h-20 md:w-20 rounded-xl object-cover"
-                src="https://i.postimg.cc/VsM4VNZp/Gemini-Generated-Image-r04xalr04xalr04x.png"
-              />
-              <span className="text-3xl md:text-8xl bg-gradient-to-b from-[#334155] to-[#1e293b] text-transparent bg-clip-text drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]">I'm Limon</span>
+  className="h-14 w-14 md:h-20 md:w-20 rounded-xl object-cover object-top"
+  src="https://i.postimg.cc/VsM4VNZp/Gemini-Generated-Image-r04xalr04xalr04x.png"
+  alt="Sanwar Hossen Limon"
+/>
+              <span className="text-3xl md:text-7xl bg-gradient-to-b from-[#334155] to-[#1e293b] text-transparent bg-clip-text drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]">I'm Sanwar Hossen Limon</span>
             </div></Fade>
            <Fade direction="">
              {/* LINE 2 */}
             <div className="flex items-center gap-3">
-              <span className="text-2xl md:text-8xl bg-gradient-to-b from-[#334155] to-[#1e293b] text-transparent bg-clip-text drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]">Remote Designer</span>
+              <span className="
+  text-2xl md:text-5xl
+  leading-[1.25]
+  pb-1
+  bg-gradient-to-b from-[#334155] to-[#1e293b]
+  text-transparent bg-clip-text
+  drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]
+">
+  Designing Experiences. Developing Growth.
+</span>
 
               <img
                 className="h-14 w-14 md:h-20 md:w-20 rounded-xl object-cover"
@@ -66,14 +76,14 @@ const Hero = () => {
           {/* PARAGRAPH */}
           <Fade>
             <p className="mt-6 text-gray-800 max-w-xl mx-auto">
-I specialize in creating thoughtful and impactful products, collaborating with startups and leading brands
+Your AI Powered Digital Growth Specialist helping startups and businesses worldwide build high-performing websites, intuitive user experiences, and scalable digital strategies.
           </p>
           </Fade>
 {/* button */}
          <div className="mt-14 flex justify-center gap-6">
 
   {/* Dark Button */}
- <Fade direction="up">
+ {/* <Fade direction="up">
    <button
     className="px-4 py-2
       md:px-6 md:py-3 rounded-lg text-sm
@@ -84,7 +94,7 @@ I specialize in creating thoughtful and impactful products, collaborating with s
     <RiArrowRightUpFill className="mr-2 text-xl" />
     Get in Touch
   </button>
- </Fade>
+ </Fade> */}
 
   {/* Light Button */}
  <Fade direction="up"> <button

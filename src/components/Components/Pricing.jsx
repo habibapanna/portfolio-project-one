@@ -1,28 +1,88 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  PiNotePencil,
-  PiSlideshow,
-  PiVideo
-} from "react-icons/pi";
-import { IoSearchOutline } from "react-icons/io5";
-import { CiDollar } from "react-icons/ci";
-import { LuArrowRightLeft } from "react-icons/lu";
-import { FiZap } from "react-icons/fi";
-import { MdOutlineSpaceDashboard } from "react-icons/md";
+  SiFigma,
+  SiAdobexd,
+  SiFramer,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiReact,
+  SiNextdotjs,
+  SiPhp,
+  SiLaravel,
+  SiWordpress,
+  SiShopify,
+  SiWix,
+  SiWebflow,
+  SiGoogleanalytics,
+  SiGooglesearchconsole,
+  SiSemrush,
+  SiGoogleads,
+  SiMeta,
+  SiMailchimp,
+  SiHubspot,
+  SiZapier,
+  SiN8N,
+  SiMake,
+} from "react-icons/si";
+import { FaChartLine, FaSearch } from "react-icons/fa";
+import { TbSeo } from "react-icons/tb";
+
+
+import { FaPlug, FaCode } from "react-icons/fa";
+import { TbWebhook } from "react-icons/tb";
 import { TiTick } from "react-icons/ti";
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
+import { IoClose } from "react-icons/io5";
 
 const marqueeItems = [
-  { text: "Video & Motion Graphics", icon: <PiVideo /> },
-  { text: "Slide Decks", icon: <PiSlideshow /> },
-  { text: "SEO", icon: <IoSearchOutline /> },
-  { text: "Landing Pages", icon: <MdOutlineSpaceDashboard /> },
-  { text: "Framer Migration", icon: <LuArrowRightLeft /> },
-  { text: "Copywriting", icon: <PiNotePencil /> },
-  { text: "Cost Effective", icon: <CiDollar /> },
-  { text: "Optimization", icon: <FiZap /> },
+  // Design & No-Code
+  { text: "Figma", icon: <SiFigma /> },
+  { text: "Adobe XD", icon: <SiAdobexd /> },
+  { text: "Framer", icon: <SiFramer /> },
+
+  // Frontend
+  { text: "HTML", icon: <SiHtml5 /> },
+  { text: "CSS", icon: <SiCss3 /> },
+  { text: "JavaScript", icon: <SiJavascript /> },
+  { text: "React", icon: <SiReact /> },
+  { text: "Next.js", icon: <SiNextdotjs /> },
+
+  // Backend & CMS
+  { text: "PHP", icon: <SiPhp /> },
+  { text: "Laravel", icon: <SiLaravel /> },
+  { text: "WordPress", icon: <SiWordpress /> },
+
+  // Builders & Platforms
+  { text: "Shopify", icon: <SiShopify /> },
+  { text: "Wix", icon: <SiWix /> },
+  { text: "Webflow", icon: <SiWebflow /> },
+  { text: "GoHighLevel", icon: <FaCode /> },
+
+  // Automation
+  { text: "n8n", icon: <SiN8N /> },
+  { text: "Zapier", icon: <SiZapier /> },
+  { text: "Make (Integromat)", icon: <SiMake /> },
+  { text: "Webhooks", icon: <TbWebhook /> },
+  { text: "API Integrations", icon: <FaPlug /> },
+
+  // Analytics & SEO
+  { text: "Google Analytics", icon: <SiGoogleanalytics /> },
+  { text: "Google Search Console", icon: <SiGooglesearchconsole /> },
+  { text: "Ahrefs", icon: <FaChartLine /> },
+  { text: "SEMrush", icon: <SiSemrush /> },
+ { text: "Screaming Frog", icon: <TbSeo /> },
+  { text: "Schema Markup", icon: <FaCode /> },
+
+  // Marketing
+  { text: "Google Ads", icon: <SiGoogleads /> },
+  { text: "Meta Ads", icon: <SiMeta /> },
+  { text: "Mailchimp", icon: <SiMailchimp /> },
+  { text: "ActiveCampaign", icon: <FaCode /> },
+  { text: "HubSpot", icon: <SiHubspot /> },
 ];
+
 
 const Pricing = () => {
   return (
@@ -36,7 +96,7 @@ const Pricing = () => {
           <span className="w-7 h-7 flex items-center justify-center rounded-md">
             <FaArrowRightArrowLeft className="text-[#1f2d5c] text-lg" />
           </span>
-          <span className="text-[#0f1724] ml-2">Comparison</span>
+          <span className="text-[#0f1724] ml-2">Why Work With Me</span>
         </div>
 
         {/* Heading */}
@@ -46,7 +106,7 @@ const Pricing = () => {
 
         {/* Sub text */}
         <p className="mt-3 text-gray-800 px-4 max-w-xl mx-auto text-sm md:text-base">
-          Precision-driven design and animations, surpassing static and unengaging layouts.
+         Precision-driven digital solutions built to perform, scale, and convert — not just look good.
         </p>
       </div>
 
@@ -62,13 +122,14 @@ const Pricing = () => {
 
           <ul className="space-y-3 text-gray-700 text-sm md:text-base">
             {[
-              "Custom, high-performance websites",
-              "Pixel-perfect UI/UX design",
+              "Custom, high-performance websites tailored to your goals",
+              "Pixel-perfect UI/UX design grounded in real user behavior",
               "Built with Framer & Figma expertise",
               "Seamless animations & interactions",
-              "Scalable & future-proof solutions",
+              "Scalable & future-ready digital systems",
               "Optimized for speed & conversions",
-              "Advanced SEO tactics for enhanced visibility",
+              "Advanced SEO, AEO & search optimization for modern discovery",
+              "Human-led strategy, enhanced with AI for speed and accuracy",
             ].map((item, index) => (
               <li key={index} className="flex items-start gap-2">
                 <TiTick className="text-gray-500 text-lg" />
@@ -76,38 +137,34 @@ const Pricing = () => {
               </li>
             ))}
           </ul>
-
-          <div className="mt-6">
-            <button className="w-full px-4 py-3 rounded-lg text-white bg-gradient-to-br from-[#1f2740] to-[#152032] text-sm md:text-base">
-              Contact Me
-            </button>
-          </div>
+          <p className="mt-5 text-gray-800 text-sm md:text-base">→ Built to grow, not just launch</p>
         </div>
 
         {/* OTHERS CARD */}
-        <div className="p-5 md:p-6 rounded-2xl border-2 shadow-sm bg-blue-50 text-left">
-          <div className="text-xl sm:text-3xl md:text-4xl font-semibold text-center">
-            Others
-          </div>
+<div className="p-5 md:p-6 rounded-2xl border-2 shadow-sm bg-blue-50 text-left">
+  <div className="text-xl sm:text-3xl md:text-4xl font-semibold text-center">
+    Others
+  </div>
 
-          <div className="border-t-2 border-dashed border-gray-300 my-4"></div>
+  <div className="border-t-2 border-dashed border-gray-300 my-4"></div>
 
-          <ul className="space-y-3 text-gray-700 text-sm md:text-base">
-            {[
-              "Generic templates",
-              "Basic design skills",
-              "Limited customization",
-              "Slow performance",
-              "Lacks scalability",
-              "Static & unengaging layouts",
-            ].map((item, index) => (
-              <li key={index} className="flex items-start gap-2">
-                <TiTick className="text-gray-500 text-lg" />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
+  <ul className="space-y-3 text-gray-700 text-sm md:text-base">
+    {[
+      "Generic templates with limited flexibility",
+      "Basic design execution without strategy",
+      "Minimal customization and weak performance",
+      "Slow, bloated, or unoptimized builds",
+      "Static layouts with no interaction depth",
+      "Little focus on scalability or long-term growth",
+    ].map((item, index) => (
+      <li key={index} className="flex items-start gap-2">
+        <IoClose className="text-gray-700 text-lg mt-[2px]" />
+        <span>{item}</span>
+      </li>
+    ))}
+  </ul>
+</div>
+
       </div>
 
       {/* Marquee */}

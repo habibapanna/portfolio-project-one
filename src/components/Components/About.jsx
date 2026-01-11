@@ -77,7 +77,7 @@ const About = () => {
           </motion.h2>
 
           <motion.p variants={fadeUp} className="text-gray-600 mt-1 text-center text-sm md:text-base">
-            UI/UX Interaction Designer Based in Berlin.
+           AI Powered Digital Growth Specialist
           </motion.p>
 
           {/* SOCIAL ICONS */}
@@ -99,7 +99,7 @@ const About = () => {
           </motion.div>
 
           {/* CONTACT BUTTON */}
-          <motion.button
+          {/* <motion.button
             variants={fadeUp}
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
@@ -110,7 +110,7 @@ const About = () => {
             "
           >
             Contact Me
-          </motion.button>
+          </motion.button> */}
         </motion.div>
 
         {/* RIGHT SECTION */}
@@ -125,43 +125,57 @@ const About = () => {
               max-w-3xl
             "
           >
-            I'm Sanwar Hosen Limon, a passionate Web Designer & Developer based
-            in the dynamic city of Berlin. I blend creative design with precise
-            technical execution to deliver outstanding digital experiences.
+           I’m Sanwar Hossen Limon, a digital growth specialist working across design, development, and strategy to help businesses build digital systems that perform.
+My work is driven by human insight and experience, enhanced by AI-powered tools that improve research depth, speed, and decision-making. I don’t rely on AI to replace creativity or strategy — I use it to remove inefficiencies, validate ideas, and scale what works.
+By combining user-centered design, clean development, and data-informed optimization, I deliver digital solutions that are reliable, adaptable, and built for long-term growth.
+
           </motion.p>
 
           <motion.div variants={fadeUp} className="border-t-2 border-dashed border-gray-300"></motion.div>
 
           {/* TAGS */}
           <motion.div variants={stagger} className="flex flex-wrap gap-3">
-            {[
-              "Product Design",
-              "UX Design",
-              "UI Design",
-              "Framer",
-              "Interaction Design",
-              "Branding",
-              "Webflow",
-              "UX Research",
-              "No-Code",
-            ].map((t, i) => (
-              <motion.span
-                key={i}
-                variants={fadeUp}
-                className="
-                  px-4 py-2 bg-gray-100 border rounded-lg 
-                  text-xs sm:text-sm md:text-base
-                "
-              >
-                {t}
-              </motion.span>
-            ))}
-          </motion.div>
+  {[
+    "Product Design",
+    "UX Research",
+    "No-Code",
+    "Usability Testing",
+    "Prototyping",
+    "Responsive Design",
+    "Performance Optimization",
+    "Growth Marketing",
+    "Performance Marketing",
+    "Content Strategy",
+    "Conversion Optimization",
+    "Campaign Analytics",
+    "Funnel Optimization",
+    "AI Automation",
+    "AI Workflows",
+    "AI Agents",
+    "Audience Targeting",
+    "Growth Strategy",
+    "Business Planning",
+    "Market Research",
+    "Data Analysis",
+  ].map((t, i) => (
+    <motion.span
+      key={i}
+      variants={fadeUp}
+      className="
+        px-4 py-2 bg-gray-50 border rounded-lg
+        text-xs sm:text-sm md:text-base
+      "
+    >
+      {t}
+    </motion.span>
+  ))}
+</motion.div>
 
-          <motion.div variants={fadeUp} className="border-t-2 border-dashed border-gray-300"></motion.div>
+
+          {/* <motion.div variants={fadeUp} className="border-t-2 border-dashed border-gray-300"></motion.div> */}
 
           {/* EXPERIENCE LIST */}
-          <motion.div variants={stagger} className="space-y-4">
+          {/* <motion.div variants={stagger} className="space-y-4">
             {[
               { role: "Product Designer", company: "Nexus Creative", year: "2023" },
               { role: "Freelance", company: "BrightLeaf Co", year: "2021" },
@@ -183,7 +197,7 @@ const About = () => {
                 <span className="text-gray-600 text-right">{item.year}</span>
               </motion.div>
             ))}
-          </motion.div>
+          </motion.div> */}
 
         </motion.div>
       </motion.div>
