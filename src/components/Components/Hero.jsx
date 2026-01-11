@@ -34,7 +34,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-serif leading-tight text-slate-900 flex flex-col items-center gap-2"
+            className="text-4xl md:text-5xl font-serif leading-tight text-[#0f1724] flex flex-col items-center gap-2"
           >
             {/* LINE 1 */}
             <Fade direction="down"> <div className="flex items-center gap-3">

@@ -34,7 +34,7 @@ const Services = () => {
               <span className="text-[#0f1724] font-medium">Services</span>
             </div>
 
-            <h2 className="mt-4 text-2xl sm:text-3xl md:text-5xl font-semibold text-[#1a1a1a] my-5">
+            <h2 className="mt-4 text-2xl sm:text-3xl md:text-5xl font-semibold text-[#0f1724] my-5">
               Crafting Digital Excellence
             </h2>
 
@@ -71,7 +71,7 @@ const Services = () => {
                     <PiFigmaLogoDuotone className="text-4xl text-gray-700" />
                   </div>
 
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 my-3 sm:my-5">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-[#0f1724] my-3 sm:my-5">
                     UI/UX Design
                   </h3>
 
@@ -87,7 +87,7 @@ const Services = () => {
                   <PiFramerLogo className="text-4xl text-white" />
                 </div>
 
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 my-3 sm:my-5">
+                <h3 className="text-xl sm:text-2xl font-semibold text-[#0f1724] my-3 sm:my-5">
                   Framer Development
                 </h3>
 
@@ -107,7 +107,7 @@ const Services = () => {
                   <LuTvMinimal className="text-4xl text-white" />
                 </div>
 
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 my-3 sm:my-5">
+                <h3 className="text-xl sm:text-2xl font-semibold text-[#0f1724] my-3 sm:my-5">
                   Interactive Web Experiences
                 </h3>
 
@@ -130,7 +130,7 @@ const Services = () => {
                     <PiPaintBrushFill className="text-4xl text-gray-700" />
                   </div>
 
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 my-3 sm:my-5">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-[#0f1724] my-3 sm:my-5">
                     Web Design & Development
                   </h3>
 

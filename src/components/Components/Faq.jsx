@@ -62,7 +62,7 @@ const faqs = [
        <Fade>
          <div className="mx-auto inline-flex items-center rounded-full px-4 py-2 bg-[#eef6f9] border border-gray-300 shadow-sm">
           <span className="w-8 h-8 flex items-center justify-center rounded-md ">
-            <BsQuestionCircleFill className="text-[#1f2d5c] text-lg" />
+            <BsQuestionCircleFill className="text-[#0f1724] text-lg" />
           </span>
           <span className="text-[#0f1724] ml-2">FAQS</span>
         </div>

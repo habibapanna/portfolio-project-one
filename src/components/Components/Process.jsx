@@ -59,7 +59,7 @@ const Process = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{ duration: 1 }}
-          className="text-2xl md:text-4xl lg:text-5xl font-semibold text-center my-5"
+          className="text-2xl md:text-4xl lg:text-5xl font-semibold text-center text-[#0f1724] my-5"
         >
           From Vision to Execution
         </motion.h3>
@@ -103,7 +103,7 @@ const Process = () => {
                 <span className="text-white text-md md:text-lg font-semibold">{s.num}</span>
               </div>
 
-              <div className="font-semibold text-lg md:text-2xl my-4">{s.title}</div>
+              <div className="font-semibold text-lg md:text-2xl my-4 text-[#0f1724]">{s.title}</div>
 
               <div className="mt-2 text-gray-500 text-sm md:text-base">
                 {s.desc}

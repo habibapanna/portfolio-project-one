@@ -100,7 +100,7 @@ const Pricing = () => {
         </div>
 
         {/* Heading */}
-        <h3 className="text-2xl sm:text-3xl md:text-5xl font-semibold mt-5">
+        <h3 className="text-2xl sm:text-3xl md:text-5xl font-semibold mt-5 text-[#0f1724]">
           Precision vs Basic
         </h3>
 
@@ -114,7 +114,7 @@ const Pricing = () => {
       <div className="mt-10 max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* ME CARD */}
         <div className="p-5 md:p-6 rounded-2xl border shadow-sm bg-blue-50 text-left">
-          <div className="text-xl sm:text-3xl md:text-4xl text-center font-semibold">
+          <div className="text-xl sm:text-3xl md:text-4xl text-center font-semibold text-[#0f1724]">
             Me
           </div>
 
@@ -142,7 +142,7 @@ const Pricing = () => {
 
         {/* OTHERS CARD */}
 <div className="p-5 md:p-6 rounded-2xl border-2 shadow-sm bg-blue-50 text-left">
-  <div className="text-xl sm:text-3xl md:text-4xl font-semibold text-center">
+  <div className="text-xl sm:text-3xl md:text-4xl font-semibold text-center text-[#0f1724]">
     Others
   </div>
 

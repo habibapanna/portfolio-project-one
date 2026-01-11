@@ -84,7 +84,7 @@ const Projects = () => {
         <section className="py-20 px-6 bg-violet-100">
           {/* WRAPPER */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-serif text-slate-800">
+            <h1 className="text-4xl md:text-5xl font-serif text-[#0f1724]">
               The Design Of Success
             </h1>
 

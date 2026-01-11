@@ -12,7 +12,7 @@ const Footer = () => {
 
         {/* Floating animated icon */}
         <motion.div
-          className="rounded-full w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center shadow-xl shadow-gray-400 bg-gray-800 mx-auto mb-6 sm:mb-8"
+          className="rounded-full w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center shadow-xl shadow-gray-400 bg-[#0f1724] mx-auto mb-6 sm:mb-8"
           animate={{ y: [0, 15, 0] }}
           transition={{
             duration: 3,

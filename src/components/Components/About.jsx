@@ -71,7 +71,7 @@ const About = () => {
           {/* NAME */}
           <motion.h2
             variants={fadeUp}
-            className="text-2xl md:text-3xl font-semibold mt-4 text-center"
+            className="text-2xl md:text-3xl font-semibold mt-4 text-[#0f1724] text-center"
           >
             Sanwar Limon
           </motion.h2>
