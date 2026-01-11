@@ -21,9 +21,6 @@ const FloatingNav = () => {
         <Link to="projects">Projects</Link>
       </button>
       <a href="#services" className="hover:opacity-70">Services</a>
-      <div className="bg-gray-500 text-white px-4 py-1 rounded-full shadow hidden md:block">
-        Get Template
-      </div>
     </div>
   );
 };
