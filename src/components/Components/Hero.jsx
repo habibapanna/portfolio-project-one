@@ -25,92 +25,143 @@ const Hero = () => {
   backgroundPosition: "center",
   }}>
 
-        <section id="home" className="bg-violet-10 pt-20"
-       >
-        <div className="mx-auto px-6 text-center">
+    <section id="home" className="bg-violet-10 pt-16 sm:pt-20">
+  <div className="mx-auto px-4 sm:px-6 text-center">
 
-          {/* HEADING */}
-          <motion.h1
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-serif leading-tight text-[#0f1724] flex flex-col items-center gap-2"
+    {/* HEADING */}
+    <motion.h1
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.1 }}
+      className="
+        font-serif text-[#0f1724]
+        flex flex-col items-center
+        gap-4 sm:gap-2
+      "
+    >
+      {/* LINE 1 */}
+      <Fade direction="down">
+        <div
+          className="
+            flex flex-col sm:flex-row
+            items-center
+            gap-3
+          "
+        >
+          <img
+            className="
+              h-14 w-14
+              sm:h-16 sm:w-16
+              md:h-20 md:w-20
+              rounded-xl
+              object-cover object-top
+            "
+            src="https://i.postimg.cc/VsM4VNZp/Gemini-Generated-Image-r04xalr04xalr04x.png"
+            alt="Sanwar Hossen Limon"
+          />
+
+          <span
+            className="
+              text-2xl
+              sm:text-3xl
+              md:text-6xl
+              bg-gradient-to-b from-[#334155] to-[#1e293b]
+              text-transparent bg-clip-text
+              drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]
+              leading-tight
+            "
           >
-            {/* LINE 1 */}
-            <Fade direction="down"> <div className="flex items-center gap-3">
-              <img
-  className="h-14 w-14 md:h-20 md:w-20 rounded-xl object-cover object-top"
-  src="https://i.postimg.cc/VsM4VNZp/Gemini-Generated-Image-r04xalr04xalr04x.png"
-  alt="Sanwar Hossen Limon"
-/>
-              <span className="text-3xl md:text-7xl bg-gradient-to-b from-[#334155] to-[#1e293b] text-transparent bg-clip-text drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]">I'm Sanwar Hossen Limon</span>
-            </div></Fade>
-           <Fade direction="">
-             {/* LINE 2 */}
-            <div className="flex items-center gap-3">
-              <span className="
-  text-2xl md:text-5xl
-  leading-[1.25]
-  pb-1
-  bg-gradient-to-b from-[#334155] to-[#1e293b]
-  text-transparent bg-clip-text
-  drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]
-">
-  Designing Experiences. Developing Growth.
-</span>
-
-              <img
-                className="h-14 w-14 md:h-20 md:w-20 rounded-xl object-cover"
-                src="https://framerusercontent.com/images/F8rOBHbbIkzGRluKefWlxCX9WI.png?scale-down-to=512"
-              />
-              <img
-                className="h-14 w-14 md:h-20 md:w-20 rounded-xl object-cover"
-                src="https://framerusercontent.com/images/XJP6N21SKyA8OD0sTiV9H2m0.jpg?scale-down-to=1024"
-              />
-            </div>
-           </Fade>
-
-           
-          </motion.h1>
-
-          {/* PARAGRAPH */}
-          <Fade>
-            <p className="mt-6 text-gray-800 max-w-xl mx-auto">
-Your AI Powered Digital Growth Specialist helping startups and businesses worldwide build high-performing websites, intuitive user experiences, and scalable digital strategies.
-          </p>
-          </Fade>
-{/* button */}
-         <div className="mt-14 flex justify-center gap-6">
-
-  {/* Dark Button */}
- {/* <Fade direction="up">
-   <button
-    className="px-4 py-2
-      md:px-6 md:py-3 rounded-lg text-sm
-      bg-gradient-to-br from-[#1f2740] to-[#152032]
-      text-white shadow-md flex items-center justify-center 
-    "
-  >
-    <RiArrowRightUpFill className="mr-2 text-xl" />
-    Get in Touch
-  </button>
- </Fade> */}
-
-  {/* Light Button */}
- <Fade direction="up"> <button
-    className="
-     px-4 py-2
-      md:px-6 md:py-3 rounded-lg font-medium shadow-lg bg-gradient-to-br from-[#f9fcff] to-[#e0e7ef] text-[#1c2026] flex items-center justify-center text-sm
-    "
-  >
-    <BiSolidRightArrowAlt className="mr-2 text-xl" />
-   <Link to="projects"> See Projects</Link>
-  </button>
-</Fade>
-</div>
-
+            I'm Sanwar Hossen Limon
+          </span>
         </div>
-      </section>
+      </Fade>
+
+      {/* LINE 2 */}
+      <Fade>
+        <div
+          className="
+            flex flex-col sm:flex-row
+            flex-wrap
+            items-center
+            justify-center
+            gap-3
+          "
+        >
+          <span
+            className="
+              text-lg
+              sm:text-xl
+              md:text-4xl
+              leading-[1.35]
+              bg-gradient-to-b from-[#334155] to-[#1e293b]
+              text-transparent bg-clip-text
+              drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]
+              text-center
+            "
+          >
+            Designing Experiences. Developing Growth.
+          </span>
+
+          <div className="flex gap-2">
+            <img
+              className="h-12 w-12 sm:h-14 sm:w-14 md:h-20 md:w-20 rounded-xl object-cover"
+              src="https://framerusercontent.com/images/F8rOBHbbIkzGRluKefWlxCX9WI.png?scale-down-to=512"
+              alt=""
+            />
+            <img
+              className="h-12 w-12 sm:h-14 sm:w-14 md:h-20 md:w-20 rounded-xl object-cover"
+              src="https://framerusercontent.com/images/XJP6N21SKyA8OD0sTiV9H2m0.jpg?scale-down-to=1024"
+              alt=""
+            />
+          </div>
+        </div>
+      </Fade>
+    </motion.h1>
+
+    {/* PARAGRAPH */}
+    <Fade>
+      <p
+        className="
+          mt-6
+          text-gray-800
+          text-sm sm:text-base
+          max-w-xl
+          mx-auto
+          leading-relaxed
+        "
+      >
+        Your AI Powered Digital Growth Specialist helping startups and businesses
+        worldwide build high-performing websites, intuitive user experiences,
+        and scalable digital strategies.
+      </p>
+    </Fade>
+
+    {/* BUTTON */}
+    <div className="mt-10 sm:mt-14 flex justify-center">
+      <Fade direction="up">
+        <Link
+          to="projects"
+          className="
+            inline-flex items-center gap-2
+            px-5 py-2.5
+            sm:px-6 sm:py-3
+            rounded-lg
+            font-medium
+            shadow-lg
+            bg-gradient-to-br from-[#f9fcff] to-[#e0e7ef]
+            text-[#1c2026]
+            text-sm
+          "
+        >
+          <BiSolidRightArrowAlt className="text-xl" />
+          See Projects
+        </Link>
+      </Fade>
+    </div>
+
+  </div>
+</section>
+
 
       {/* PROJECTS MARQUEE */}
       <section id="projects" className="bg-violet-10 py-12 overflow-hidden">
