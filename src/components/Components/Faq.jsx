@@ -107,7 +107,7 @@ const faqs = [
                     onClick={() => toggleIndex(i)}
                     className="w-full px-5 py-3 flex items-center justify-between"
                   >
-                    <span className="font-medium text-gray-800 text-sm md:text-base">
+                    <span className="font-medium text-gray-800 text-sm md:text-base text-left">
                       {f.q}
                     </span>
 

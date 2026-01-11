@@ -118,18 +118,32 @@ const About = () => {
 
           {/* DESCRIPTION */}
           <motion.p
-            variants={fadeUp}
-            className="
-              text-gray-700 leading-relaxed 
-              text-sm sm:text-base md:text-lg 
-              max-w-3xl
-            "
-          >
-           I’m Sanwar Hossen Limon, a digital growth specialist working across design, development, and strategy to help businesses build digital systems that perform.
-My work is driven by human insight and experience, enhanced by AI-powered tools that improve research depth, speed, and decision-making. I don’t rely on AI to replace creativity or strategy — I use it to remove inefficiencies, validate ideas, and scale what works.
-By combining user-centered design, clean development, and data-informed optimization, I deliver digital solutions that are reliable, adaptable, and built for long-term growth.
+  variants={fadeUp}
+  className="
+    text-gray-700 leading-relaxed 
+    text-sm sm:text-base md:text-lg 
+    max-w-3xl
+  "
+>
+  <p className="mb-5">
+    I’m Sanwar Hossen Limon, a digital growth specialist working across design,
+    development, and strategy to help businesses build digital systems that perform.
+  </p>
 
-          </motion.p>
+  <p className="mb-5">
+    My work is driven by human insight and experience, enhanced by AI-powered tools
+    that improve research depth, speed, and decision-making. I don’t rely on AI to
+    replace creativity or strategy — I use it to remove inefficiencies, validate
+    ideas, and scale what works.
+  </p>
+
+  <p>
+    By combining user-centered design, clean development, and data-informed
+    optimization, I deliver digital solutions that are reliable, adaptable, and
+    built for long-term growth.
+  </p>
+</motion.p>
+
 
           <motion.div variants={fadeUp} className="border-t-2 border-dashed border-gray-300"></motion.div>
 

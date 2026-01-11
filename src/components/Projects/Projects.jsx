@@ -112,10 +112,10 @@ const Projects = () => {
                 Trusted by {trustedCount.toLocaleString()}+ • Audience worldwide
               </p>
 
-              <button className="px-6 py-3 rounded-lg text-sm bg-gradient-to-br from-[#1f2740] to-[#152032] text-white shadow-md flex items-center justify-center">
+              {/* <button className="px-6 py-3 rounded-lg text-sm bg-gradient-to-br from-[#1f2740] to-[#152032] text-white shadow-md flex items-center justify-center">
                 <RiArrowRightUpFill className="mr-2 text-xl" />
                 Contact Me
-              </button>
+              </button> */}
             </div>
           </div>
 
