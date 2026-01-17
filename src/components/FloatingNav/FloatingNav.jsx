@@ -16,11 +16,15 @@ const FloatingNav = () => {
     text-gray-300 shadow-xl shadow-gray-400
     "
     >
-      <a href="#home" className="hover:opacity-70">Home</a>
+      <button className="text-white rounded-full shadow hidden md:block">
+        <Link to="/">Home</Link>
+      </button>
       <button className="bg-gray-500 text-white px-4 py-1 rounded-full shadow hidden md:block">
         <Link to="projects">Projects</Link>
       </button>
-      <a href="#services" className="hover:opacity-70">Services</a>
+      <button className=" text-white hidden md:block">
+        <Link to="services">Services</Link>
+      </button>
       {/* <div className="bg-gray-500 text-white px-4 py-1 rounded-full shadow hidden md:block">
         Get Template
       </div> */}

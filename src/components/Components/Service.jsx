@@ -1,6 +1,6 @@
 import React from "react";
 import { BiSolidRightArrowAlt } from "react-icons/bi";
-import { LuTvMinimal } from "react-icons/lu";
+import { LuArrowDownUp, LuTvMinimal } from "react-icons/lu";
 import {
   PiFigmaLogoDuotone,
   PiFramerLogo,
@@ -38,7 +38,7 @@ const Services = () => {
               Crafting Digital Excellence
             </h2>
 
-            <p className="text-gray-700 max-w-2xl mx-auto text-sm sm:text-base">
+            <p className="text-gray-800 max-w-3xl mx-auto text-sm sm:text-base md:text-[20px]">
               Building smooth and engaging digital interactions that elevate
               user satisfaction
             </p>
@@ -144,35 +144,47 @@ const Services = () => {
           </div>
         </Fade>
 
-{/* button */}
-         <div className="mt-14 flex justify-center gap-6">
-
-  {/* Dark Button */}
- {/* <Fade direction="up">
-   <button
-    className="px-4 py-2
-      md:px-6 md:py-3 rounded-lg text-sm
-      bg-gradient-to-br from-[#1f2740] to-[#152032]
-      text-white shadow-md flex items-center justify-center 
-    "
-  >
-    <RiArrowRightUpFill className="mr-2 text-xl" />
-    Get in Touch
-  </button>
- </Fade> */}
-
-  {/* Light Button */}
- <Fade direction="up"> <button
-    className="
-     px-4 py-2
-      md:px-6 md:py-3 rounded-lg font-medium shadow-lg bg-gradient-to-br from-[#f9fcff] to-[#e0e7ef] text-[#1c2026] flex items-center justify-center text-sm
-    "
-  >
-    <BiSolidRightArrowAlt className="mr-2 text-xl" />
-   <Link to="projects"> See Projects</Link>
-  </button>
-</Fade>
-</div>
+ {/* BUTTON */}
+    <div className="mt-10 sm:mt-14 flex gap-5 justify-center">
+      <Fade direction="up">
+        <Link
+          to="projects"
+          className="
+            inline-flex items-center gap-2
+            px-5 py-2
+            md:px-12 md:py-6
+            rounded-lg
+            font-medium
+            shadow-lg
+            bg-[#1c2026]
+            text-white
+            text-sm md:text-[20px]
+          "
+        >
+          <RiArrowRightUpFill className="mr-2 text-xl md:text-2xl" />
+          Let's Work together
+        </Link>
+      </Fade>
+      <Fade direction="up">
+        <Link
+          to="projects"
+          className="
+            inline-flex items-center gap-2
+            px-5 py-2
+            md:px-12 md:py-6
+            rounded-lg
+            font-medium
+            shadow-lg
+            bg-gradient-to-br from-[#f9fcff] to-[#e0e7ef]
+            text-[#1c2026]
+            text-sm md:text-[20px]
+          "
+        >
+          <LuArrowDownUp className="text-xl md:text-2xl" />
+          See Services
+        </Link>
+      </Fade>
+    </div>
       </div>
     </section>
   );

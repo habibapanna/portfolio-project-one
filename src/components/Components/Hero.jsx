@@ -4,6 +4,7 @@ import { BiSolidRightArrowAlt } from "react-icons/bi";
 import { RiArrowRightUpFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
+import { LuArrowDownUp } from "react-icons/lu";
 
 const Hero = () => {
   // ✅ Your images (corrected array)
@@ -64,7 +65,7 @@ const Hero = () => {
             className="
               text-2xl
               sm:text-3xl
-              md:text-6xl
+              md:text-7xl
               bg-gradient-to-b from-[#334155] to-[#1e293b]
               text-transparent bg-clip-text
               drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]
@@ -124,7 +125,7 @@ const Hero = () => {
         className="
           mt-6
           text-gray-800
-          text-sm sm:text-base
+          text-sm sm:text-[20px]
           max-w-xl
           mx-auto
           leading-relaxed
@@ -137,23 +138,42 @@ const Hero = () => {
     </Fade>
 
     {/* BUTTON */}
-    <div className="mt-10 sm:mt-14 flex justify-center">
+    <div className="mt-10 sm:mt-14 flex  gap-5 justify-center">
       <Fade direction="up">
         <Link
           to="projects"
           className="
             inline-flex items-center gap-2
-            px-5 py-2.5
-            sm:px-6 sm:py-3
+            px-5 py-2
+            md:px-12 md:py-6
+            rounded-lg
+            font-medium
+            shadow-lg
+            bg-[#1c2026]
+            text-white
+            text-sm md:text-[20px]
+          "
+        >
+          <RiArrowRightUpFill className="mr-2 text-xl md:text-2xl" />
+          Let"s Talk
+        </Link>
+      </Fade>
+      <Fade direction="up">
+        <Link
+          to="projects"
+          className="
+            inline-flex items-center gap-2
+            px-5 py-2
+            md:px-12 md:py-6
             rounded-lg
             font-medium
             shadow-lg
             bg-gradient-to-br from-[#f9fcff] to-[#e0e7ef]
             text-[#1c2026]
-            text-sm
+            text-sm md:text-[20px]
           "
         >
-          <BiSolidRightArrowAlt className="text-xl" />
+          <LuArrowDownUp className="text-xl md:text-2xl" />
           See Projects
         </Link>
       </Fade>

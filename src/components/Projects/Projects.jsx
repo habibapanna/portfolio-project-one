@@ -90,32 +90,14 @@ const Projects = () => {
 
             {/* Trusted Section */}
             <div className="flex flex-col items-center gap-3 mt-4">
-              <div className="flex -space-x-3">
-                <img
-                  src="https://i.pravatar.cc/50?img=12"
-                  className="w-10 h-10 rounded-full border"
-                />
-                <img
-                  src="https://i.pravatar.cc/50?img=32"
-                  className="w-10 h-10 rounded-full border"
-                />
-                <img
-                  src="https://i.pravatar.cc/50?img=49"
-                  className="w-10 h-10 rounded-full border"
-                />
-                <img
-                  src="https://i.pravatar.cc/50?img=22"
-                  className="w-10 h-10 rounded-full border"
-                />
-              </div>
               <p className="text-gray-700 ">
                 Trusted by {trustedCount.toLocaleString()}+ • Audience worldwide
               </p>
 
-              {/* <button className="px-6 py-3 rounded-lg text-sm bg-gradient-to-br from-[#1f2740] to-[#152032] text-white shadow-md flex items-center justify-center">
-                <RiArrowRightUpFill className="mr-2 text-xl" />
+              <button className="px-6 py-3 rounded-lg text-sm bg-gradient-to-br from-[#1f2740] to-[#152032] text-white shadow-md flex items-center justify-center  font-semibold text-[20px]">
+                <RiArrowRightUpFill className="mr-2 text-xl md:text-2xl" />
                 Contact Me
-              </button> */}
+              </button>
             </div>
           </div>
 

@@ -99,18 +99,18 @@ const About = () => {
           </motion.div>
 
           {/* CONTACT BUTTON */}
-          {/* <motion.button
+          <motion.button
             variants={fadeUp}
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
             className="
               mt-8 w-full flex items-center justify-center py-3 
               bg-gradient-to-br from-[#1f2740] to-[#152032] 
-              text-white rounded-lg shadow-lg text-sm md:text-base
+              text-white rounded-lg shadow-lg text-sm md:text-[20px] font-semibold 
             "
           >
-            Contact Me
-          </motion.button> */}
+             Let's Talk
+          </motion.button>
         </motion.div>
 
         {/* RIGHT SECTION */}
@@ -120,9 +120,9 @@ const About = () => {
           <motion.p
   variants={fadeUp}
   className="
-    text-gray-700 leading-relaxed 
-    text-sm sm:text-base md:text-lg 
-    max-w-3xl
+    text-gray-800 leading-relaxed 
+    text-sm sm:text-base md:text-[20px] 
+    max-w-3xl md:mt-12
   "
 >
   <p className="mb-5">
@@ -148,7 +148,7 @@ const About = () => {
           <motion.div variants={fadeUp} className="border-t-2 border-dashed border-gray-300"></motion.div>
 
           {/* TAGS */}
-          <motion.div variants={stagger} className="flex flex-wrap gap-3">
+          <motion.div variants={stagger} className="flex flex-wrap gap-4">
   {[
     "Product Design",
     "UX Research",
@@ -177,7 +177,7 @@ const About = () => {
       variants={fadeUp}
       className="
         px-4 py-2 bg-gray-50 border rounded-lg
-        text-xs sm:text-sm md:text-base
+        text-xs sm:text-sm md:text-[20px] md:px- md:py-3 text-gray-800
       "
     >
       {t}

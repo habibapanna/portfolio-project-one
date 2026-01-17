@@ -69,8 +69,8 @@ const faqs = [
        </Fade>
 
         <div className="max-w-6xl mx-auto px-6">
-          <h4 className="text-2xl md:text-5xl font-semibold text-center my-5">Frequently Asked Questions</h4>
-          <p className="mb-10">Find quick answers to the most common questions about the services offered</p>
+          <h4 className="text-2xl md:text-5xl font-semibold text-center my-5 text-[#0f1724]">Frequently Asked Questions</h4>
+          <p className="mb-10 md:text-[20px]">Find quick answers to the most common questions about the services offered</p>
 
           <div className="">
 
@@ -107,7 +107,7 @@ const faqs = [
                     onClick={() => toggleIndex(i)}
                     className="w-full px-5 py-3 flex items-center justify-between"
                   >
-                    <span className="font-medium text-gray-800 text-sm md:text-base text-left">
+                    <span className="text-gray-800 text-sm md:text-[20px] text-left font-semibold">
                       {f.q}
                     </span>
 
@@ -134,7 +134,7 @@ const faqs = [
                           initial={{ y: -5 }}
                           animate={{ y: 0 }}
                           transition={{ duration: 0.25 }}
-                          className="py-3 text-gray-700 text-left text-sm md:text-base"
+                          className="py-3 text-gray-800 text-left text-[18px] md:text-base"
                         >
                           {f.a}
                         </motion.div>

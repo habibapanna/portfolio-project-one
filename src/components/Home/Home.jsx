@@ -1,5 +1,5 @@
 import Hero from "../Components/Hero";
-import Services from "../Components/Services";
+import Service from "../Components/Service";
 import About from "../Components/About";
 import Pricing from "../Components/Pricing";
 import Process from "../Components/Process";
@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <section className="bg-violet-100">
    <section id="home"><Hero /></section>
-<section id="services"><Services /></section>
+<section id="services"><Service /></section>
 <section id="about"><About /></section>
 <section id="pricing"><Pricing /></section>
 <section id="process"><Process /></section>

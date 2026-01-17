@@ -105,7 +105,7 @@ const Pricing = () => {
         </h3>
 
         {/* Sub text */}
-        <p className="mt-3 text-gray-800 px-4 max-w-xl mx-auto text-sm md:text-base">
+        <p className="mt-3 text-gray-800 px-4 max-w-4xl mx-auto text-sm md:text-[20px]">
          Precision-driven digital solutions built to perform, scale, and convert — not just look good.
         </p>
       </div>
@@ -120,7 +120,7 @@ const Pricing = () => {
 
           <div className="border-t-2 border-dashed border-gray-300 my-4"></div>
 
-          <ul className="space-y-3 text-gray-700 text-sm md:text-base">
+          <ul className="space-y-3 text-gray-800 text-sm md:text-base font-semibold">
             {[
               "Custom, high-performance websites tailored to your goals",
               "Pixel-perfect UI/UX design grounded in real user behavior",
@@ -132,12 +132,12 @@ const Pricing = () => {
               "Human-led strategy, enhanced with AI for speed and accuracy",
             ].map((item, index) => (
               <li key={index} className="flex items-start gap-2">
-                <TiTick className="text-gray-500 text-lg" />
+                <TiTick className="text-green-500 text-lg md:text-xl" />
                 <span>{item}</span>
               </li>
             ))}
           </ul>
-          <p className="mt-5 text-gray-800 text-sm md:text-base">→ Built to grow, not just launch</p>
+          <p className="mt-5 text-gray-800 text-sm md:text-base font-semibold">→ Built to grow, not just launch</p>
         </div>
 
         {/* OTHERS CARD */}
@@ -148,7 +148,7 @@ const Pricing = () => {
 
   <div className="border-t-2 border-dashed border-gray-300 my-4"></div>
 
-  <ul className="space-y-3 text-gray-700 text-sm md:text-base">
+  <ul className="space-y-3 text-gray-800 text-sm md:text-base font-semibold">
     {[
       "Generic templates with limited flexibility",
       "Basic design execution without strategy",
@@ -158,7 +158,7 @@ const Pricing = () => {
       "Little focus on scalability or long-term growth",
     ].map((item, index) => (
       <li key={index} className="flex items-start gap-2">
-        <IoClose className="text-gray-700 text-lg mt-[2px]" />
+        <IoClose className="text-red-500 text-lg md:text-xl mt-[2px]" />
         <span>{item}</span>
       </li>
     ))}
