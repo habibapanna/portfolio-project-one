@@ -16,7 +16,7 @@ const FloatingNav = () => {
     text-gray-300 shadow-xl shadow-gray-400
     "
     >
-      <button className="text-white rounded-full shadow hidden md:block">
+      <button className="text-white rounded-full  hidden md:block">
         <Link to="/">Home</Link>
       </button>
       <button className="bg-gray-500 text-white px-4 py-1 rounded-full shadow hidden md:block">

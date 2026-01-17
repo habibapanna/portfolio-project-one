@@ -81,93 +81,78 @@ const Projects = () => {
   return (
     <div>
       <Fade>
-        <section className="py-20 px-6 bg-violet-100">
-          {/* WRAPPER */}
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-serif text-[#0f1724]">
-              The Design Of Success
-            </h1>
+        <section className="h-screen bg-violet-100 overflow-hidden">
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 h-full">
 
-            {/* Trusted Section */}
-            <div className="flex flex-col items-center gap-3 mt-4">
-              <p className="text-gray-700 ">
-                Trusted by {trustedCount.toLocaleString()}+ • Audience worldwide
-              </p>
+    {/* LEFT SIDEBAR (SCROLLS ALONE) */}
+    <div className="lg:col-span-1 h-full overflow-y-auto space-y-2 px-2">
 
-              <button className="px-6 py-3 rounded-lg text-sm bg-gradient-to-br from-[#1f2740] to-[#152032] text-white shadow-md flex items-center justify-center  font-semibold text-[20px]">
-                <RiArrowRightUpFill className="mr-2 text-xl md:text-2xl" />
-                Contact Me
-              </button>
+      <input
+        type="text"
+        placeholder="Search projects..."
+        className="w-full px-4 py-2 rounded-lg bg-white border shadow-sm mb-5"
+        value={searchText}
+        onChange={(e) => setSearchText(e.target.value)}
+      />
+
+      <div className="space-y-5">
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            onClick={() => setSelectedCategory(cat)}
+            className={`w-full text-left px-4 py-2 rounded-lg transition ${
+              selectedCategory === cat
+                ? "bg-violet-400 text-white"
+                : "bg-violet-50 hover:bg-violet-400 hover:text-white"
+            }`}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+    </div>
+
+    {/* RIGHT CONTENT (SCROLLS ALONE) */}
+    <div className="lg:col-span-2 h-full overflow-y-auto px-2">
+
+      <h2 className="text-2xl mb-6 text-slate-800 font-semibold">
+        {selectedCategory === "All" ? "All Projects" : selectedCategory}
+      </h2>
+
+      <div className="grid md:grid-cols-2 gap-10">
+        {filteredProjects.map((project, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.15 }}
+            className="rounded-xl overflow-hidden shadow-sm pt-5 pb-16 px-5 bg-violet-100 border border-gray-300 cursor-pointer"
+          >
+            <img
+              src={project.image}
+              className="w-full h-64 object-cover rounded-xl"
+            />
+
+            <div className="flex justify-between items-center px-4 py-3">
+              <h3 className="font-medium text-slate-700">
+                {project.title}
+              </h3>
+              <FiArrowUpRight className="text-gray-500 text-lg" />
             </div>
-          </div>
+          </motion.div>
+        ))}
+      </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-auto">
-            {/* LEFT SIDEBAR */}
-            <div className="lg:col-span-1 space-y-2">
-              {/* SEARCH BAR */}
-              <input
-                type="text"
-                placeholder="Search projects..."
-                className="w-full px-4 py-2 rounded-lg bg-white border shadow-sm"
-                value={searchText}
-                onChange={(e) => setSearchText(e.target.value)}
-              />
+      {filteredProjects.length === 0 && (
+        <p className="text-gray-500 text-center mt-10">
+          No projects found.
+        </p>
+      )}
+    </div>
 
-              {/* FILTER BUTTONS */}
-              <div className="space-y-5">
-                {categories.map((cat) => (
-                  <button
-                    key={cat}
-                    onClick={() => setSelectedCategory(cat)}
-                    className={`w-full text-left px-4 py-2 transition rounded-lg ${
-                      selectedCategory === cat
-                        ? "bg-violet-200"
-                        : "bg-violet-50 hover:bg-gray-200"
-                    }`}
-                  >
-                    {cat}
-                  </button>
-                ))}
-              </div>
-            </div>
+  </div>
+</section>
 
-            {/* RIGHT SIDE CONTENT */}
-            <div className="lg:col-span-2">
-              {/* Selected Category Header */}
-              <h2 className="text-2xl font-serif mb-6 text-slate-800">
-                {selectedCategory === "All" ? "All Projects" : selectedCategory}
-              </h2>
-
-              {/* PROJECTS GRID */}
-              <div className="grid md:grid-cols-2 gap-5">
-                {filteredProjects.map((project, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.15 }}
-                    className="rounded-xl overflow-hidden shadow-sm min-w-[350px] pt-5 pb-16 px-5 bg-violet-100 border border-gray-300 cursor-pointer"
-                  >
-                    <img
-                      src={project.image}
-                      className="w-full h-full object-cover rounded-xl border-b border-gray-500 shadow-lg shadow-gray-500"
-                    />
-
-                    <div className="flex justify-between items-center px-4 py-3">
-                      <h3 className="font-medium text-slate-700">{project.title}</h3>
-                      <FiArrowUpRight className="text-gray-500 text-lg" />
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-
-              {/* IF NOTHING FOUND */}
-              {filteredProjects.length === 0 && (
-                <p className="text-gray-500 text-center mt-10">No projects found.</p>
-              )}
-            </div>
-          </div>
-        </section>
       </Fade>
     </div>
   );

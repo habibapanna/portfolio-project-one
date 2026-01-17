@@ -120,7 +120,7 @@ const About = () => {
           <motion.p
   variants={fadeUp}
   className="
-    text-gray-800 leading-relaxed 
+    text-gray-800 leading-tight 
     text-sm sm:text-base md:text-[20px] 
     max-w-3xl md:mt-12
   "
