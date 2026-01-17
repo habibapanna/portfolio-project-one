@@ -122,7 +122,7 @@ const Services = () => {
 
 <div className="p-5 rounded-2xl shadow hover:shadow-lg transition bg-blue-50">
 
-  <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center">
+  <div className="flex flex-wrap items-center gap-3 mt-2 justify-center">
     {techIcons.map((Icon, index) => (
       <div
         key={index}

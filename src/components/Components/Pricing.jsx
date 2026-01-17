@@ -26,7 +26,7 @@ import {
   SiN8N,
   SiMake,
 } from "react-icons/si";
-import { FaChartLine, FaSearch } from "react-icons/fa";
+import { FaChartLine, FaCheck, FaSearch } from "react-icons/fa";
 import { TbSeo } from "react-icons/tb";
 
 
@@ -35,6 +35,7 @@ import { TbWebhook } from "react-icons/tb";
 import { TiTick } from "react-icons/ti";
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
+import { AiOutlineCheck } from "react-icons/ai";
 
 const marqueeItems = [
   // Design & No-Code
@@ -132,7 +133,7 @@ const Pricing = () => {
               "Human-led strategy, enhanced with AI for speed and accuracy",
             ].map((item, index) => (
               <li key={index} className="flex items-start gap-2">
-                <TiTick className="text-green-500 text-lg md:text-xl" />
+                <AiOutlineCheck className="text-green-500 text-lg md:text-2xl" />
                 <span>{item}</span>
               </li>
             ))}
@@ -158,7 +159,7 @@ const Pricing = () => {
       "Little focus on scalability or long-term growth",
     ].map((item, index) => (
       <li key={index} className="flex items-start gap-2">
-        <IoClose className="text-red-500 text-lg md:text-xl mt-[2px]" />
+        <IoClose className="text-red-500 text-lg md:text-2xl mt-[2px]" />
         <span>{item}</span>
       </li>
     ))}
