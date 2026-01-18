@@ -9,7 +9,7 @@ import LocomotiveScroll from "locomotive-scroll";
 const Main = () => {
   const location = useLocation();
   return (
-    <div className="min-h-screen mx-auto flex flex-col">
+    <div className="min-h-screen mx-auto flex flex-col bg-white">
       <Navbar></Navbar>
      <motion.div
   key={location.pathname}
