@@ -32,7 +32,7 @@ import { GiNotebook } from "react-icons/gi";
 import { DiGoogleAnalytics } from "react-icons/di";
 
 
-const Services = () => {
+const Service = () => {
   const techIcons = [
   SiHtml5,
   SiCss3,
@@ -443,4 +443,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Service;
