@@ -113,7 +113,7 @@ const Services = () => {
                     Web Design & Development
                   </h3>
 
-                  <p className="text-gray-800 font-semibold text-sm sm:text-base">
+                  <p className="text-gray-800 text-sm sm:text-base">
                     High-performance websites designed and built for clarity, speed, and scalability — combining modern design, clean development, and AI-enhanced testing and performance optimization.
                   </p>
                 </div>
@@ -121,15 +121,14 @@ const Services = () => {
              {/* Right Small Card */}
 
 <div className="p-5 rounded-2xl shadow hover:shadow-lg transition bg-blue-50">
-
   <div className="flex flex-wrap items-center gap-3 mt-2 justify-center">
     {techIcons.map((Icon, index) => (
       <div
         key={index}
-        className="rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center
-                   shadow-xl shadow-gray-400 bg-gray-800"
+        className="rounded-full w-14 h-14 flex items-center justify-center
+                   shadow-xl shadow-gray-400 bg-[#9888C6]"
       >
-        <Icon className="text-2xl md:text-3xl text-white" />
+        <Icon className="text-2xl text-white" />
       </div>
     ))}
   </div>
@@ -147,33 +146,33 @@ const Services = () => {
   <div className="flex flex-wrap items-center gap-3 mt-2 justify-center">
 
     {/* Google Ads */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
-      <SiGoogleads className="text-white text-2xl md:text-3xl" />
+    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
+      <SiGoogleads className="text-white text-2xl" />
     </div>
 
     {/* Meta Ads (Facebook) */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
-      <SiFacebook className="text-white text-2xl md:text-3xl" />
+    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
+      <SiFacebook className="text-white text-2xl" />
     </div>
 
     {/* Analytics */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
-      <SiGoogleanalytics className="text-white text-2xl md:text-3xl" />
+    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
+      <SiGoogleanalytics className="text-white text-2xl " />
     </div>
 
     {/* Email Platforms */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
-      <SiMailchimp className="text-white text-2xl md:text-3xl" />
+    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
+      <SiMailchimp className="text-white text-2xl" />
     </div>
 
     {/* Automation Tools */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
-      <SiZapier className="text-white text-2xl md:text-3xl" />
+    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
+      <SiZapier className="text-white text-2xl" />
     </div>
 
     {/* AI Marketing Tools */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
-      <FaRobot className="text-white text-2xl md:text-3xl" />
+    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
+      <FaRobot className="text-white text-2xl" />
     </div>
 
   </div>
@@ -198,7 +197,7 @@ const Services = () => {
                     Digital Marketing
                   </h3>
 
-                  <p className="text-gray-800 font-semibold text-sm sm:text-base">
+                  <p className="text-gray-800 text-sm sm:text-base">
                     Performance-driven digital marketing strategies supported by AI-assisted targeting, content optimization, and analytics — always guided by clear goals and human-led strategy.
                   </p>
                 </div>
@@ -226,7 +225,7 @@ const Services = () => {
                    SEO, AEO & Search Optimization
                   </h3>
 
-                  <p className="text-gray-800 font-semibold text-sm sm:text-base">
+                  <p className="text-gray-800 text-sm sm:text-base">
                       Search optimization built for modern discovery — combining SEO best practices, answer-focused content (AEO), and contextual relevance, supported by AI-assisted research and continuous analysis.
 
                   </p>
@@ -239,33 +238,33 @@ const Services = () => {
   <div className="flex flex-wrap items-center gap-3 mt-2 justify-center">
 
     {/* Google Search Console */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
-      <SiGoogle className="text-white text-2xl md:text-3xl" />
+    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
+      <SiGoogle className="text-white text-2xl " />
     </div>
 
     {/* Google Analytics */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
-      <SiGoogleanalytics className="text-white text-2xl md:text-3xl" />
+    <div className="w-14 h-14  rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
+      <SiGoogleanalytics className="text-white text-2xl " />
     </div>
 
     {/* Technical Audits */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
-      <MdSettings className="text-white text-2xl md:text-3xl" />
+    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
+      <MdSettings className="text-white text-2xl " />
     </div>
 
     {/* Keyword Research */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
-      <FaSearch className="text-white text-2xl md:text-3xl" />
+    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
+      <FaSearch className="text-white text-2xl " />
     </div>
 
     {/* Schema */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
-      <AiOutlineFileText className="text-white text-2xl md:text-3xl" />
+    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
+      <AiOutlineFileText className="text-white text-2xl " />
     </div>
 
     {/* AI SEO Tools */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
-      <FaRobot className="text-white text-2xl md:text-3xl" />
+    <div className="w-14 h-14  rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
+      <FaRobot className="text-white text-2xl " />
     </div>
 
   </div>
@@ -285,15 +284,15 @@ const Services = () => {
   {/* TOOL ICONS */}
   <div className="flex items-center gap-3 mt-2">
 
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
-      <SiFigma className="text-white text-2xl md:text-3xl" />
+    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
+      <SiFigma className="text-white text-2xl " />
     </div>
 
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
-      <SiAdobe className="text-white text-2xl md:text-3xl" />
+    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
+      <SiAdobe className="text-white text-2xl" />
     </div>
 
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
+    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
       <PiFramerLogo className="text-white text-2xl md:text-3xl" />
     </div>
 
@@ -318,7 +317,7 @@ const Services = () => {
                     UI/UX Design
                   </h3>
 
-                  <p className="text-gray-800 font-semibold text-sm sm:text-base">
+                  <p className="text-gray-800 text-sm sm:text-base">
                      User-centered interfaces crafted through research, testing, and experience — with AI assisting usability analysis, pattern recognition, and faster iteration while preserving design quality.
                   </p>
                 </div>
@@ -346,7 +345,7 @@ const Services = () => {
                    Business & Growth Strategy
                   </h3>
 
-                  <p className="text-gray-800 font-semibold text-sm sm:text-base">
+                  <p className="text-gray-800 text-sm sm:text-base">
                      Strategic planning focused on sustainable growth — supported by market insights, data analysis, and AI-enhanced forecasting to improve decision-making and scalability.
 
                   </p>
@@ -359,33 +358,33 @@ const Services = () => {
   <div className="flex flex-wrap items-center gap-3 mt-2 justify-center">
 
     {/* Market Research */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
-      <FaChartLine className="text-white text-2xl md:text-3xl" />
+    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
+      <FaChartLine className="text-white text-2xl " />
     </div>
 
     {/* Analytics */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
+    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
       <DiGoogleAnalytics className="text-white text-2xl md:text-3xl" />
     </div>
 
     {/* CRM */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
+    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
       <FaUsers className="text-white text-2xl md:text-3xl" />
     </div>
 
     {/* Dashboards */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
-      <MdDashboard className="text-white text-2xl md:text-3xl" />
+    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
+      <MdDashboard className="text-white text-2xl " />
     </div>
 
     {/* Planning Frameworks */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
+    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
       <GiNotebook className="text-white text-2xl md:text-3xl" />
     </div>
 
     {/* AI Strategy Tools */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-800 flex items-center justify-center shadow-md">
-      <FaRobot className="text-white text-2xl md:text-3xl" />
+    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
+      <FaRobot className="text-white text-2xl" />
     </div>
 
   </div>

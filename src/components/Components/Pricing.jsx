@@ -36,6 +36,7 @@ import { TiTick } from "react-icons/ti";
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import { AiOutlineCheck } from "react-icons/ai";
+import { RiCloseLargeFill } from "react-icons/ri";
 
 const marqueeItems = [
   // Design & No-Code
@@ -133,12 +134,11 @@ const Pricing = () => {
               "Human-led strategy, enhanced with AI for speed and accuracy",
             ].map((item, index) => (
               <li key={index} className="flex items-start gap-2">
-                <AiOutlineCheck className="text-green-500 text-lg md:text-2xl" />
+                <FaCheck className="text-green-500 text-lg md:text-xl" />
                 <span>{item}</span>
               </li>
             ))}
           </ul>
-          <p className="mt-5 text-gray-800 text-sm md:text-base font-semibold">→ Built to grow, not just launch</p>
         </div>
 
         {/* OTHERS CARD */}
@@ -159,7 +159,7 @@ const Pricing = () => {
       "Little focus on scalability or long-term growth",
     ].map((item, index) => (
       <li key={index} className="flex items-start gap-2">
-        <IoClose className="text-red-500 text-lg md:text-2xl mt-[2px]" />
+        <RiCloseLargeFill className="text-red-500 text-lg md:text-xl mt-[2px]" />
         <span>{item}</span>
       </li>
     ))}

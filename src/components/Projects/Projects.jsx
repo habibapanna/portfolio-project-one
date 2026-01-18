@@ -81,7 +81,7 @@ const Projects = () => {
   return (
     <div>
       <Fade>
-        <section className="h-screen bg-violet-100 overflow-hidden">
+        <section className="h-screen bg-violet-100 overflow-hidden px-5 md:px-12 md:py-20">
   <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 h-full">
 
     {/* LEFT SIDEBAR (SCROLLS ALONE) */}
@@ -102,8 +102,8 @@ const Projects = () => {
             onClick={() => setSelectedCategory(cat)}
             className={`w-full text-left px-4 py-2 rounded-lg transition ${
               selectedCategory === cat
-                ? "bg-violet-400 text-white"
-                : "bg-violet-50 hover:bg-violet-400 hover:text-white"
+                ? "bg-[#9888C6] text-white"
+                : "bg-violet-50 hover:bg-[#9888C6] hover:text-white"
             }`}
           >
             {cat}
