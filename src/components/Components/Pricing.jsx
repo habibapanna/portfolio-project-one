@@ -163,10 +163,12 @@ const Pricing = () => {
         <span>{item}</span>
       </li>
     ))}
-  </ul>
+  </ul>  
+  
 </div>
-
       </div>
+      
+
 
       {/* Marquee */}
       <div className="relative overflow-hidden py-6 max-w-5xl mx-auto mt-12 px-4">
@@ -201,6 +203,12 @@ const Pricing = () => {
           ))}
         </motion.div>
       </div>
+      <div className="text-center">
+<p className="mt-5 text-gray-800 text-[25px] md:text-[50px] font-semibold italic"
+   style={{ fontFamily: "'Dancing Script', cursive" }}>
+  → Built to grow, not just launch
+</p>
+</div>
     </section>
   );
 };
