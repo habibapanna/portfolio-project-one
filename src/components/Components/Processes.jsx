@@ -5,6 +5,10 @@ import {
 } from "react-icons/hi2";
 import { HiOutlineCode } from "react-icons/hi";
 import { HiOutlinePencilAlt } from "react-icons/hi";
+import { motion } from "framer-motion";
+import { MdSupportAgent } from "react-icons/md";
+import { TbLayout } from "react-icons/tb";
+
 
 const steps = [
   {
@@ -15,7 +19,7 @@ const steps = [
   {
     title: "Design with Purpose",
     desc: "Share your vision, and I’ll craft intuitive, user-focused designs that balance creativity, usability, and performance — refined with insights and smart tools for efficiency.",
-    icon: HiOutlinePencilAlt,
+    icon: TbLayout,
   },
   {
     title: "Build & Launch",
@@ -25,7 +29,7 @@ const steps = [
   {
     title: "Deliver & Support",
     desc: "Receive a polished, thoroughly tested product tailored to your needs — with ongoing support and optimization to help you grow confidently.",
-    icon:  HiOutlineCode,
+    icon:  MdSupportAgent,
   },
 ];
 
@@ -51,40 +55,53 @@ const Processes = () => {
           </p>
         </div>
 
-        {/* PROCESS CARDS */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+  {steps.map((step, index) => {
+    const Icon = step.icon;
+    const isEven = index % 2 === 0; // 1st & 3rd cards
 
-          {steps.map((step, index) => {
-            const Icon = step.icon;
+    return (
+      <motion.div
+  key={index}
+  initial={{ opacity: 0, y: 60 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: false, amount: 0.3 }}
+  transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.1 }}
+  className={`
+    relative bg-blue-50 border border-gray-200
+    rounded-xl p-8 min-h-[340px]
+    ${index % 2 !== 0 ? "lg:mt-20" : ""}
+  `}
+>
+  {/* ICON — TOP (2nd & 4th) */}
+  {!isEven && (
+    <div className="w-12 h-12 rounded-full flex items-center justify-center bg-[#9888C6] mb-6">
+      <Icon className="text-white text-2xl" />
+    </div>
+  )}
 
-            return (
-              <div
-                key={index}
-                className={`
-                  relative bg-blue-50 border border-gray-200
-                  rounded-xl p-8 min-h-[260px]
-                  ${index % 2 !== 0 ? "lg:mt-20" : ""}
-                `}
-              >
-                {/* ICON */}
-                <div className="w-12 h-12 rounded-full flex items-center justify-center bg-[#9888C6] mb-6">
-                  <Icon className="text-white text-2xl" />
-                </div>
+  {/* TEXT */}
+  <div className={`${!isEven ? "mt-auto" : ""}`}>
+    <h3 className="text-xl font-semibold text-[#0f1724] mb-3">
+      {step.title}
+    </h3>
+    <p className="text-gray-800 text-sm lg:text-base leading-relaxed">
+      {step.desc}
+    </p>
+  </div>
 
-                {/* TITLE */}
-                <h3 className="text-xl font-semibold text-[#0f1724] mb-3">
-                  {step.title}
-                </h3>
+  {/* ICON — BOTTOM LEFT (1st & 3rd) */}
+  {isEven && (
+    <div className="absolute bottom-6 left-6 w-12 h-12 rounded-full flex items-center justify-center bg-[#9888C6]">
+      <Icon className="text-white text-2xl" />
+    </div>
+  )}
+</motion.div>
 
-                {/* DESC */}
-                <p className="text-gray-800 text-sm lg:text-base leading-relaxed">
-                  {step.desc}
-                </p>
-              </div>
-            );
-          })}
+    );
+  })}
+</div>
 
-        </div>
       </div>
     </section>
   );

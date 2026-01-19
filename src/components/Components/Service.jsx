@@ -24,7 +24,7 @@ import {
   SiWebflow,
 } from "react-icons/si";
 import { TbDashboard } from "react-icons/tb";
-import { FaChartLine, FaRobot, FaSearch, FaUsers } from "react-icons/fa";
+import { FaChartLine, FaCogs, FaRobot, FaSearch, FaUsers } from "react-icons/fa";
 import { AiOutlineFileText, AiOutlineProject } from "react-icons/ai";
 import { MdCampaign, MdDashboard, MdOutlinePeople, MdSettings } from "react-icons/md";
 import { GrOptimize } from "react-icons/gr";
@@ -218,7 +218,7 @@ const Service = () => {
 
                 <div className="flex flex-col justify-center gap-2">
                   <div className="rounded-full w-14 h-14 flex items-center justify-center shadow-xl shadow-gray-400 bg-white">
-                    <GrOptimize className="text-4xl text-gray-700" />
+                    <FaCogs className="text-4xl text-gray-700" />
                   </div>
 
                   <h3 className="text-xl sm:text-2xl font-semibold text-[#0f1724] my-3 sm:my-5">
