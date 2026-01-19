@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import {
   FaPalette,
   FaLaptopCode,
@@ -28,25 +28,26 @@ const industries = [
   { title: "Education", icon: FaGraduationCap, desc: "Learning platforms built for engagement." },
 ];
 
-const Industries = () => {
-  const sliderRef = useRef(null);
+const CARD_WIDTH = 280 + 24; // card width + gap
+const VISIBLE_CARDS = 4;
 
-  const scroll = (direction) => {
-    if (!sliderRef.current) return;
-    const width = sliderRef.current.offsetWidth;
-    sliderRef.current.scrollBy({
-      left: direction === "left" ? -width : width,
-      behavior: "smooth",
-    });
-  };
+const Industries = () => {
+  const [index, setIndex] = useState(0);
+
+  const maxIndex = industries.length - VISIBLE_CARDS;
+
+  const prev = () => setIndex((i) => Math.max(i - 1, 0));
+  const next = () => setIndex((i) => Math.min(i + 1, maxIndex));
 
   return (
-    <section className="bg-violet-200 py-20  text-white">
+    <section className="bg-violet-200 py-20">
       {/* HEADER */}
       <div className="flex items-center justify-between mb-10">
         <div>
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-[#0f1724]">Industries</h2>
-          <p className="text-gray-800 max-w-xl mt-3 lg:text-[20px]">
+          <h2 className="text-3xl md:text-5xl font-semibold text-[#0f1724]">
+            Industries
+          </h2>
+          <p className="text-gray-800 max-w-xl mt-3 text-lg">
             We work across high-impact industries, combining deep domain
             knowledge with cutting-edge design and AI.
           </p>
@@ -55,14 +56,16 @@ const Industries = () => {
         {/* ARROWS */}
         <div className="flex gap-3">
           <button
-            onClick={() => scroll("left")}
-            className="w-10 h-10 rounded-full bg-[#0f1724] hover:bg-zinc-700 flex items-center justify-center"
+            onClick={prev}
+            disabled={index === 0}
+            className="w-10 h-10 rounded-full bg-[#0f1724] text-white disabled:opacity-40 flex items-center justify-center"
           >
             <IoArrowBack />
           </button>
           <button
-            onClick={() => scroll("right")}
-            className="w-10 h-10 rounded-full bg-white text-[#0f1724] flex items-center justify-center"
+            onClick={next}
+            disabled={index === maxIndex}
+            className="w-10 h-10 rounded-full bg-white text-[#0f1724] disabled:opacity-40 flex items-center justify-center"
           >
             <IoArrowForward />
           </button>
@@ -70,30 +73,35 @@ const Industries = () => {
       </div>
 
       {/* CAROUSEL */}
-      <div
-        ref={sliderRef}
-        className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth"
-      >
-        {industries.map((item, index) => {
-          const Icon = item.icon;
-          return (
-            <div
-              key={index}
-              className="min-w-[280px] bg-violet-50
-                         rounded-2xl p-6 "
-            >
-              <div className="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center mb-5">
-                <Icon className="text-xl text-[#0f1724]" />
+      <div className="overflow-hidden">
+        <div
+          className="flex gap-6 transition-transform duration-500 ease-in-out"
+          style={{
+            transform: `translateX(-${index * CARD_WIDTH}px)`,
+          }}
+        >
+          {industries.map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <div
+                key={i}
+                className="min-w-[280px] bg-violet-50 rounded-2xl p-6"
+              >
+                <div className="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center mb-5">
+                  <Icon className="text-xl text-[#0f1724]" />
+                </div>
+
+                <h3 className="text-xl font-semibold mb-3 text-[#0f1724]">
+                  {item.title}
+                </h3>
+
+                <p className="text-gray-800 text-sm leading-relaxed">
+                  {item.desc}
+                </p>
               </div>
-
-              <h3 className="text-xl font-semibold mb-3 text-[#0f1724]">{item.title}</h3>
-
-              <p className="text-gray-800 text-sm lg:text-base leading-relaxed">
-                {item.desc}
-              </p>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </section>
   );
