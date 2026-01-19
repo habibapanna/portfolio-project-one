@@ -97,7 +97,7 @@ const Process = () => {
                 show: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              whileHover={{ y: -8, transition: { duration: 0.3 } }}
+              whileHover={{ y: 0, transition: { duration: 0.3 } }}
               className="bg-blue-50 p-5 md:p-6 rounded-2xl shadow"
             >
               <div className="rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shadow-xl shadow-gray-400 bg-gray-800">

@@ -162,7 +162,7 @@ const Services = () => {
         {techIcons.map((Icon, index) => (
           <div
             key={index}
-            className="w-14 h-14 rounded-lg flex items-center justify-center
+            className="w-12 h-12 md:w-14 md:h-14 rounded-lg flex items-center justify-center
                        bg-white shadow-3xl"
           >
             <Icon className="text-gray-800 text-3xl" />
@@ -222,7 +222,7 @@ const Services = () => {
         {marketingIcons.map((Icon, index) => (
           <div
             key={index}
-            className="w-14 h-14 rounded-lg flex items-center justify-center
+            className="w-12 h-12 md:w-14 md:h-14 rounded-lg flex items-center justify-center
                        bg-white shadow-3xl"
           >
             <Icon className="text-gray-800 text-3xl" />
@@ -282,7 +282,7 @@ const Services = () => {
         {businessIcons.map((Icon, index) => (
           <div
             key={index}
-            className="w-14 h-14 rounded-lg flex items-center justify-center
+            className="w-12 h-12 md:w-14 md:h-14 rounded-lg flex items-center justify-center
                        bg-white shadow-3xl"
           >
             <Icon className="text-gray-800 text-3xl" />
@@ -342,7 +342,7 @@ const Services = () => {
         {seoIcons.map((Icon, index) => (
           <div
             key={index}
-            className="w-14 h-14 rounded-lg flex items-center justify-center
+            className="w-12 h-12 md:w-14 md:h-14 rounded-lg flex items-center justify-center
                        bg-white shadow-3xl"
           >
             <Icon className="text-gray-800 text-3xl" />
@@ -402,7 +402,7 @@ const Services = () => {
         {uiuxIcons.map((Icon, index) => (
           <div
             key={index}
-            className="w-14 h-14 rounded-lg flex items-center justify-center
+            className="w-12 h-12 md:w-14 md:h-14 rounded-lg flex items-center justify-center
                        bg-white shadow-3xl"
           >
             <Icon className="text-gray-800 text-3xl" />
