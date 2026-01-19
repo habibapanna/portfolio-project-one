@@ -31,6 +31,7 @@ import { GrOptimize } from "react-icons/gr";
 import { GiNotebook } from "react-icons/gi";
 import { DiGoogleAnalytics } from "react-icons/di";
 import Industries from "../Components/Industries";
+import Processes from "../Components/Processes";
 
 
 
@@ -90,7 +91,7 @@ const seoIcons = [
 
 const Services = () => {
     return (
-        <div className='py-16 px-12 sm:py-20 md:px-16 bg-violet-200'>
+        <div className='py-16 sm:py-20  bg-violet-200'>
         {/* TITLE */}
         <Fade
           triggerOnce={false}
@@ -122,7 +123,7 @@ const Services = () => {
         {/* CONTENT GRID */}
         <Fade
         >
-          <div className="mt-16 grid grid-cols-1 gap-6">
+          <div className="mt-16 grid grid-cols-1 gap-6 px-12">
 {/* card 1 */}
 <div className="bg-blue-50 p-6 md:p-10 rounded-3xl shadow">
 
@@ -423,10 +424,10 @@ const Services = () => {
   </div>
 
 </div>
-
           </div>
         </Fade>
         <Industries></Industries>
+        <Processes></Processes>
         </div>
     );
 };
