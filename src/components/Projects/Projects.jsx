@@ -100,7 +100,7 @@ const Projects = () => {
           <button
             key={cat}
             onClick={() => setSelectedCategory(cat)}
-            className={`w-full text-left px-4 py-2 rounded-lg transition ${
+            className={`w-full text-left px-4 py-2 rounded-lg transition lg:text-[20px] ${
               selectedCategory === cat
                 ? "bg-[#9888C6] text-white"
                 : "bg-violet-50 hover:bg-[#9888C6] hover:text-white"

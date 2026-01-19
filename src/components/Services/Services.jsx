@@ -30,6 +30,7 @@ import { MdCampaign, MdDashboard, MdOutlinePeople, MdSettings } from "react-icon
 import { GrOptimize } from "react-icons/gr";
 import { GiNotebook } from "react-icons/gi";
 import { DiGoogleAnalytics } from "react-icons/di";
+import Industries from "../Components/Industries";
 
 
 
@@ -423,9 +424,9 @@ const Services = () => {
 
 </div>
 
-
           </div>
         </Fade>
+        <Industries></Industries>
         </div>
     );
 };
