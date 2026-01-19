@@ -206,7 +206,7 @@ const Pricing = () => {
       <div className="text-center">
 <p className="mt-5 text-gray-800 text-[25px] md:text-[50px] font-semibold italic"
    style={{ fontFamily: "'Dancing Script', cursive" }}>
-  → Built to grow, not just launch
+  " Built to grow, not just launch "
 </p>
 </div>
     </section>

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaRegEnvelope } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
+import Logo from '../../../assets/port3.jpeg'
 
 const Navbar = () => {
 
@@ -17,7 +18,7 @@ const Navbar = () => {
         
         {/* Left */}
         <div className="flex items-center gap-4">
-          <div className="text-xl font-semibold italic"><Link to="/">Sanwar Limon</Link></div>
+          <div className="h-[100px] w-[200px]"><Link to="/"><img src={Logo} alt="" /></Link></div>
 
          
         </div>
@@ -26,15 +27,7 @@ const Navbar = () => {
         <div className="flex items-center gap-8">
            {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6 text-black md:text-[20px]">
-            {/* {navItems.map((n) => (
-              <a 
-                key={n} 
-                href={`#${n.toLowerCase()}`} 
-                className="hover:text-gray-900"
-              >
-                {n}
-              </a>
-            ))} */}
+            
             <NavLink className=" hover:underline" to="/">Home</NavLink>
             <NavLink className=" hover:underline" to="projects">Projects</NavLink>
             <NavLink className=" hover:underline" to="services">Services</NavLink>

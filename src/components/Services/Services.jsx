@@ -48,10 +48,48 @@ import { DiGoogleAnalytics } from "react-icons/di";
    TbDashboard,
 ];
 
+// Digital Marketing
+const marketingIcons = [
+  SiGoogleads,
+  SiFacebook,
+  SiGoogleanalytics,
+  SiMailchimp,
+  SiZapier,
+  DiGoogleAnalytics,
+];
+
+// Business & Growth Strategy
+const businessIcons = [
+  FaChartLine,
+  FaUsers,
+  TbDashboard,
+  GrOptimize,
+  GiNotebook,
+];
+
+// UI/UX Design (Tools)
+const uiuxIcons = [
+  SiFigma,
+  SiAdobe,
+  PiFramerLogo,
+  PiPaintBrushFill,
+];
+
+// SEO / AEO / Search Optimization
+const seoIcons = [
+  SiGoogle,
+  SiGoogleanalytics,
+  DiGoogleAnalytics,
+  FaSearch,
+  GrOptimize,
+  FaRobot,
+];
+
+
 
 const Services = () => {
     return (
-        <div className='py-16 sm:py-20 bg-violet-200'>
+        <div className='py-16 px-12 sm:py-20 md:px-16 bg-violet-200'>
         {/* TITLE */}
         <Fade
           triggerOnce={false}
@@ -84,307 +122,307 @@ const Services = () => {
         <Fade
         >
           <div className="mt-16 grid grid-cols-1 gap-6">
+{/* card 1 */}
+<div className="bg-blue-50 p-6 md:p-10 rounded-3xl shadow">
 
-            {/* TOP ROW */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              
-              {/* Wide Left Card */}
-              <div className="col-span-1 md:col-span-2 flex flex-col lg:flex-row gap-5 bg-blue-50 p-5 rounded-2xl shadow">
-                <img
-                  src="https://framerusercontent.com/images/SG0ZbESc0TAkt6qXYHYpwhuuuME.png?width=1200&height=904"
-                  alt=""
-                  className="w-full lg:w-1/2 h-52 sm:h-60 md:h-64 lg:h-auto object-cover rounded-xl shadow-lg shadow-gray-400"
-                />
+  <div className="flex flex-col lg:flex-row items-center gap-8 relative">
 
-                <div className="flex flex-col justify-center gap-2">
-                  <div className="rounded-full w-14 h-14 flex items-center justify-center shadow-xl shadow-gray-400 bg-white">
-                    <PiPaintBrushFill className="text-4xl text-gray-700" />
-                  </div>
+    {/* LEFT — TEXT */}
+    <div className="lg:w-1/2">
+      <h2 className="text-3xl md:text-4xl font-bold text-[#0f1724] mb-4">
+        Website Development
+      </h2>
 
-                  <h3 className="text-xl sm:text-2xl font-semibold text-[#0f1724] my-3 sm:my-5">
-                    Web Design & Development
-                  </h3>
+      <p className="text-gray-800 mb-6 lg:text-[20px]">
+        High-performance websites designed and built for clarity, speed, and scalability — combining modern design, clean development, and AI-enhanced testing and performance optimization.
+      </p>
 
-                  <p className="text-gray-800 text-sm sm:text-base">
-                    High-performance websites designed and built for clarity, speed, and scalability — combining modern design, clean development, and AI-enhanced testing and performance optimization.
-                  </p>
-                </div>
-              </div>
-             {/* Right Small Card */}
-
-<div className="p-5 rounded-2xl shadow hover:shadow-lg transition bg-blue-50">
-  <div className="flex flex-wrap items-center gap-3 mt-2 justify-center">
-    {techIcons.map((Icon, index) => (
-      <div
-        key={index}
-        className="rounded-full w-14 h-14 flex items-center justify-center
-                   shadow-xl shadow-gray-400 bg-[#9888C6]"
-      >
-        <Icon className="text-2xl text-white" />
+      <div className="flex flex-wrap">
+        {[
+          "HTML","CSS","JavaScript","React","Next.js","PHP","Laravel",
+          "WordPress","Shopify","Wix","Webflow","GoHighLevel"
+        ].map((tech, i) => (
+          <span
+            key={i}
+            className="px-6 py-4 rounded-[20px] lg:text-[20px]
+                       border border-gray-300
+                       bg-white/60 backdrop-blur
+                       text-gray-800 shadow-sm"
+          >
+            {tech}
+          </span>
+        ))}
       </div>
-    ))}
+    </div>
+        {/* RIGHT — LOGOS */}
+    <div className="absolute w-[300px] bottom-0 -right-0 lg:left- lg:right-0 lg:top-4">
+      <div className="flex flex-wrap gap-4 justify-center">
+        {techIcons.map((Icon, index) => (
+          <div
+            key={index}
+            className="w-14 h-14 rounded-lg flex items-center justify-center
+                       bg-white shadow-3xl"
+          >
+            <Icon className="text-gray-800 text-3xl" />
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div className="lg:w-1/2">
+      <img
+        src="https://i.postimg.cc/GtMXxvXk/programming-background-collage-(1).jpg"
+        alt=""
+        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
+      />
+    </div>
+
+
+
   </div>
 
 </div>
 
-            </div>
+{/* card 2 */}
+<div className="bg-blue-50 p-6 md:p-10 rounded-3xl shadow">
 
-            {/* BOTTOM ROW */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <div className="flex flex-col lg:flex-row items-center gap-8 relative">
 
-{/* Bottom Small Card */}
-<div className="bg-blue-50 p-5 rounded-2xl shadow hover:shadow-lg transition">
-  {/* TOOL ICONS */}
-  <div className="flex flex-wrap items-center gap-3 mt-2 justify-center">
+    {/* LEFT — TEXT */}
+    <div className="lg:w-1/2">
+      <h2 className="text-3xl md:text-4xl font-bold text-[#0f1724] mb-4">
+        Digital Marketing
+      </h2>
 
-    {/* Google Ads */}
-    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <SiGoogleads className="text-white text-2xl" />
+      <p className="text-gray-800 mb-6 lg:text-[20px]">
+        Performance-driven digital marketing strategies supported by AI-assisted targeting, content optimization, and analytics — always guided by clear goals and human-led strategy.
+      </p>
+
+      <div className="flex flex-wrap">
+        {[
+          "Google Ads","Meta Ads","Analytics","Email Platforms","Automation Tools","AI Marketing Tools",
+        ].map((tech, i) => (
+          <span
+            key={i}
+            className="px-6 py-4 rounded-[20px] lg:text-[20px]
+                       border border-gray-300
+                       bg-white/60 backdrop-blur
+                       text-gray-800 shadow-sm"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
+        {/* RIGHT — LOGOS */}
+    <div className="absolute w-[300px] bottom-0 -right-0 lg:left- lg:right-0 lg:top-4">
+      <div className="flex flex-wrap gap-4 justify-center">
+        {marketingIcons.map((Icon, index) => (
+          <div
+            key={index}
+            className="w-14 h-14 rounded-lg flex items-center justify-center
+                       bg-white shadow-3xl"
+          >
+            <Icon className="text-gray-800 text-3xl" />
+          </div>
+        ))}
+      </div>
     </div>
 
-    {/* Meta Ads (Facebook) */}
-    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <SiFacebook className="text-white text-2xl" />
+    <div className="lg:w-1/2">
+      <img
+        src="https://i.postimg.cc/4xpkGNwK/hand-using-laptp-with-graphic-global-communication-connection-technology.jpg"
+        alt=""
+        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
+      />
     </div>
 
-    {/* Analytics */}
-    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <SiGoogleanalytics className="text-white text-2xl " />
-    </div>
 
-    {/* Email Platforms */}
-    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <SiMailchimp className="text-white text-2xl" />
-    </div>
-
-    {/* Automation Tools */}
-    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <SiZapier className="text-white text-2xl" />
-    </div>
-
-    {/* AI Marketing Tools */}
-    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <FaRobot className="text-white text-2xl" />
-    </div>
 
   </div>
+
 </div>
 
+{/* card 3 */}
+<div className="bg-blue-50 p-6 md:p-10 rounded-3xl shadow">
 
-              {/* Wide Right Card */}
+  <div className="flex flex-col lg:flex-row items-center gap-8 relative">
 
- <div className="col-span-1 md:col-span-2 flex flex-col lg:flex-row gap-5 bg-blue-50 p-5 rounded-2xl shadow">
-                <img
-                  src="https://framerusercontent.com/images/8P0e6AzdnfLABVNNwGpdPbhIu5Q.png?width=1200"
-                  alt=""
-                  className="w-full lg:w-1/2 h-52 sm:h-60 md:h-64 lg:h-auto object-cover rounded-xl shadow-lg shadow-gray-400"
-                />
+    {/* LEFT — TEXT */}
+    <div className="lg:w-1/2">
+      <h2 className="text-3xl md:text-4xl font-bold text-[#0f1724] mb-4">
+        Business & Growth Strategy
+      </h2>
 
-                <div className="flex flex-col justify-center gap-2">
-                  <div className="rounded-full w-14 h-14 flex items-center justify-center shadow-xl shadow-gray-400 bg-white">
-                    <MdCampaign className="text-4xl text-gray-700" />
-                  </div>
+      <p className="text-gray-800 mb-6 lg:text-[20px]">
+       Strategic planning focused on sustainable growth — supported by market insights, data analysis, and AI-enhanced forecasting to improve decision-making and scalability.
+      </p>
 
-                  <h3 className="text-xl sm:text-2xl font-semibold text-[#0f1724] my-3 sm:my-5">
-                    Digital Marketing
-                  </h3>
-
-                  <p className="text-gray-800 text-sm sm:text-base">
-                    Performance-driven digital marketing strategies supported by AI-assisted targeting, content optimization, and analytics — always guided by clear goals and human-led strategy.
-                  </p>
-                </div>
-              </div>
-
-            </div>
- 
- {/* 2nd TOP ROW */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              
-              {/* Wide Left Card */}
-              <div className="col-span-1 md:col-span-2 flex flex-col lg:flex-row gap-5 bg-blue-50 p-5 rounded-2xl shadow">
-                <img
-                  src="https://framerusercontent.com/images/SG0ZbESc0TAkt6qXYHYpwhuuuME.png?width=1200&height=904"
-                  alt=""
-                  className="w-full lg:w-1/2 h-52 sm:h-60 md:h-64 lg:h-auto object-cover rounded-xl shadow-lg shadow-gray-400"
-                />
-
-                <div className="flex flex-col justify-center gap-2">
-                  <div className="rounded-full w-14 h-14 flex items-center justify-center shadow-xl shadow-gray-400 bg-white">
-                    <GrOptimize className="text-4xl text-gray-700" />
-                  </div>
-
-                  <h3 className="text-xl sm:text-2xl font-semibold text-[#0f1724] my-3 sm:my-5">
-                   SEO, AEO & Search Optimization
-                  </h3>
-
-                  <p className="text-gray-800 text-sm sm:text-base">
-                      Search optimization built for modern discovery — combining SEO best practices, answer-focused content (AEO), and contextual relevance, supported by AI-assisted research and continuous analysis.
-
-                  </p>
-                </div>
-              </div>
-
-{/* Right Small Card */}
-<div className="bg-blue-50 p-5 rounded-2xl shadow hover:shadow-lg transition">
-  {/* TOOL ICONS */}
-  <div className="flex flex-wrap items-center gap-3 mt-2 justify-center">
-
-    {/* Google Search Console */}
-    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <SiGoogle className="text-white text-2xl " />
+      <div className="flex flex-wrap">
+        {[
+          "Google Ads","Meta Ads","Analytics","Email Platforms ","Automation Tools","AI Marketing Tools",
+        ].map((tech, i) => (
+          <span
+            key={i}
+            className="px-6 py-4 rounded-[20px] lg:text-[20px]
+                       border border-gray-300
+                       bg-white/60 backdrop-blur
+                       text-gray-800 shadow-sm"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
+        {/* RIGHT — LOGOS */}
+    <div className="absolute w-[300px] bottom-0 -right-0 lg:left- lg:right-0 lg:top-4">
+      <div className="flex flex-wrap gap-4 justify-center">
+        {businessIcons.map((Icon, index) => (
+          <div
+            key={index}
+            className="w-14 h-14 rounded-lg flex items-center justify-center
+                       bg-white shadow-3xl"
+          >
+            <Icon className="text-gray-800 text-3xl" />
+          </div>
+        ))}
+      </div>
     </div>
 
-    {/* Google Analytics */}
-    <div className="w-14 h-14  rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <SiGoogleanalytics className="text-white text-2xl " />
+    <div className="lg:w-1/2">
+      <img
+        src="https://i.postimg.cc/kXQNx059/pexels-tima-miroshnichenko-7567595.jpg"
+        alt=""
+        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
+      />
     </div>
 
-    {/* Technical Audits */}
-    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <MdSettings className="text-white text-2xl " />
-    </div>
 
-    {/* Keyword Research */}
-    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <FaSearch className="text-white text-2xl " />
-    </div>
-
-    {/* Schema */}
-    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <AiOutlineFileText className="text-white text-2xl " />
-    </div>
-
-    {/* AI SEO Tools */}
-    <div className="w-14 h-14  rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <FaRobot className="text-white text-2xl " />
-    </div>
 
   </div>
+
 </div>
 
+{/* card 4 */}
+<div className="bg-blue-50 p-6 md:p-10 rounded-3xl shadow">
 
-            </div>
+  <div className="flex flex-col lg:flex-row items-center gap-8 relative">
 
-{/* 2nd bottom row */}
+    {/* LEFT — TEXT */}
+    <div className="lg:w-1/2">
+      <h2 className="text-3xl md:text-4xl font-bold text-[#0f1724] mb-4">
+       SEO, AEO & Search Optimization
+      </h2>
 
-            {/* BOTTOM ROW */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <p className="text-gray-800 mb-6 lg:text-[20px]">
+        Search optimization built for modern discovery — combining SEO best practices, answer-focused content (AEO), and contextual relevance, supported by AI-assisted research and continuous analysis.
+      </p>
 
-              {/* Bottom Small Card */}
-
-<div className="bg-blue-50 p-5 rounded-2xl shadow hover:shadow-lg transition">
-  {/* TOOL ICONS */}
-  <div className="flex items-center gap-3 mt-2">
-
-    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <SiFigma className="text-white text-2xl " />
+      <div className="flex flex-wrap">
+        {[
+          "Search Console","Analytics","Keyword Research ","Schema","AI SEO Tools","PHP",
+        ].map((tech, i) => (
+          <span
+            key={i}
+            className="px-6 py-4 rounded-[20px] lg:text-[20px]
+                       border border-gray-300
+                       bg-white/60 backdrop-blur
+                       text-gray-800 shadow-sm"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
+        {/* RIGHT — LOGOS */}
+    <div className="absolute w-[300px] bottom-0 -right-0 lg:left- lg:right-0 lg:top-4">
+      <div className="flex flex-wrap gap-4 justify-center">
+        {seoIcons.map((Icon, index) => (
+          <div
+            key={index}
+            className="w-14 h-14 rounded-lg flex items-center justify-center
+                       bg-white shadow-3xl"
+          >
+            <Icon className="text-gray-800 text-3xl" />
+          </div>
+        ))}
+      </div>
     </div>
 
-    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <SiAdobe className="text-white text-2xl" />
+    <div className="lg:w-1/2">
+      <img
+        src="https://i.postimg.cc/WbCFKSfk/homepage-concept-with-search-bar.jpg"
+        alt=""
+        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
+      />
     </div>
 
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <PiFramerLogo className="text-white text-2xl md:text-3xl" />
-    </div>
+
 
   </div>
+
 </div>
 
-              {/* Wide Right Card */}
+{/* card 5 */}
+<div className="bg-blue-50 p-6 md:p-10 rounded-3xl shadow">
 
- <div className="col-span-1 md:col-span-2 flex flex-col lg:flex-row gap-5 bg-blue-50 p-5 rounded-2xl shadow">
-                <img
-                  src="https://framerusercontent.com/images/8P0e6AzdnfLABVNNwGpdPbhIu5Q.png?width=1200"
-                  alt=""
-                  className="w-full lg:w-1/2 h-52 sm:h-60 md:h-64 lg:h-auto object-cover rounded-xl shadow-lg shadow-gray-400"
-                />
+  <div className="flex flex-col lg:flex-row items-center gap-8 relative">
 
-                <div className="flex flex-col justify-center gap-2">
-                  <div className="rounded-full w-14 h-14 flex items-center justify-center shadow-xl shadow-gray-400 bg-white">
-                    <PiFigmaLogoDuotone className="text-4xl text-gray-700" />
-                  </div>
+    {/* LEFT — TEXT */}
+    <div className="lg:w-1/2">
+      <h2 className="text-3xl md:text-4xl font-bold text-[#0f1724] mb-4">
+        UI/UX Design
+      </h2>
 
-                  <h3 className="text-xl sm:text-2xl font-semibold text-[#0f1724] my-3 sm:my-5">
-                    UI/UX Design
-                  </h3>
+      <p className="text-gray-800 mb-6 lg:text-[20px]">
+       User-centered interfaces crafted through research, testing, and experience — with AI assisting usability analysis, pattern recognition, and faster iteration while preserving design quality.
+      </p>
 
-                  <p className="text-gray-800 text-sm sm:text-base">
-                     User-centered interfaces crafted through research, testing, and experience — with AI assisting usability analysis, pattern recognition, and faster iteration while preserving design quality.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-
- {/* 3rd TOP ROW */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              
-              {/* Wide Left Card */}
-              <div className="col-span-1 md:col-span-2 flex flex-col lg:flex-row gap-5 bg-blue-50 p-5 rounded-2xl shadow">
-                <img
-                  src="https://framerusercontent.com/images/SG0ZbESc0TAkt6qXYHYpwhuuuME.png?width=1200&height=904"
-                  alt=""
-                  className="w-full lg:w-1/2 h-52 sm:h-60 md:h-64 lg:h-auto object-cover rounded-xl shadow-lg shadow-gray-400"
-                />
-
-                <div className="flex flex-col justify-center gap-2">
-                  <div className="rounded-full w-14 h-14 flex items-center justify-center shadow-xl shadow-gray-400 bg-white">
-                    <GrOptimize className="text-4xl text-gray-700" />
-                  </div>
-
-                  <h3 className="text-xl sm:text-2xl font-semibold text-[#0f1724] my-3 sm:my-5">
-                   Business & Growth Strategy
-                  </h3>
-
-                  <p className="text-gray-800 text-sm sm:text-base">
-                     Strategic planning focused on sustainable growth — supported by market insights, data analysis, and AI-enhanced forecasting to improve decision-making and scalability.
-
-                  </p>
-                </div>
-              </div>
-
-{/* Right Small Card */}
-<div className="bg-blue-50 p-5 rounded-2xl shadow hover:shadow-lg transition">
-  {/* TOOL ICONS */}
-  <div className="flex flex-wrap items-center gap-3 mt-2 justify-center">
-
-    {/* Market Research */}
-    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <FaChartLine className="text-white text-2xl " />
+      <div className="flex flex-wrap">
+        {[
+          "Figma","Adobe XD","Framer",
+        ].map((tech, i) => (
+          <span
+            key={i}
+            className="px-6 py-4 rounded-[20px] lg:text-[20px]
+                       border border-gray-300
+                       bg-white/60 backdrop-blur
+                       text-gray-800 shadow-sm"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
+        {/* RIGHT — LOGOS */}
+    <div className="absolute w-[300px] bottom-0 -right-0 lg:left- lg:right-0 lg:top-4">
+      <div className="flex flex-wrap gap-4 justify-center">
+        {uiuxIcons.map((Icon, index) => (
+          <div
+            key={index}
+            className="w-14 h-14 rounded-lg flex items-center justify-center
+                       bg-white shadow-3xl"
+          >
+            <Icon className="text-gray-800 text-3xl" />
+          </div>
+        ))}
+      </div>
     </div>
 
-    {/* Analytics */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <DiGoogleAnalytics className="text-white text-2xl md:text-3xl" />
+    <div className="lg:w-1/2">
+      <img
+        src="https://i.postimg.cc/5t2wWpM9/alvaro-reyes-Kx-Vl-Kiq-QOb-U-unsplash.jpg"
+        alt=""
+        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
+      />
     </div>
 
-    {/* CRM */}
-    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <FaUsers className="text-white text-2xl md:text-3xl" />
-    </div>
 
-    {/* Dashboards */}
-    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <MdDashboard className="text-white text-2xl " />
-    </div>
-
-    {/* Planning Frameworks */}
-    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <GiNotebook className="text-white text-2xl md:text-3xl" />
-    </div>
-
-    {/* AI Strategy Tools */}
-    <div className="w-14 h-14 rounded-full bg-[#9888C6] flex items-center justify-center shadow-md">
-      <FaRobot className="text-white text-2xl" />
-    </div>
 
   </div>
+
 </div>
 
-
-
-            </div>
 
           </div>
         </Fade>

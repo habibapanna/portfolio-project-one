@@ -414,7 +414,7 @@ const Service = () => {
             text-sm md:text-[20px]
           "
         >
-          <RiArrowRightUpFill className="mr-2 text-xl md:text-2xl" />
+          <RiArrowRightUpFill className="mr-2 text-lg md:text-2xl" />
           Let's Work together
         </Link>
       </Fade>
