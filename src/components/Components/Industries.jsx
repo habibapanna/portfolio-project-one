@@ -40,9 +40,9 @@ const Industries = () => {
   const next = () => setIndex((i) => Math.min(i + 1, maxIndex));
 
   return (
-    <section className="bg-violet-100 py-12 lg:py-20 rounded-[100px] mt-20">
+    <section className="bg-violet-100 py-20 md:py-28 rounded-[100px] mt-20 md:pb-48">
       {/* HEADER */}
-      <div className="flex items-center justify-between mb-10 px-12">
+      <div className="flex items-center justify-between mb-16 px-12">
         <div>
           <h2 className="text-3xl md:text-5xl font-semibold text-[#0f1724]">
             Industries
@@ -85,7 +85,7 @@ const Industries = () => {
             return (
               <div
                 key={i}
-                className="min-w-[280px] bg-violet-50 rounded-2xl p-6"
+                className="min-w-[280px] bg-white/90 rounded-2xl p-6"
               >
                 <div className="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center mb-5">
                   <Icon className="text-xl text-[#0f1724]" />
@@ -95,7 +95,7 @@ const Industries = () => {
                   {item.title}
                 </h3>
 
-                <p className="text-gray-800 text-sm leading-relaxed">
+                <p className="text-gray-800 text-sm lg:text-base leading-relaxed">
                   {item.desc}
                 </p>
               </div>

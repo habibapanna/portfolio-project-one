@@ -32,14 +32,15 @@ const steps = [
 const Processes = () => {
   return (
     <section className="py-20 md:py-28 bg-violet-200">
-      <div className="max-w-7xl mx-auto px-6">
-
-        {/* HEADER */}
-        <div className="grid lg:grid-cols-2 gap-10 mb-20">
-          <div>
-            <span className="text-sm md:text-base font-medium text-orange-500 tracking-wide">
+      <div className="max-w-7xl mx-auto px-6 py-20 md:py-28">
+         <span className="text-sm md:text-base font-medium text-gray-800 tracking-wide">
               ✦ Process
             </span>
+
+        {/* HEADER */}
+        <div className="grid lg:grid-cols-2 gap-10 mb-32">
+          <div>
+           
             <h2 className="mt-4 text-4xl md:text-5xl font-semibold text-[#0f1724] leading-tight">
               From Vision to Execution
             </h2>
@@ -51,7 +52,7 @@ const Processes = () => {
         </div>
 
         {/* PROCESS CARDS */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {steps.map((step, index) => {
             const Icon = step.icon;
@@ -60,14 +61,14 @@ const Processes = () => {
               <div
                 key={index}
                 className={`
-                  relative bg-white border border-gray-200
+                  relative bg-blue-50 border border-gray-200
                   rounded-xl p-8 min-h-[260px]
                   ${index % 2 !== 0 ? "lg:mt-20" : ""}
                 `}
               >
                 {/* ICON */}
-                <div className="w-12 h-12 rounded-full flex items-center justify-center bg-orange-100 mb-6">
-                  <Icon className="text-orange-500 text-2xl" />
+                <div className="w-12 h-12 rounded-full flex items-center justify-center bg-[#9888C6] mb-6">
+                  <Icon className="text-white text-2xl" />
                 </div>
 
                 {/* TITLE */}
@@ -76,7 +77,7 @@ const Processes = () => {
                 </h3>
 
                 {/* DESC */}
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-800 text-sm lg:text-base leading-relaxed">
                   {step.desc}
                 </p>
               </div>
