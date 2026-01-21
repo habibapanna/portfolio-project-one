@@ -233,7 +233,7 @@ const Services = () => {
 
     <div className="lg:w-1/2">
       <img
-        src="https://i.postimg.cc/4xpkGNwK/hand-using-laptp-with-graphic-global-communication-connection-technology.jpg"
+        src="https://i.postimg.cc/Fz3F1Jc5/corporate-management-strategy-solution-branding-concept.jpg"
         alt=""
         className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
       />
@@ -293,7 +293,7 @@ const Services = () => {
 
     <div className="lg:w-1/2">
       <img
-        src="https://i.postimg.cc/kXQNx059/pexels-tima-miroshnichenko-7567595.jpg"
+        src="https://i.postimg.cc/xCmtZ0M2/team-meeting-with-growth-chart-overlay.jpg"
         alt=""
         className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
       />
@@ -413,7 +413,7 @@ const Services = () => {
 
     <div className="lg:w-1/2">
       <img
-        src="https://i.postimg.cc/5t2wWpM9/alvaro-reyes-Kx-Vl-Kiq-QOb-U-unsplash.jpg"
+        src="https://i.postimg.cc/Vsrd3JJK/ytktykk7.jpg"
         alt=""
         className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
       />
