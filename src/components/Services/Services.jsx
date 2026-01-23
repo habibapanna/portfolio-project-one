@@ -135,18 +135,18 @@ const Services = () => {
         Website Development
       </h2>
 
-      <p className="text-gray-800 mb-6 lg:text-[20px]">
+      <p className="text-gray-800 mb-6 lg:text-[18px]">
         High-performance websites designed and built for clarity, speed, and scalability — combining modern design, clean development, and AI-enhanced testing and performance optimization.
       </p>
 
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap gap-[16px]">
         {[
           "HTML","CSS","JavaScript","React","Next.js","PHP","Laravel",
           "WordPress","Shopify","Wix","Webflow","GoHighLevel"
         ].map((tech, i) => (
           <span
             key={i}
-            className="px-6 py-4 rounded-[20px] lg:text-[20px]
+            className="px-6 py-4 rounded-[20px] lg:text-[18px]
                        border border-gray-300
                        bg-white/60 backdrop-blur
                        text-gray-800 shadow-sm"
@@ -196,17 +196,17 @@ const Services = () => {
         Digital Marketing
       </h2>
 
-      <p className="text-gray-800 mb-6 lg:text-[20px]">
+      <p className="text-gray-800 mb-6 lg:text-[18px]">
         Performance-driven digital marketing strategies supported by AI-assisted targeting, content optimization, and analytics — always guided by clear goals and human-led strategy.
       </p>
 
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap gap-[16px]">
         {[
           "Google Ads","Meta Ads","Analytics","Email Platforms","Automation Tools","AI Marketing Tools",
         ].map((tech, i) => (
           <span
             key={i}
-            className="px-6 py-4 rounded-[20px] lg:text-[20px]
+            className="px-6 py-4 rounded-[20px] lg:text-[18px]
                        border border-gray-300
                        bg-white/60 backdrop-blur
                        text-gray-800 shadow-sm"
@@ -256,17 +256,17 @@ const Services = () => {
         Business & Growth Strategy
       </h2>
 
-      <p className="text-gray-800 mb-6 lg:text-[20px]">
+      <p className="text-gray-800 mb-6 lg:text-[18px]">
        Strategic planning focused on sustainable growth — supported by market insights, data analysis, and AI-enhanced forecasting to improve decision-making and scalability.
       </p>
 
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap gap-[16px]">
         {[
           "Google Ads","Meta Ads","Analytics","Email Platforms ","Automation Tools","AI Marketing Tools",
         ].map((tech, i) => (
           <span
             key={i}
-            className="px-6 py-4 rounded-[20px] lg:text-[20px]
+            className="px-6 py-4 rounded-[20px] lg:text-[18px]
                        border border-gray-300
                        bg-white/60 backdrop-blur
                        text-gray-800 shadow-sm"
@@ -316,17 +316,17 @@ const Services = () => {
        SEO, AEO & Search Optimization
       </h2>
 
-      <p className="text-gray-800 mb-6 lg:text-[20px]">
+      <p className="text-gray-800 mb-6 lg:text-[18px]">
         Search optimization built for modern discovery — combining SEO best practices, answer-focused content (AEO), and contextual relevance, supported by AI-assisted research and continuous analysis.
       </p>
 
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap gap-[16px]">
         {[
           "Search Console","Analytics","Keyword Research ","Schema","AI SEO Tools","PHP",
         ].map((tech, i) => (
           <span
             key={i}
-            className="px-6 py-4 rounded-[20px] lg:text-[20px]
+            className="px-6 py-4 rounded-[20px] lg:text-[18px]
                        border border-gray-300
                        bg-white/60 backdrop-blur
                        text-gray-800 shadow-sm"
@@ -376,17 +376,17 @@ const Services = () => {
         UI/UX Design
       </h2>
 
-      <p className="text-gray-800 mb-6 lg:text-[20px]">
+      <p className="text-gray-800 mb-6 lg:text-[18px]">
        User-centered interfaces crafted through research, testing, and experience — with AI assisting usability analysis, pattern recognition, and faster iteration while preserving design quality.
       </p>
 
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap gap-[16px]">
         {[
           "Figma","Adobe XD","Framer",
         ].map((tech, i) => (
           <span
             key={i}
-            className="px-6 py-4 rounded-[20px] lg:text-[20px]
+            className="px-6 py-4 rounded-[20px] lg:text-[18px]
                        border border-gray-300
                        bg-white/60 backdrop-blur
                        text-gray-800 shadow-sm"

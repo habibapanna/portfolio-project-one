@@ -42,7 +42,7 @@ const About = () => {
             className="
               rounded-xl 
               w-full 
-              h-[350px] sm:h-[400px] md:h-[450px] 
+              h-[350px] md:h-[450px] 
               object-cover
             "
           />
@@ -64,19 +64,19 @@ const About = () => {
                 <span className="w-2 h-2 bg-green-500 rounded-full z-10"></span>
               </div>
 
-              <p className="text-gray-600 text-sm md:text-base">available for work</p>
+              <p className="text-gray-800 text-sm md:text-[18px]">available for work</p>
             </div>
           </motion.div>
 
           {/* NAME */}
           <motion.h2
             variants={fadeUp}
-            className="text-2xl md:text-3xl font-semibold mt-4 text-[#0f1724] text-center"
+            className="text-2xl md:text-[40px] font-semibold mt-4 text-[#0f1724] text-center"
           >
-            Sanwar Limon
+            Sanwar H. Limon
           </motion.h2>
 
-          <motion.p variants={fadeUp} className="text-gray-600 mt-1 text-center text-sm md:text-base">
+          <motion.p variants={fadeUp} className="text-gray-800 mt-[20px] text-center text-sm md:text-[20px]">
            AI Powered Digital Growth Specialist
           </motion.p>
 
@@ -105,7 +105,7 @@ const About = () => {
             transition={{ duration: 0.3 }}
             className="
               mt-8 w-full flex items-center justify-center py-3 
-              bg-gradient-to-br from-[#1f2740] to-[#152032] 
+              bg-gradient-to-r from-[#1c2026] to-[#1b2853] 
               text-white rounded-lg shadow-lg text-sm md:text-[20px] font-semibold 
             "
           >
@@ -121,7 +121,7 @@ const About = () => {
   variants={fadeUp}
   className="
     text-gray-800 leading-tight 
-    text-sm sm:text-base md:text-[20px] 
+    text-sm sm:text-base md:text-[18px] 
     max-w-3xl md:mt-12
   "
 >
@@ -177,7 +177,7 @@ const About = () => {
       variants={fadeUp}
       className="
         px-4 py-2 bg-gray-50 border rounded-lg
-        text-xs sm:text-sm md:text-[20px] md:px- md:py-3 text-gray-800
+        text-xs sm:text-sm md:text-[16px] md:px- md:py-3 text-gray-800
       "
     >
       {t}

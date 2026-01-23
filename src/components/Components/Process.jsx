@@ -133,7 +133,7 @@ const Process = () => {
             rounded-lg
             font-medium
             shadow-lg
-            bg-[#1c2026]
+            bg-gradient-to-r from-[#1c2026] to-[#1b2853]
             text-white
             text-sm md:text-[20px]
           "

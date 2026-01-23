@@ -92,12 +92,13 @@ const Hero = () => {
             className="
               text-lg
               sm:text-xl
-              md:text-4xl
-              leading-[1.35]
+              md:text-[2.5rem]
+              leading-normal
               bg-gradient-to-b from-[#334155] to-[#1e293b]
               text-transparent bg-clip-text
               drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]
-              text-center
+              text-center md:pb-5
+
             "
           >
             Designing Experiences. Developing Growth.
@@ -149,7 +150,7 @@ const Hero = () => {
             rounded-lg
             font-medium
             shadow-lg
-            bg-[#1c2026]
+            bg-gradient-to-r from-[#1c2026] to-[#1b2853]
             text-white
             text-sm md:text-[20px]
           "

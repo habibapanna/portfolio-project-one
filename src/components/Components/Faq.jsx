@@ -107,7 +107,7 @@ const faqs = [
                     onClick={() => toggleIndex(i)}
                     className="w-full px-5 py-3 flex items-center justify-between"
                   >
-                    <span className="text-gray-800 text-sm md:text-[20px] text-left font-semibold">
+                    <span className="text-gray-800 text-sm md:text-[18px] text-left font-semibold">
                       {f.q}
                     </span>
 
@@ -134,7 +134,7 @@ const faqs = [
                           initial={{ y: -5 }}
                           animate={{ y: 0 }}
                           transition={{ duration: 0.25 }}
-                          className="py-3 text-gray-800 text-left text-[18px] md:text-base"
+                          className="py-3 text-gray-800 text-left text-[16px] md:text-base"
                         >
                           {f.a}
                         </motion.div>

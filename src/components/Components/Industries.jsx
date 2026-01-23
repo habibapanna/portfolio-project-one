@@ -85,19 +85,30 @@ const Industries = () => {
             return (
               <div
                 key={i}
-                className="min-w-[280px] bg-white/90 rounded-2xl p-6"
+                className="min-w-[280px]
+    h-[220px]
+    bg-white/90
+    rounded-2xl
+    p-6
+    flex
+    flex-col"
               >
-                <div className="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center mb-5">
-                  <Icon className="text-xl text-[#0f1724]" />
-                </div>
+                {/* TOP (icon + title) */}
+<div>
+  <div className="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center mb-4">
+    <Icon className="text-xl text-[#0f1724]" />
+  </div>
 
-                <h3 className="text-xl font-semibold mb-3 text-[#0f1724]">
-                  {item.title}
-                </h3>
+  <h3 className="text-xl font-semibold mb-3 text-[#0f1724]">
+    {item.title}
+  </h3>
+</div>
 
-                <p className="text-gray-800 text-sm lg:text-base leading-relaxed">
-                  {item.desc}
-                </p>
+{/* DESCRIPTION */}
+<p className="text-gray-800 text-sm lg:text-base leading-relaxed mt-auto">
+  {item.desc}
+</p>
+
               </div>
             );
           })}
