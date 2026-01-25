@@ -122,7 +122,7 @@ const About = () => {
   className="
     text-gray-800 leading-tight 
     text-sm sm:text-base md:text-[18px] 
-    max-w-3xl md:mt-12
+    max-w-3xl md:mt-24
   "
 >
   <p className="mb-5">

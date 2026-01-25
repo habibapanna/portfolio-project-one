@@ -165,8 +165,6 @@ const Service = () => {
   </div>
 </Fade>
 
-
-
         {/* BUTTON */}
         <div className="mt-10 sm:mt-14 flex gap-5 justify-center">
           <Fade direction="up">
@@ -218,7 +216,7 @@ const SmallCard = ({ icons }) => (
       {icons.map((Icon, idx) => (
         <div
           key={idx}
-          className="rounded-full w-14 h-14 flex items-center justify-center bg-[#9888C6]"
+          className="rounded-full w-14 h-14 flex items-center justify-center bg-[#9888C6] shadow-xl shadow-gray-400"
         >
           <Icon className="text-2xl text-white" />
         </div>
