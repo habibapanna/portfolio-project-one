@@ -71,7 +71,7 @@ const About = () => {
           {/* NAME */}
           <motion.h2
             variants={fadeUp}
-            className="text-2xl md:text-[40px] font-semibold mt-4 text-[#0f1724] text-center"
+            className="text-2xl md:text-[30px] font-semibold mt-4 text-[#0f1724] text-center"
           >
             Sanwar H. Limon
           </motion.h2>
@@ -90,7 +90,7 @@ const About = () => {
                 className="
                   w-10 h-10 md:w-12 md:h-12 
                   bg-violet-200 rounded-full flex items-center justify-center 
-                  text-lg md:text-xl text-slate-700
+                  text-lg md:text-xl text-slate-700 shadow-xl shadow-gray-400
                 "
               >
                 {icon}
@@ -122,22 +122,22 @@ const About = () => {
   className="
     text-gray-800 leading-tight 
     text-sm sm:text-base md:text-[18px] 
-    max-w-3xl md:mt-24
+    max-w-3xl md:mt-12
   "
 >
-  <p className="mb-5">
+  <p className="mb-5 leading-8">
     I’m Sanwar Hossen Limon, a digital growth specialist working across design,
     development, and strategy to help businesses build digital systems that perform.
   </p>
 
-  <p className="mb-5">
+  <p className="mb-5 leading-8">
     My work is driven by human insight and experience, enhanced by AI-powered tools
     that improve research depth, speed, and decision-making. I don’t rely on AI to
     replace creativity or strategy — I use it to remove inefficiencies, validate
     ideas, and scale what works.
   </p>
 
-  <p>
+  <p className="leading-8">
     By combining user-centered design, clean development, and data-informed
     optimization, I deliver digital solutions that are reliable, adaptable, and
     built for long-term growth.

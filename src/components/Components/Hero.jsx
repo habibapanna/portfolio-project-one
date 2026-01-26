@@ -89,29 +89,30 @@ const Hero = () => {
           "
         >
           <span
-            className="
-              text-lg
-              sm:text-xl
-              md:text-[2.5rem]
-              leading-normal
-              bg-gradient-to-b from-[#334155] to-[#1e293b]
-              text-transparent bg-clip-text
-              drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]
-              text-center md:pb-5
+  className="
+    text-lg
+    sm:text-xl
+    md:text-5xl
+    leading-[1.3]
+    pb-1
+    bg-gradient-to-b from-[#334155] to-[#1e293b]
+    text-transparent bg-clip-text
+    drop-shadow-[0_4px_12px_rgba(0,0,0,0.15)]
+    text-center
+  "
+>
+  Designing Experiences. Developing Growth.
+</span>
 
-            "
-          >
-            Designing Experiences. Developing Growth.
-          </span>
 
-          <div className="flex gap-2">
+          <div className="flex gap-2 pb-1">
             <img
-              className="h-12 w-12 sm:h-14 sm:w-14 md:h-20 md:w-20 rounded-xl object-cover"
+              className="h-12 w-12 sm:h-14 sm:w-14 md:h-[60px] md:w-[60px] rounded-xl object-cover"
               src="https://framerusercontent.com/images/F8rOBHbbIkzGRluKefWlxCX9WI.png?scale-down-to=512"
               alt=""
             />
             <img
-              className="h-12 w-12 sm:h-14 sm:w-14 md:h-20 md:w-20 rounded-xl object-cover"
+              className="h-12 w-12 sm:h-14 sm:w-14 md:h-[60px] md:w-[60px] rounded-xl object-cover"
               src="https://framerusercontent.com/images/XJP6N21SKyA8OD0sTiV9H2m0.jpg?scale-down-to=1024"
               alt=""
             />
@@ -146,7 +147,7 @@ const Hero = () => {
           className="
             inline-flex items-center gap-2
             px-5 py-2
-            md:px-12 md:py-6
+            md:px-8 md:py-4
             rounded-lg
             font-medium
             shadow-lg
@@ -165,7 +166,7 @@ const Hero = () => {
           className="
             inline-flex items-center gap-2
             px-5 py-2
-            md:px-12 md:py-6
+            md:px-8 md:py-4
             rounded-lg
             font-medium
             shadow-lg

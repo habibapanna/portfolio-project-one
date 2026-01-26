@@ -170,7 +170,7 @@ const Service = () => {
           <Fade direction="up">
             <Link
               to="projects"
-              className="inline-flex items-center gap-2 px-5 py-2 md:px-12 md:py-6 rounded-lg font-medium shadow-lg bg-gradient-to-r from-[#1c2026] to-[#1b2853] text-white text-sm md:text-[20px]"
+              className="inline-flex items-center gap-2 px-5 py-2 md:px-8 md:py-4 rounded-lg font-medium shadow-lg bg-gradient-to-r from-[#1c2026] to-[#1b2853] text-white text-sm md:text-[20px]"
             >
               <RiArrowRightUpFill className="mr-2 text-lg md:text-2xl" />
               Let's Work together
@@ -179,7 +179,7 @@ const Service = () => {
           <Fade direction="up">
             <Link
               to="projects"
-              className="inline-flex items-center gap-2 px-5 py-2 md:px-12 md:py-6 rounded-lg font-medium shadow-lg bg-gradient-to-br from-[#f9fcff] to-[#e0e7ef] text-[#1c2026] text-sm md:text-[20px]"
+              className="inline-flex items-center gap-2 px-5 py-2 md:px-8 md:py-4 rounded-lg font-medium shadow-lg bg-gradient-to-br from-[#f9fcff] to-[#e0e7ef] text-[#1c2026] text-sm md:text-[20px]"
             >
               <LuArrowDownUp className="text-xl md:text-2xl" />
               See Services

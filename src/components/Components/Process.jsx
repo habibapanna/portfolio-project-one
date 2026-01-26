@@ -129,7 +129,7 @@ const Process = () => {
           className="
             inline-flex items-center gap-2
             px-5 py-2
-            md:px-12 md:py-6
+            md:px-8 md:py-4
             rounded-lg
             font-medium
             shadow-lg
@@ -148,7 +148,7 @@ const Process = () => {
           className="
             inline-flex items-center gap-2
             px-5 py-2
-            md:px-12 md:py-6
+           md:px-8 md:py-4
             rounded-lg
             font-medium
             shadow-lg

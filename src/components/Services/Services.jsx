@@ -109,7 +109,7 @@ const Services = () => {
               <span className="text-[#0f1724] font-medium">Services</span>
             </div>
 
-            <h2 className="mt-4 text-2xl sm:text-3xl md:text-5xl font-semibold text-[#0f1724] my-5">
+            <h2 className="mt-4 text-2xl sm:text-3xl md:text-6xl font-semibold text-[#0f1724] my-5">
               Crafting Digital Excellence
             </h2>
 

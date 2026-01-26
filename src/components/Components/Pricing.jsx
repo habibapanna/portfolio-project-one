@@ -37,6 +37,7 @@ import { FaArrowRightArrowLeft } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import { AiOutlineCheck } from "react-icons/ai";
 import { RiCloseLargeFill } from "react-icons/ri";
+import { X } from "lucide-react";
 
 const marqueeItems = [
   // Design & No-Code
@@ -133,10 +134,13 @@ const Pricing = () => {
               "Advanced SEO, AEO & search optimization for modern discovery",
               "Human-led strategy, enhanced with AI for speed and accuracy",
             ].map((item, index) => (
-              <li key={index} className="flex items-start gap-2">
-                <FaCheck className="text-green-500 text-lg md:text-xl" />
-                <span>{item}</span>
-              </li>
+             <li key={index} className="flex items-start gap-3">
+  <span className="w-6 h-6 flex items-center justify-center shrink-0">
+    <FaCheck className="text-green-500 text-[20px]" />
+  </span>
+  <span className="leading-relaxed">{item}</span>
+</li>
+
             ))}
           </ul>
         </div>
@@ -159,7 +163,7 @@ const Pricing = () => {
       "Little focus on scalability or long-term growth",
     ].map((item, index) => (
       <li key={index} className="flex items-start gap-2">
-        <RiCloseLargeFill className="text-red-500 text-lg md:text-xl mt-[2px]" />
+       <X className="text-red-500" size={25} strokeWidth={3.5} />
         <span>{item}</span>
       </li>
     ))}
