@@ -5,11 +5,13 @@ import Footer from '../Shared/Footer/Footer';
 import { AnimatePresence, motion } from "framer-motion";
 import FloatingNav from '../FloatingNav/FloatingNav';
 import LocomotiveScroll from "locomotive-scroll";
+import ScrollToTop from '../Components/ScrollToTop';
 
 const Main = () => {
   const location = useLocation();
   return (
     <div className="min-h-screen mx-auto flex flex-col bg-white">
+      <ScrollToTop />
       <Navbar></Navbar>
      <motion.div
   key={location.pathname}
