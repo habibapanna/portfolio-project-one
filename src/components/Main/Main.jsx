@@ -10,7 +10,7 @@ import ScrollToTop from '../Components/ScrollToTop';
 const Main = () => {
   const location = useLocation();
   return (
-    <div className="min-h-screen mx-auto flex flex-col bg-white">
+    <div className="min-h-screen mx-auto flex flex-col bg-violet-100">
       <ScrollToTop />
       <Navbar></Navbar>
      <motion.div
