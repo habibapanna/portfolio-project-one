@@ -1,7 +1,7 @@
 import React from "react";
 import { FaRegEnvelope } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
-import Logo from '../../../assets/port5.png'
+import Logo from '../../../assets/port.png'
 
 const Navbar = () => {
 
@@ -17,11 +17,16 @@ const Navbar = () => {
       <nav className="mx-auto px-2 py-3 flex items-center justify-between max-w-6xl">
         
         {/* Left */}
-        <div className="flex items-center gap-4 bg-transparent bg-violet-50">
-          <div className=""><Link to="/"><img src={Logo} alt="" className="bg-transparent h-[60px] md:h-[100px]" /></Link></div>
+        <div className="flex items-center gap-4">
+  <Link to="/">
+    <img
+      src={Logo}
+      alt="Logo"
+      className="h-[60px] md:h-[100px] object-contain"
+    />
+  </Link>
+</div>
 
-         
-        </div>
 
         {/* Right */}
         <div className="flex items-center gap-8">
