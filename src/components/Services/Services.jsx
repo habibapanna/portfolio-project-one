@@ -1,6 +1,6 @@
 import React from "react";
 import { BiSolidRightArrowAlt } from "react-icons/bi";
-import { LuArrowDownUp, LuTvMinimal } from "react-icons/lu";
+import { LuArrowDownUp, LuTvMinimal, LuWebhook } from "react-icons/lu";
 import {
   PiFigmaLogoDuotone,
   PiFramerLogo,
@@ -9,7 +9,7 @@ import {
 import { RiArrowRightUpFill, RiBox2Fill } from "react-icons/ri";
 import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
-import { SiAdobe, SiFacebook, SiFigma, SiGoogle, SiGoogleads, SiGoogleanalytics, SiGrafana, SiMailchimp, SiZapier } from "react-icons/si";
+import { SiAdobe, SiAdobeillustrator, SiAdobephotoshop, SiAdobexd, SiCanva, SiFacebook, SiFigma, SiFramer, SiGoogle, SiGoogleads, SiGoogleanalytics, SiGrafana, SiHubspot, SiLinkedin, SiMailchimp, SiMake, SiMeta, SiN8N, SiSemrush, SiZapier } from "react-icons/si";
 import { 
   SiHtml5,
   SiCss3,
@@ -23,10 +23,10 @@ import {
   SiWix,
   SiWebflow,
 } from "react-icons/si";
-import { TbDashboard } from "react-icons/tb";
-import { FaChartLine, FaRobot, FaSearch, FaUsers } from "react-icons/fa";
+import { TbDashboard, TbLayoutGrid } from "react-icons/tb";
+import { FaChartBar, FaChartLine, FaClipboardCheck, FaCogs, FaFrog, FaPlug, FaProjectDiagram, FaRobot, FaSearch, FaTachometerAlt, FaTags, FaUsers } from "react-icons/fa";
 import { AiOutlineFileText, AiOutlineProject } from "react-icons/ai";
-import { MdCampaign, MdDashboard, MdOutlinePeople, MdSettings } from "react-icons/md";
+import { MdCampaign, MdDashboard, MdOutlineBrandingWatermark, MdOutlinePeople, MdSettings } from "react-icons/md";
 import { GrOptimize } from "react-icons/gr";
 import { GiNotebook } from "react-icons/gi";
 import { DiGoogleAnalytics } from "react-icons/di";
@@ -36,6 +36,10 @@ import Processes from "../Components/Processes";
 
 
   const techIcons = [
+  SiWordpress,
+  SiShopify,
+  SiWix,
+  SiWebflow,
   SiHtml5,
   SiCss3,
   SiJavascript,
@@ -43,49 +47,66 @@ import Processes from "../Components/Processes";
   SiNextdotjs,
   SiPhp,
   SiLaravel,
-  SiWordpress,
-  SiShopify,
-  SiWix,
-  SiWebflow,
-   TbDashboard,
 ];
 
 // Digital Marketing
 const marketingIcons = [
-  SiGoogleads,
-  SiFacebook,
-  SiGoogleanalytics,
+  SiMeta,
+  SiLinkedin,
   SiMailchimp,
-  SiZapier,
-  DiGoogleAnalytics,
+  SiHubspot,
+  SiGoogleanalytics,
+  FaChartBar,
 ];
 
 // Business & Growth Strategy
 const businessIcons = [
-  FaChartLine,
+ FaSearch, 
+ FaChartLine,
   FaUsers,
-  TbDashboard,
-  GrOptimize,
-  GiNotebook,
+   FaCogs, 
+   FaChartBar,
+    FaTachometerAlt ,
+  MdDashboard ,
 ];
 
 // UI/UX Design (Tools)
 const uiuxIcons = [
   SiFigma,
-  SiAdobe,
-  PiFramerLogo,
-  PiPaintBrushFill,
+  SiAdobexd,
+  SiFramer,
+  FaUsers,
+   FaProjectDiagram,
+    FaClipboardCheck,
 ];
 
 // SEO / AEO / Search Optimization
 const seoIcons = [
-  SiGoogle,
+   SiGoogle,
   SiGoogleanalytics,
-  DiGoogleAnalytics,
-  FaSearch,
-  GrOptimize,
-  FaRobot,
+  FaChartLine,
+  SiSemrush,
+  FaSearch, 
+  FaTags,
+  FaFrog,
 ];
+const brandingIcons = [
+ SiFigma,
+  SiAdobeillustrator,
+  SiAdobephotoshop,
+  SiCanva,
+  MdOutlineBrandingWatermark,
+  TbLayoutGrid,
+];
+const aiIcons = [
+  SiN8N, 
+  SiZapier,
+   SiMake,
+  FaRobot,
+   FaPlug, 
+  LuWebhook
+];
+
 
 
 
@@ -132,11 +153,210 @@ const Services = () => {
     {/* LEFT — TEXT */}
     <div className="lg:w-1/2">
       <h2 className="text-3xl md:text-4xl font-bold text-[#0f1724] mb-4">
+        Business & Growth Strategy
+      </h2>
+
+      <p className="text-gray-800 mb-6 lg:text-[18px]">
+        Strategic planning focused on clarity, scalability, and measurable growth — helping businesses define direction, optimize processes, and make informed decisions supported by data and intelligent analysis.
+      </p>
+
+      <div className="flex flex-wrap gap-[16px]">
+        {[
+          " Market Research" ,
+ "Competitor Analysis" ,
+ "Growth Frameworks",
+ "Analytics",
+ "KPI Tracking",
+ "CRM Systems",
+ "Dashboards",
+        ].map((tech, i) => (
+          <span
+            key={i}
+            className="px-6 py-4 rounded-[20px] lg:text-[18px]
+                       border border-gray-300
+                       bg-white/60 backdrop-blur
+                       text-gray-800 shadow-sm"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
+        {/* RIGHT — LOGOS */}
+    <div className="absolute w-[300px] bottom-0 -right-0 lg:left- lg:right-0 lg:top-4">
+      <div className="flex flex-wrap gap-4 justify-center">
+        {businessIcons.map((Icon, index) => (
+          <div
+            key={index}
+            className="w-12 h-12 md:w-14 md:h-14 rounded-lg flex items-center justify-center
+                       bg-white shadow-3xl"
+          >
+            <Icon className="text-gray-800 text-3xl" />
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div className="lg:w-1/2">
+      <img
+        src="https://i.postimg.cc/xCmtZ0M2/team-meeting-with-growth-chart-overlay.jpg"
+        alt=""
+        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
+      />
+    </div>
+
+
+
+  </div>
+
+</div>
+
+{/* card 2 */}
+<div className="bg-blue-50 p-6 md:p-10 rounded-3xl shadow">
+
+  <div className="flex flex-col lg:flex-row items-center gap-8 relative">
+
+    {/* LEFT — TEXT */}
+    <div className="lg:w-1/2">
+      <h2 className="text-3xl md:text-4xl font-bold text-[#0f1724] mb-4">
+        Branding
+      </h2>
+
+      <p className="text-gray-800 mb-6 lg:text-[18px]">
+      Purpose-driven brand identity design that builds recognition and trust — creating consistent visual systems that communicate value clearly across all digital touchpoints.
+      </p>
+
+      <div className="flex flex-wrap gap-[16px]">
+        {[
+          "Figma",
+ "Adobe Illustrator",
+ "Adobe Photoshop",
+ "Canva",
+ "Brand Guidelines",
+ "Design Systems",
+
+        ].map((tech, i) => (
+          <span
+            key={i}
+            className="px-6 py-4 rounded-[20px] lg:text-[18px]
+                       border border-gray-300
+                       bg-white/60 backdrop-blur
+                       text-gray-800 shadow-sm"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
+        {/* RIGHT — LOGOS */}
+    <div className="absolute w-[300px] bottom-0 -right-0 lg:left- lg:right-0 lg:top-4">
+      <div className="flex flex-wrap gap-4 justify-center">
+        {brandingIcons.map((Icon, index) => (
+          <div
+            key={index}
+            className="w-12 h-12 md:w-14 md:h-14 rounded-lg flex items-center justify-center
+                       bg-white shadow-3xl"
+          >
+            <Icon className="text-gray-800 text-3xl" />
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div className="lg:w-1/2">
+      <img
+        src="https://i.postimg.cc/Vsrd3JJK/ytktykk7.jpg"
+        alt=""
+        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
+      />
+    </div>
+
+
+
+  </div>
+
+</div>
+
+{/* card 3 */}
+<div className="bg-blue-50 p-6 md:p-10 rounded-3xl shadow">
+
+  <div className="flex flex-col lg:flex-row items-center gap-8 relative">
+
+    {/* LEFT — TEXT */}
+    <div className="lg:w-1/2">
+      <h2 className="text-3xl md:text-4xl font-bold text-[#0f1724] mb-4">
+        UI/UX Design
+      </h2>
+
+      <p className="text-gray-800 mb-6 lg:text-[18px]">
+      User-centered interface design focused on usability, clarity, and engagement — combining research, testing, and experience, enhanced by intelligent tools to improve accuracy and iteration speed.
+      </p>
+
+      <div className="flex flex-wrap gap-[16px]">
+        {[
+          "Figma",
+ "Adobe XD",
+ "Framer",
+ "FigJam",
+ "UX Research",
+ "Prototyping",
+ "Usability Testing",
+
+        ].map((tech, i) => (
+          <span
+            key={i}
+            className="px-6 py-4 rounded-[20px] lg:text-[18px]
+                       border border-gray-300
+                       bg-white/60 backdrop-blur
+                       text-gray-800 shadow-sm"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
+        {/* RIGHT — LOGOS */}
+    <div className="absolute w-[300px] bottom-0 -right-0 lg:left- lg:right-0 lg:top-4">
+      <div className="flex flex-wrap gap-4 justify-center">
+        {uiuxIcons.map((Icon, index) => (
+          <div
+            key={index}
+            className="w-12 h-12 md:w-14 md:h-14 rounded-lg flex items-center justify-center
+                       bg-white shadow-3xl"
+          >
+            <Icon className="text-gray-800 text-3xl" />
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div className="lg:w-1/2">
+      <img
+        src="https://i.postimg.cc/Vsrd3JJK/ytktykk7.jpg"
+        alt=""
+        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
+      />
+    </div>
+
+
+
+  </div>
+
+</div>
+
+{/* card 4 */}
+<div className="bg-blue-50 p-6 md:p-10 rounded-3xl shadow">
+
+  <div className="flex flex-col lg:flex-row items-center gap-8 relative">
+
+    {/* LEFT — TEXT */}
+    <div className="lg:w-1/2">
+      <h2 className="text-3xl md:text-4xl font-bold text-[#0f1724] mb-4">
         Website Development
       </h2>
 
       <p className="text-gray-800 mb-6 lg:text-[18px]">
-        High-performance websites designed and built for clarity, speed, and scalability — combining modern design, clean development, and AI-enhanced testing and performance optimization.
+       High-performance websites designed and built for clarity, speed, and scalability — combining modern design, clean development, and AI-enhanced testing and performance optimization.
       </p>
 
       <div className="flex flex-wrap gap-[16px]">
@@ -185,127 +405,7 @@ const Services = () => {
 
 </div>
 
-{/* card 2 */}
-<div className="bg-blue-50 p-6 md:p-10 rounded-3xl shadow">
-
-  <div className="flex flex-col lg:flex-row items-center gap-8 relative">
-
-    {/* LEFT — TEXT */}
-    <div className="lg:w-1/2">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#0f1724] mb-4">
-        Digital Marketing
-      </h2>
-
-      <p className="text-gray-800 mb-6 lg:text-[18px]">
-        Performance-driven digital marketing strategies supported by AI-assisted targeting, content optimization, and analytics — always guided by clear goals and human-led strategy.
-      </p>
-
-      <div className="flex flex-wrap gap-[16px]">
-        {[
-          "Google Ads","Meta Ads","Analytics","Email Platforms","Automation Tools","AI Marketing Tools",
-        ].map((tech, i) => (
-          <span
-            key={i}
-            className="px-6 py-4 rounded-[20px] lg:text-[18px]
-                       border border-gray-300
-                       bg-white/60 backdrop-blur
-                       text-gray-800 shadow-sm"
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
-    </div>
-        {/* RIGHT — LOGOS */}
-    <div className="absolute w-[300px] bottom-0 -right-0 lg:left- lg:right-0 lg:top-4">
-      <div className="flex flex-wrap gap-4 justify-center">
-        {marketingIcons.map((Icon, index) => (
-          <div
-            key={index}
-            className="w-12 h-12 md:w-14 md:h-14 rounded-lg flex items-center justify-center
-                       bg-white shadow-3xl"
-          >
-            <Icon className="text-gray-800 text-3xl" />
-          </div>
-        ))}
-      </div>
-    </div>
-
-    <div className="lg:w-1/2">
-      <img
-        src="https://i.postimg.cc/Fz3F1Jc5/corporate-management-strategy-solution-branding-concept.jpg"
-        alt=""
-        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
-      />
-    </div>
-
-
-
-  </div>
-
-</div>
-
-{/* card 3 */}
-<div className="bg-blue-50 p-6 md:p-10 rounded-3xl shadow">
-
-  <div className="flex flex-col lg:flex-row items-center gap-8 relative">
-
-    {/* LEFT — TEXT */}
-    <div className="lg:w-1/2">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#0f1724] mb-4">
-        Business & Growth Strategy
-      </h2>
-
-      <p className="text-gray-800 mb-6 lg:text-[18px]">
-       Strategic planning focused on sustainable growth — supported by market insights, data analysis, and AI-enhanced forecasting to improve decision-making and scalability.
-      </p>
-
-      <div className="flex flex-wrap gap-[16px]">
-        {[
-          "Google Ads","Meta Ads","Analytics","Email Platforms ","Automation Tools","AI Marketing Tools",
-        ].map((tech, i) => (
-          <span
-            key={i}
-            className="px-6 py-4 rounded-[20px] lg:text-[18px]
-                       border border-gray-300
-                       bg-white/60 backdrop-blur
-                       text-gray-800 shadow-sm"
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
-    </div>
-        {/* RIGHT — LOGOS */}
-    <div className="absolute w-[300px] bottom-0 -right-0 lg:left- lg:right-0 lg:top-4">
-      <div className="flex flex-wrap gap-4 justify-center">
-        {businessIcons.map((Icon, index) => (
-          <div
-            key={index}
-            className="w-12 h-12 md:w-14 md:h-14 rounded-lg flex items-center justify-center
-                       bg-white shadow-3xl"
-          >
-            <Icon className="text-gray-800 text-3xl" />
-          </div>
-        ))}
-      </div>
-    </div>
-
-    <div className="lg:w-1/2">
-      <img
-        src="https://i.postimg.cc/xCmtZ0M2/team-meeting-with-growth-chart-overlay.jpg"
-        alt=""
-        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
-      />
-    </div>
-
-
-
-  </div>
-
-</div>
-
-{/* card 4 */}
+{/* card 5 */}
 <div className="bg-blue-50 p-6 md:p-10 rounded-3xl shadow">
 
   <div className="flex flex-col lg:flex-row items-center gap-8 relative">
@@ -317,12 +417,19 @@ const Services = () => {
       </h2>
 
       <p className="text-gray-800 mb-6 lg:text-[18px]">
-        Search optimization built for modern discovery — combining SEO best practices, answer-focused content (AEO), and contextual relevance, supported by AI-assisted research and continuous analysis.
+         Search optimization built for modern discovery — improving visibility across search engines, AI-driven answers, and contextual results through structured content and continuous optimization.
       </p>
 
       <div className="flex flex-wrap gap-[16px]">
         {[
-          "Search Console","Analytics","Keyword Research ","Schema","AI SEO Tools","PHP",
+          "Google Search Console",
+ "Google Analytics",
+ "Ahrefs",
+" SEMrush",
+ "Screaming Frog",
+ "Schema Markup",
+ "Keyword Research Tools"
+,
         ].map((tech, i) => (
           <span
             key={i}
@@ -365,7 +472,7 @@ const Services = () => {
 
 </div>
 
-{/* card 5 */}
+{/* card 6 */}
 <div className="bg-blue-50 p-6 md:p-10 rounded-3xl shadow">
 
   <div className="flex flex-col lg:flex-row items-center gap-8 relative">
@@ -373,16 +480,22 @@ const Services = () => {
     {/* LEFT — TEXT */}
     <div className="lg:w-1/2">
       <h2 className="text-3xl md:text-4xl font-bold text-[#0f1724] mb-4">
-        UI/UX Design
+        Digital Marketing
       </h2>
 
       <p className="text-gray-800 mb-6 lg:text-[18px]">
-       User-centered interfaces crafted through research, testing, and experience — with AI assisting usability analysis, pattern recognition, and faster iteration while preserving design quality.
+         Performance-focused digital marketing designed to attract, convert, and retain audiences — driven by data, analytics, and intelligent optimization tools aligned with business goals.
       </p>
 
       <div className="flex flex-wrap gap-[16px]">
         {[
-          "Figma","Adobe XD","Framer",
+          "Meta Ads",
+ "LinkedIn Ads",
+ "Mailchimp",
+ "ActiveCampaign",
+ "HubSpot",
+ "Analytics Tools"
+,
         ].map((tech, i) => (
           <span
             key={i}
@@ -399,7 +512,7 @@ const Services = () => {
         {/* RIGHT — LOGOS */}
     <div className="absolute w-[300px] bottom-0 -right-0 lg:left- lg:right-0 lg:top-4">
       <div className="flex flex-wrap gap-4 justify-center">
-        {uiuxIcons.map((Icon, index) => (
+        {marketingIcons.map((Icon, index) => (
           <div
             key={index}
             className="w-12 h-12 md:w-14 md:h-14 rounded-lg flex items-center justify-center
@@ -413,7 +526,7 @@ const Services = () => {
 
     <div className="lg:w-1/2">
       <img
-        src="https://i.postimg.cc/Vsrd3JJK/ytktykk7.jpg"
+        src="https://i.postimg.cc/Fz3F1Jc5/corporate-management-strategy-solution-branding-concept.jpg"
         alt=""
         className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
       />
@@ -424,6 +537,72 @@ const Services = () => {
   </div>
 
 </div>
+{/* card 7 */}
+<div className="bg-blue-50 p-6 md:p-10 rounded-3xl shadow">
+
+  <div className="flex flex-col lg:flex-row items-center gap-8 relative">
+
+    {/* LEFT — TEXT */}
+    <div className="lg:w-1/2">
+      <h2 className="text-3xl md:text-4xl font-bold text-[#0f1724] mb-4">
+        AI Automation & AI Agents
+      </h2>
+
+      <p className="text-gray-800 mb-6 lg:text-[18px]">
+         Intelligent automation solutions that streamline workflows, reduce manual effort, and improve efficiency — using AI as a support layer with human oversight for reliable, scalable systems.
+      </p>
+
+      <div className="flex flex-wrap gap-[16px]">
+        {[
+          " n8n",
+ "Zapier",
+ "Make ",
+ "GoHighLevel",
+ "AI Agents",
+ "APIs",
+ "Webhooks",
+        ].map((tech, i) => (
+          <span
+            key={i}
+            className="px-6 py-4 rounded-[20px] lg:text-[18px]
+                       border border-gray-300
+                       bg-white/60 backdrop-blur
+                       text-gray-800 shadow-sm"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
+        {/* RIGHT — LOGOS */}
+    <div className="absolute w-[300px] bottom-0 -right-0 lg:left- lg:right-0 lg:top-4">
+      <div className="flex flex-wrap gap-4 justify-center">
+        {aiIcons.map((Icon, index) => (
+          <div
+            key={index}
+            className="w-12 h-12 md:w-14 md:h-14 rounded-lg flex items-center justify-center
+                       bg-white shadow-3xl"
+          >
+            <Icon className="text-gray-800 text-3xl" />
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div className="lg:w-1/2">
+      <img
+        src="https://i.postimg.cc/Fz3F1Jc5/corporate-management-strategy-solution-branding-concept.jpg"
+        alt=""
+        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
+      />
+    </div>
+
+
+
+  </div>
+
+</div>
+
           </div>
         </Fade>
         <Industries></Industries>

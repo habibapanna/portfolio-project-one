@@ -15,17 +15,24 @@ import { MdDesignServices } from "react-icons/md";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 
 const industries = [
-  { title: "UI/UX", icon: MdDesignServices, desc: "Human-centered interface and experience design." },
-  { title: "Branding", icon: FaPalette, desc: "Identity systems that build trust and recognition." },
-  { title: "Web Design", icon: FaLaptopCode, desc: "Modern, responsive, conversion-focused websites." },
-  { title: "Business", icon: FaBriefcase, desc: "Digital tools that support growth and strategy." },
-  { title: "E-commerce", icon: FaShoppingCart, desc: "High-performance shopping experiences." },
-  { title: "Real Estate", icon: FaBuilding, desc: "Property platforms with clarity and scale." },
-  { title: "Car", icon: FaCar, desc: "Automotive platforms and digital services." },
-  { title: "Cleaning", icon: FaBroom, desc: "Service-based booking and management tools." },
-  { title: "Travel", icon: FaPlane, desc: "Booking, discovery, and travel experiences." },
-  { title: "Healthcare", icon: FaHeartbeat, desc: "Patient-friendly and compliant solutions." },
-  { title: "Education", icon: FaGraduationCap, desc: "Learning platforms built for engagement." },
+  { title: "Blog & Editorial", icon: MdDesignServices, desc: "Content-focused platforms designed for readability, structure, and discoverability — optimized for publishing, SEO, and long-form engagement.." },
+  { title: "Community & Nonprofit", icon: FaPalette, desc: "Purpose-driven digital experiences that support engagement, transparency, and impact — built to communicate mission and drive action." },
+  { title: "Documentation", icon: FaLaptopCode, desc: "Clear, structured documentation systems designed for usability, navigation, and long-term maintenance across technical and non-technical audiences.." },
+  { title: "Education", icon: FaBriefcase, desc: "Designing intuitive education platforms that prioritize clarity, accessibility, and engagement across web, mobile, and learning systems." },
+  { title: "Environment", icon: FaShoppingCart, desc: "Digital solutions that communicate sustainability initiatives, data, and impact clearly — supporting awareness, action, and transparency." },
+  { title: "Food & Drink", icon: FaBuilding, desc: "Brand-forward digital experiences for food and beverage businesses — focused on storytelling, conversion, and customer engagement." },
+  { title: "Government", icon: FaCar, desc: "Accessible, compliant, and user-focused digital platforms designed to improve clarity, trust, and public service delivery." },
+  { title: "Home Services", icon: FaBroom, desc: "Conversion-focused digital platforms designed to generate leads, simplify bookings, and support local service growth." },
+  { title: "HR & Hiring", icon: FaPlane, desc: "Recruitment and HR platforms focused on usability, clarity, and efficiency — improving candidate experience and internal workflows." },
+  { title: "Medical & Wellness", icon: FaHeartbeat, desc: "Healthcare-focused digital experiences built for clarity, trust, and accessibility — supporting patients, providers, and compliance needs." },
+  { title: "Personal", icon: FaGraduationCap, desc: "Clean, expressive digital spaces for individuals — from personal brands to creators and professionals." },
+  { title: "Portfolio & Agency", icon: FaGraduationCap, desc: "High-performance portfolio and agency websites designed to showcase work, credibility, and conversion-focused storytelling." },
+  { title: "Professional Services", icon: FaGraduationCap, desc: "Digital platforms for consultants, firms, and service providers — focused on clarity, authority, and lead generation." },
+  { title: "Real Estate", icon: FaGraduationCap, desc: "Property-focused digital experiences designed for discovery, listings, and lead conversion across devices." },
+  { title: "Retail & E-Commerce", icon: FaGraduationCap, desc: "Scalable, conversion-optimized commerce experiences designed to support browsing, purchasing, and long-term growth." },
+  { title: "Technology", icon: FaGraduationCap, desc: "Digital products and platforms built for speed, scalability, and usability — supporting SaaS, platforms, and technical services." },
+  { title: "Transportation", icon: FaGraduationCap, desc: "User-focused digital solutions designed to support logistics, mobility, and service efficiency through clear interfaces." },
+  { title: "Travel", icon: FaGraduationCap, desc: "Experience-driven digital platforms designed to inspire discovery, simplify planning, and support seamless journeys." },
 ];
 
 const CARD_WIDTH = 280 + 24; // card width + gap
@@ -45,11 +52,10 @@ const Industries = () => {
       <div className="flex items-center justify-between mb-16 px-12">
         <div>
           <h2 className="text-3xl md:text-5xl font-semibold text-[#0f1724]">
-            Industries
+           Architecture & Design
           </h2>
           <p className="text-gray-800 max-w-xl mt-3 text-lg">
-            We work across high-impact industries, combining deep domain
-            knowledge with cutting-edge design and AI.
+            Designing visually driven digital experiences that showcase concepts, portfolios, and spatial storytelling with clarity and precision.
           </p>
         </div>
 
@@ -86,10 +92,9 @@ const Industries = () => {
               <div
                 key={i}
                 className="min-w-[280px]
-    h-[220px]
     bg-white/90
     rounded-2xl
-    p-6
+    p-[16px]
     flex
     flex-col"
               >

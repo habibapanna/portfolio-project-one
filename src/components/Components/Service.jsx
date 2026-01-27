@@ -25,9 +25,15 @@ import {
   SiZapier,
   SiAdobe,
   SiFigma,
+  SiCanva,
+  SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiGooglegemini,
+  SiN8N,
+  SiMake,
 } from "react-icons/si";
 import { FaCogs, FaChartLine, FaRobot, FaSearch, FaUsers } from "react-icons/fa";
-import { MdCampaign, MdSettings, MdDashboard } from "react-icons/md";
+import { MdCampaign, MdSettings, MdDashboard, MdOutlineAutoAwesome, MdOutlineBrandingWatermark } from "react-icons/md";
 import { GrOptimize } from "react-icons/gr";
 import { GiNotebook } from "react-icons/gi";
 import { TbDashboard } from "react-icons/tb";
@@ -80,32 +86,35 @@ const strategyIcons = [
   GiNotebook,
   FaRobot,
 ];
+const brandingIcons = [
+  SiAdobeillustrator, 
+  SiAdobephotoshop, 
+  SiFigma, 
+  SiCanva 
+];
+const aiIcons = [
+   SiMake,
+  SiZapier,
+  SiN8N,
+  SiGooglegemini
+];
 
 const serviceCards = [
-  {
-    title: "Web Design & Development",
+   {
+    title: "Business & Growth Strategy",
     description:
-      "High-performance websites designed and built for clarity, speed, and scalability — combining modern design, clean development, and AI-enhanced testing and performance optimization.",
-    icon: PiPaintBrushFill,
+      "Strategic planning focused on sustainable growth — supported by market insights, data analysis, and AI-enhanced forecasting to improve decision-making and scalability.",
+    icon: GrOptimize,
     img: "https://framerusercontent.com/images/SG0ZbESc0TAkt6qXYHYpwhuuuME.png?width=1200&height=904",
-    smallIcons: techIcons,
+    smallIcons: strategyIcons,
   },
-  {
-    title: "Digital Marketing",
+   {
+    title: "Branding",
     description:
-      "Performance-driven digital marketing strategies supported by AI-assisted targeting, content optimization, and analytics — always guided by clear goals and human-led strategy.",
-    icon: MdCampaign,
-    img: "https://framerusercontent.com/images/8P0e6AzdnfLABVNNwGpdPbhIu5Q.png?width=1200",
-    smallIcons: marketingIcons,
-    reverse: true, // makes small card appear on left
-  },
-  {
-    title: "SEO, AEO & Search Optimization",
-    description:
-      "Search optimization built for modern discovery — combining SEO best practices, answer-focused content (AEO), and contextual relevance, supported by AI-assisted research and continuous analysis.",
-    icon: FaCogs,
+      "Strategic brand identity design that creates clarity, consistency, and recognition — helping businesses communicate their values and stand out across digital touchpoints.",
+    icon: MdOutlineBrandingWatermark,
     img: "https://framerusercontent.com/images/SG0ZbESc0TAkt6qXYHYpwhuuuME.png?width=1200&height=904",
-    smallIcons: seoIcons,
+    smallIcons: brandingIcons,
   },
   {
     title: "UI/UX Design",
@@ -117,13 +126,40 @@ const serviceCards = [
     reverse: true,
   },
   {
-    title: "Business & Growth Strategy",
+    title: "Web Design & Development",
     description:
-      "Strategic planning focused on sustainable growth — supported by market insights, data analysis, and AI-enhanced forecasting to improve decision-making and scalability.",
-    icon: GrOptimize,
+      "High-performance websites designed and built for clarity, speed, and scalability — combining modern design, clean development, and AI-enhanced testing and performance optimization.",
+    icon: PiPaintBrushFill,
     img: "https://framerusercontent.com/images/SG0ZbESc0TAkt6qXYHYpwhuuuME.png?width=1200&height=904",
-    smallIcons: strategyIcons,
+    smallIcons: techIcons,
   },
+  {
+    title: "SEO, AEO & GEO Search Optimization",
+    description:
+      "Search optimization built for modern discovery — combining SEO best practices, answer-focused content (AEO), and contextual relevance, supported by AI-assisted research and continuous analysis.",
+    icon: FaCogs,
+    img: "https://framerusercontent.com/images/SG0ZbESc0TAkt6qXYHYpwhuuuME.png?width=1200&height=904",
+    smallIcons: seoIcons,
+  },
+   {
+    title: "Digital Marketing",
+    description:
+      "Performance-driven digital marketing strategies supported by AI-assisted targeting, content optimization, and analytics — always guided by clear goals and human-led strategy.",
+    icon: MdCampaign,
+    img: "https://framerusercontent.com/images/8P0e6AzdnfLABVNNwGpdPbhIu5Q.png?width=1200",
+    smallIcons: marketingIcons,
+    reverse: true, // makes small card appear on left
+  },
+  {
+    title: "AI Automation and AI Agent",
+    description:
+      "Smart automation solutions that streamline workflows, reduce manual effort, and improve efficiency — using AI as a support tool to make systems faster, more reliable, and scalable.",
+    icon: MdOutlineAutoAwesome,
+    img: "https://framerusercontent.com/images/8P0e6AzdnfLABVNNwGpdPbhIu5Q.png?width=1200",
+    smallIcons: aiIcons,
+    reverse: true,
+  },
+
 ];
 
 const Service = () => {
@@ -151,17 +187,35 @@ const Service = () => {
 {/* // Inside Service component CONTENT GRID */}
 <Fade>
   <div className="mt-12 grid grid-cols-1 gap-6">
-    {serviceCards.map((card, index) => (
-      <div key={index} className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-        {/* Wide card */}
-        <WideCard card={card} />
+   {serviceCards.map((card, index) => {
+  const isEvenRow = index % 2 === 1; // 2nd, 4th, 6th...
 
-        {/* Small card: fill height */}
-        <div className={`md:col-span-1 ${card.reverse ? 'md:order-first' : ''} flex`}>
-          <SmallCard icons={card.smallIcons} />
-        </div>
+  return (
+    <div
+      key={index}
+      className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch"
+    >
+      {/* SMALL CARD */}
+      <div
+        className={`lg:col-span-1 flex ${
+          isEvenRow ? "lg:order-1" : "lg:order-2"
+        }`}
+      >
+        <SmallCard icons={card.smallIcons} />
       </div>
-    ))}
+
+      {/* WIDE CARD */}
+      <div
+        className={`lg:col-span-2 ${
+          isEvenRow ? "lg:order-2" : "lg:order-1"
+        }`}
+      >
+        <WideCard card={card} />
+      </div>
+    </div>
+  );
+})}
+
   </div>
 </Fade>
 
