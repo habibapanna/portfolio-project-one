@@ -130,7 +130,7 @@ const Projects = () => {
           >
             <img
               src={project.image}
-              className="w-full h-64 object-cover rounded-xl"
+              className="w-full h-full object-cover rounded-xl"
             />
 
             <div className="flex justify-between items-center px-4 py-3">

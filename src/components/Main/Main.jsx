@@ -1,10 +1,9 @@
-import React from 'react';
+
 import Navbar from '../Shared/Navbar/Navbar';
 import { Outlet, useLocation } from "react-router-dom";
 import Footer from '../Shared/Footer/Footer';
-import { AnimatePresence, motion } from "framer-motion";
+import {  motion } from "framer-motion";
 import FloatingNav from '../FloatingNav/FloatingNav';
-import LocomotiveScroll from "locomotive-scroll";
 import ScrollToTop from '../Components/ScrollToTop';
 
 const Main = () => {
