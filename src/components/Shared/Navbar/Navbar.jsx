@@ -9,7 +9,7 @@ const Navbar = () => {
   // You can change these names based on your section IDs.
 
   return (
-    <header className="sticky top-0 z-50 bg-violet-200/50 backdrop-blur-sm"
+    <header className="sticky top-0 z-50 bg-violet-100/50 backdrop-blur-sm"
     style={{
         backdropFilter: "blur(10px)", // glassy effect
         WebkitBackdropFilter: "blur(10px)", // Safari support
