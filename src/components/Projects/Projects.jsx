@@ -4,7 +4,8 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { Fade } from "react-awesome-reveal";
 import { FiSearch } from "react-icons/fi";
 
-import Project1 from '../../assets/pr2.jpeg'
+import Project1 from '../../assets/pr1.jpeg'
+import Project2 from '../../assets/pr2.jpeg'
 
 // Projects Data With Categories
 const projects = [
@@ -16,7 +17,7 @@ const projects = [
   {
     title: "Portfey",
     category: "Web Design",
-    image: "https://framerusercontent.com/images/luuFCS3wrDtTqDV4Kd1Adkkk.jpg",
+    image: Project2,
   },
   {
     title: "CourseSite",
