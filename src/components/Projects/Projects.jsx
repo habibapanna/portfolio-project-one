@@ -13,12 +13,12 @@ const projects = [
   {
     title: "Alter",
     category: "Branding",
-    image: Project2,
+    image: Project1,
   },
   {
     title: "Portfey",
     category: "Web Design",
-    image: Project3,
+    image: Project2,
   },
   {
     title: "CourseSite",
