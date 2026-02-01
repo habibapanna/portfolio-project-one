@@ -3,13 +3,14 @@ import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 import { Fade } from "react-awesome-reveal";
 import { RiArrowRightUpFill } from "react-icons/ri";
+import Project1 from '../../assets/pr1.jpeg'
 
 // Projects Data With Categories
 const projects = [
   {
     title: "Alter",
     category: "Branding",
-    image: "https://framerusercontent.com/images/tWaZY7WBmJ3rT5y8Tc6cmJefJk.jpeg",
+    image: Project1,
   },
   {
     title: "Portfey",

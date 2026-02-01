@@ -22,7 +22,7 @@ const Navbar = () => {
     <img
       src={Logo}
       alt="Logo"
-      className="h-[60px] md:h-[100px] object-contain"
+      className="h-[60px] md:h-[80px] object-contain"
     />
   </Link>
 </div>
