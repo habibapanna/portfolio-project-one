@@ -26,20 +26,66 @@ const projects = [
     image: Project3,
   },
   {
-    title: "CourseSite",
-    category: "UI/UX",
-    image: "https://framerusercontent.com/images/jQO0HIIQMx84s1lMLD7tOLhn9pc.png",
+    title: "Alter",
+    category: "Branding",
+    image: Project1,
+  },
+  {
+    title: "Portfey",
+    category: "Web Design",
+    image: Project2,
   },
   {
     title: "CourseSite",
     category: "UI/UX",
-    image: "https://framerusercontent.com/images/qaXP9CBTkpCNVvyTQ6Uxc8kN5ts.png",
+    image: Project3,
   },
   {
-    title: "LanderOS",
-    category: "UI/UX",
-    image: "https://framerusercontent.com/images/tWaZY7WBmJ3rT5y8Tc6cmJefJk.jpeg",
+    title: "Alter",
+    category: "Branding",
+    image: Project1,
   },
+  {
+    title: "Portfey",
+    category: "Web Design",
+    image: Project2,
+  },
+  {
+    title: "CourseSite",
+    category: "UI/UX",
+    image: Project3,
+  },
+  {
+    title: "Alter",
+    category: "Branding",
+    image: Project1,
+  },
+  {
+    title: "Portfey",
+    category: "Web Design",
+    image: Project2,
+  },
+  {
+    title: "CourseSite",
+    category: "UI/UX",
+    image: Project3,
+  },
+  {
+    title: "Alter",
+    category: "Branding",
+    image: Project1,
+  },
+  {
+    title: "Portfey",
+    category: "Web Design",
+    image: Project2,
+  },
+  {
+    title: "CourseSite",
+    category: "UI/UX",
+    image: Project3,
+  },
+ 
 ];
 
 // All categories
