@@ -6,23 +6,24 @@ import { FiSearch } from "react-icons/fi";
 
 import Project1 from '../../assets/pr1.jpeg'
 import Project2 from '../../assets/pr2.jpeg'
+import Project3 from '../../assets/pr3.jpeg'
 
 // Projects Data With Categories
 const projects = [
   {
     title: "Alter",
     category: "Branding",
-    image: Project1,
+    image: Project2,
   },
   {
     title: "Portfey",
     category: "Web Design",
-    image: Project2,
+    image: Project3,
   },
   {
     title: "CourseSite",
     category: "UI/UX",
-    image: "https://framerusercontent.com/images/jQO0HIIQMx84s1lMLD7tOLhn9pc.png",
+    image: Project3,
   },
   {
     title: "CourseSite",
@@ -46,7 +47,13 @@ const categories = ["All", "UI/UX", "Branding", "Web Design", "Business", "E-com
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [searchText, setSearchText] = useState("");
+const [searchInput, setSearchInput] = useState("");
+const [searchText, setSearchText] = useState("");
+
+const handleSearch = () => {
+  setSearchText(searchInput.trim());
+};
+
 
   // Counter state
   const [trustedCount, setTrustedCount] = useState(0);
@@ -71,15 +78,16 @@ const Projects = () => {
     return () => clearInterval(counter);
   }, []);
 
-  // Filtering Logic
-  const filteredProjects = projects.filter((project) => {
-    const matchesCategory =
-      selectedCategory === "All" || project.category === selectedCategory;
+const filteredProjects = projects.filter((project) => {
+  const matchesCategory =
+    selectedCategory === "All" || project.category === selectedCategory;
 
-    const matchesSearch = project.title.toLowerCase().includes(searchText.toLowerCase());
+  const matchesSearch =
+    project.title.toLowerCase().includes(searchText.toLowerCase());
 
-    return matchesCategory && matchesSearch;
-  });
+  return matchesCategory && matchesSearch;
+});
+
 
   return (
     <div>
@@ -90,13 +98,29 @@ const Projects = () => {
     {/* LEFT SIDEBAR (SCROLLS ALONE) */}
     <div className="lg:col-span-1 h-full overflow-y-auto space-y-2 px-2">
 
-      <input
-        type="text"
-        placeholder="Search projects..."
-        className="w-full px-4 py-2 rounded-lg bg-white border shadow-sm mb-5"
-        value={searchText}
-        onChange={(e) => setSearchText(e.target.value)}
-      />
+      <div className="relative mb-5">
+  <input
+    type="text"
+    placeholder="Search projects..."
+    className="w-full px-4 py-2 pr-10 rounded-lg bg-white border shadow-sm"
+    value={searchInput}
+    onChange={(e) => setSearchInput(e.target.value)}
+  />
+
+  <button
+    onClick={handleSearch}
+    className="
+      absolute right-2 top-1/2 -translate-y-1/2
+      p-2 rounded-md
+      text-gray-500
+      hover:text-[#9888C6]
+      transition
+    "
+  >
+    <FiSearch />
+  </button>
+</div>
+
 
       <div className="space-y-5">
         {categories.map((cat) => (
