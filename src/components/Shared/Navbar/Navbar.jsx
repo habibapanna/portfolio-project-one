@@ -14,7 +14,7 @@ const Navbar = () => {
         backdropFilter: "blur(10px)", // glassy effect
         WebkitBackdropFilter: "blur(10px)", // Safari support
       }}>
-      <nav className="mx-auto px-[16px] py-3 flex items-center justify-between max-w-6xl">
+      <nav className="mx-auto px-[16px] flex items-center justify-between max-w-6xl">
         
         {/* Left */}
         <div className="flex items-center gap-4">
