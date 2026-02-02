@@ -5,16 +5,29 @@ import { RiArrowRightUpFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
 import { LuArrowDownUp } from "react-icons/lu";
+import Project1 from '../../assets/pr1.jpeg';
+import Project2 from '../../assets/pr2.jpeg';
+import Project3 from '../../assets/pr3.jpeg';
 
 const Hero = () => {
   // ✅ Your images (corrected array)
   const projectImages = [
-    { img: "https://framerusercontent.com/images/qaXP9CBTkpCNVvyTQ6Uxc8kN5ts.png" },
-    { img: "https://framerusercontent.com/images/jQO0HIIQMx84s1lMLD7tOLhn9pc.png" },
-    { img: "https://framerusercontent.com/images/jQO0HIIQMx84s1lMLD7tOLhn9pc.png?scale-down-to=2048" },
-    { img: "https://framerusercontent.com/images/luuFCS3wrDtTqDV4Kd1Adkkk.jpg" },
-    { img: "https://framerusercontent.com/images/tWaZY7WBmJ3rT5y8Tc6cmJefJk.jpeg" },
-    { img: "https://framerusercontent.com/images/tWaZY7WBmJ3rT5y8Tc6cmJefJk.jpeg?scale-down-to=512" },
+    { img: Project1 },
+    { img: Project2 },
+    { img: Project3 },
+    { img: Project1 },
+    { img: Project2 },
+    { img: Project3 },
+    { img: Project1 },
+    { img: Project2 },
+    { img: Project3 },
+    { img: Project1 },
+    { img: Project2 },
+    { img: Project3 },
+    { img: Project1 },
+    { img: Project2 },
+    { img: Project3 },
+   
   ];
 
   return (
