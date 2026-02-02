@@ -144,7 +144,7 @@ const Services = () => {
         {/* CONTENT GRID */}
         <Fade
         >
-          <div className="mt-16 grid grid-cols-1 gap-6 px-12">
+          <div className="mt-16 grid grid-cols-1 gap-6 px-[16px] 2xl:px-12">
 {/* card 1 */}
 <div className="bg-blue-50 p-6 md:p-10 rounded-3xl shadow">
 

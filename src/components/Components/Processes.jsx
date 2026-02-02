@@ -35,8 +35,8 @@ const steps = [
 
 const Processes = () => {
   return (
-    <section className="py-20 md:py-28 bg-violet-200">
-      <div className="max-w-7xl mx-auto px-6 py-20 md:py-28">
+    <section className="2xl:py-28 bg-violet-200">
+      <div className="max-w-7xl mx-auto px-[16px] 2xl:px-6 py-20 md:py-28">
          <span className="text-sm md:text-base font-medium text-gray-800 tracking-wide">
               ✦ Process
             </span>

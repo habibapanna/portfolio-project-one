@@ -138,7 +138,7 @@ const filteredProjects = projects.filter((project) => {
   return (
     <div>
       <Fade>
-        <section className="h-screen bg-violet-100 overflow-hidden px-5 md:px-12 md:py-20">
+        <section className="h-screen bg-violet-100 overflow-hidden px-[16px] 2xl:px-12 md:py-20">
   <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 h-full">
 
     {/* LEFT SIDEBAR (SCROLLS ALONE) */}

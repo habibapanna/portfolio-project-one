@@ -47,9 +47,9 @@ const Industries = () => {
   const next = () => setIndex((i) => Math.min(i + 1, maxIndex));
 
   return (
-    <section className="bg-violet-100 py-20 md:py-28 rounded-[100px] mt-20 md:pb-48">
+    <section className="bg-violet-100 py-28 rounded-[100px] mt-20 md:pb-48">
       {/* HEADER */}
-      <div className="flex items-center justify-between mb-16 px-12">
+      <div className="flex items-center justify-between mb-16 px-[16px] 2xl:px-12">
         <div>
           <h2 className="text-3xl md:text-5xl font-semibold text-[#0f1724]">
            Architecture & Design

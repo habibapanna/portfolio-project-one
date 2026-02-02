@@ -42,8 +42,8 @@ const About = () => {
             className="
               rounded-xl 
               w-full 
-              h-[350px] md:h-[450px] 
-              object-cover
+              h-[350px] md:h-[450px] lg:object-contain 
+              2xl:object-cover
             "
           />
 
