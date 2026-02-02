@@ -6,29 +6,48 @@ import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
 import { LuArrowDownUp } from "react-icons/lu";
 import Project1 from '../../assets/pr1.jpeg';
-import Project2 from '../../assets/pr2.jpeg';
-import Project3 from '../../assets/pr3.jpeg';
+import Project2 from '../../assets/pr2.jpg';
+import Project3 from '../../assets/pr3.jpg';
+import Project4 from '../../assets/pr4.jpg';
+import Project5 from '../../assets/pr5.jpg';
+import Project6 from '../../assets/pr6.jpg';
 
 const Hero = () => {
   // ✅ Your images (corrected array)
-  const projectImages = [
-    { img: Project1 },
-    { img: Project2 },
-    { img: Project3 },
-    { img: Project1 },
-    { img: Project2 },
-    { img: Project3 },
-    { img: Project1 },
-    { img: Project2 },
-    { img: Project3 },
-    { img: Project1 },
-    { img: Project2 },
-    { img: Project3 },
-    { img: Project1 },
-    { img: Project2 },
-    { img: Project3 },
-   
-  ];
+const projectImages = [
+  {
+    img: Project1,
+    category: "Branding",
+    link: "https://sunrayn-fragrance-project.vercel.app/",
+  },
+  {
+    img: Project2,
+    category: "Web Design",
+    link: "https://aromafragrance.us/",
+  },
+  {
+    img: Project3,
+    category: "UI/UX",
+    link: "https://imaginedreamworld.com/",
+  },
+  {
+    img: Project4,
+    category: "Branding",
+    link: "https://hamramediaproduction.us/",
+  },
+  {
+    img: Project5,
+    category: "Web Design",
+    link: "https://govandentalcare.co.uk/",
+  },
+  {
+    img: Project6,
+    category: "UI/UX",
+    link: "https://divitiaetraders.com/",
+  },
+];
+
+
 
   return (
     <div className="bg-violet-100" style={{
@@ -202,24 +221,65 @@ const Hero = () => {
       <section id="projects" className="bg-violet-10 py-12 overflow-hidden">
         <div className="mx-auto px-6">
 
-          <Marquee
-            speed={30}         // smooth & slow
-            gradient={false}   // no fade edges
-            pauseOnHover={true}
-          >
-            {projectImages.map((p, i) => (
-              <article
-                key={i}
-                className="rounded-xl overflow-hidden shadow-sm min-w-[350px] mx-4 pt-5 pb-16 px-5 bg-violet-100 border border-gray-300 cursor-pointer"
-              >
-                <img
-                  src={p.img}
-                  alt={`Project ${i + 1}`}
-                  className="w-full h-[200px] md:h-[400px] object-cover rounded-xl border-b border-gray-500 shadow-lg shadow-gray-500"
-                />
-              </article>
-            ))}
-          </Marquee>
+        <Marquee
+  speed={30}
+  gradient={false}
+  pauseOnHover={true}
+>
+  {projectImages.map((p, i) => (
+    <a
+      key={i}
+      href={p.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block"
+    >
+      <article
+        className="
+          rounded-xl
+          overflow-hidden
+          shadow-sm
+          min-w-[350px]
+          mx-4
+          pt-5
+          pb-6
+          px-5
+          bg-violet-100
+          border
+          border-gray-300
+          cursor-pointer
+          transition-all
+          duration-300
+          hover:-translate-y-1
+          hover:shadow-lg
+        "
+      >
+        {/* IMAGE */}
+        <img
+          src={p.img}
+          alt={p.category}
+          className="
+            w-full
+            h-[200px]
+            md:h-[400px]
+            object-cover
+            rounded-xl
+          "
+        />
+
+        {/* CATEGORY + ARROW */}
+        <div className="flex justify-between items-center px-2 pt-4">
+          <p className="text-[18px] font-medium text-slate-700">
+            {p.category}
+          </p>
+
+          <RiArrowRightUpFill className="text-[22px] text-slate-600" />
+        </div>
+      </article>
+    </a>
+  ))}
+</Marquee>
+
 
         </div>
       </section>
