@@ -11,6 +11,13 @@ import Project3 from '../../assets/pr3.jpg';
 import Project4 from '../../assets/pr4.jpg';
 import Project5 from '../../assets/pr5.jpg';
 import Project6 from '../../assets/pr6.jpg';
+import Project7 from '../../assets/pr7.jpg';
+import Project8 from '../../assets/pr8.jpg';
+import Project9 from '../../assets/pr9.jpg';
+import Project10 from '../../assets/pr10.jpg';
+import Project11 from '../../assets/pr11.jpg';
+import Project12 from '../../assets/pr12.jpg';
+import Project13 from '../../assets/pr13.jpg';
 
 const Hero = () => {
   // ✅ Your images (corrected array)
@@ -44,6 +51,41 @@ const projectImages = [
     img: Project6,
     category: "UI/UX",
     link: "https://divitiaetraders.com/",
+  },
+  {
+    img: Project7,
+    category: "UI/UX",
+    link: "https://www.somabreath.com/",
+  },
+  {
+    img: Project8,
+    category: "UI/UX",
+    link: "https://aspireworksholdings.com/",
+  },
+  {
+    img: Project9,
+    category: "UI/UX",
+    link: "https://biztechconsult.com/",
+  },
+  {
+    img: Project10,
+    category: "UI/UX",
+    link: "https://greyalpha.agency/",
+  },
+  {
+    img: Project11,
+    category: "UI/UX",
+    link: "https://labarbeapapa.net/",
+  },
+  {
+    img: Project12,
+    category: "UI/UX",
+    link: "https://svdigital.ae/",
+  },
+  {
+    img: Project13,
+    category: "UI/UX",
+    link: "https://www.twinbridgelighting.com/",
   },
 ];
 

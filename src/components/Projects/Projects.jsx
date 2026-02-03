@@ -8,14 +8,54 @@ import Project3 from "../../assets/pr3.jpg";
 import Project4 from "../../assets/pr4.jpg";
 import Project5 from "../../assets/pr5.jpg";
 import Project6 from "../../assets/pr6.jpg";
+import Project7 from "../../assets/pr7.jpg";
+import Project8 from '../../assets/pr8.jpg';
+import Project9 from '../../assets/pr9.jpg';
+import Project10 from '../../assets/pr10.jpg';
+import Project11 from '../../assets/pr11.jpg';
+import Project12 from '../../assets/pr12.jpg';
+import Project13 from '../../assets/pr13.jpg';
 
 const projects = [
-  { category: "Branding", image: Project1, link: "https://sunrayn-fragrance-project.vercel.app/" },
-  { category: "Web Design", image: Project2, link: "https://aromafragrance.us/" },
-  { category: "UI/UX", image: Project3, link: "https://imaginedreamworld.com/" },
-  { category: "Branding", image: Project4, link: "https://hamramediaproduction.us/" },
-  { category: "Web Design", image: Project5, link: "https://govandentalcare.co.uk/" },
-  { category: "UI/UX", image: Project6, link: "https://divitiaetraders.com/" },
+  { category: "Branding", 
+    image: Project1, 
+    link: "https://sunrayn-fragrance-project.vercel.app/" },
+  { category: "Web Design", 
+    image: Project2, 
+    link: "https://aromafragrance.us/" },
+  { category: "UI/UX", 
+    image: Project3, 
+    link: "https://imaginedreamworld.com/" },
+  { category: "Branding", 
+    image: Project4, 
+    link: "https://hamramediaproduction.us/" },
+  { category: "Web Design", 
+    image: Project5, 
+    link: "https://govandentalcare.co.uk/" },
+  { category: "UI/UX", 
+    image: Project6, 
+    link: "https://divitiaetraders.com/" },
+  { category: "UI/UX", 
+    image: Project7, 
+    link: "https://www.somabreath.com/" },
+  { category: "UI/UX", 
+    image: Project8, 
+    link: "https://aspireworksholdings.com/" },
+  { category: "UI/UX", 
+    image: Project9, 
+    link: "https://biztechconsult.com/" },
+  { category: "UI/UX", 
+    image: Project10, 
+    link: "https://greyalpha.agency/" },
+  { category: "UI/UX", 
+    image: Project11, 
+    link: "https://labarbeapapa.net/" },
+  { category: "UI/UX", 
+    image: Project12, 
+    link: "https://svdigital.ae/" },
+  { category: "UI/UX", 
+    image: Project13, 
+    link: "https://www.twinbridgelighting.com/" },
 ];
 
 const Projects = () => {
