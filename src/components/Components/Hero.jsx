@@ -24,67 +24,67 @@ const Hero = () => {
 const projectImages = [
   {
     img: Project1,
-    category: "Branding",
+    category: "E-Commerce",
     link: "https://sunrayn-fragrance-project.vercel.app/",
   },
   {
     img: Project2,
-    category: "Web Design",
+    category: "E-Commerce",
     link: "https://aromafragrance.us/",
   },
   {
     img: Project3,
-    category: "UI/UX",
+    category: "Portfolio",
     link: "https://imaginedreamworld.com/",
   },
   {
     img: Project4,
-    category: "Branding",
+    category: "Media production",
     link: "https://hamramediaproduction.us/",
   },
   {
     img: Project5,
-    category: "Web Design",
+    category: "Fitness",
     link: "https://govandentalcare.co.uk/",
   },
   {
     img: Project6,
-    category: "UI/UX",
+    category: "Business",
     link: "https://divitiaetraders.com/",
   },
   {
     img: Project7,
-    category: "UI/UX",
+    category: "Fitness",
     link: "https://www.somabreath.com/",
   },
   {
     img: Project8,
-    category: "UI/UX",
+    category: "Business",
     link: "https://aspireworksholdings.com/",
   },
   {
     img: Project9,
-    category: "UI/UX",
+    category: "Consulting",
     link: "https://biztechconsult.com/",
   },
   {
     img: Project10,
-    category: "UI/UX",
+    category: "Marketing",
     link: "https://greyalpha.agency/",
   },
   {
     img: Project11,
-    category: "UI/UX",
+    category: "Blog",
     link: "https://labarbeapapa.net/",
   },
   {
     img: Project12,
-    category: "UI/UX",
+    category: "Digital agency",
     link: "https://svdigital.ae/",
   },
   {
     img: Project13,
-    category: "UI/UX",
+    category: "E-Commerce",
     link: "https://www.twinbridgelighting.com/",
   },
 ];
