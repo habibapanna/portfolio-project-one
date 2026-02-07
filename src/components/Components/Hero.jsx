@@ -18,75 +18,97 @@ import Project10 from '../../assets/pr10.jpg';
 import Project11 from '../../assets/pr11.jpg';
 import Project12 from '../../assets/pr12.jpg';
 import Project13 from '../../assets/pr13.jpg';
+import Project14 from '../../assets/pr14.jpg';
+import Project15 from '../../assets/pr15.jpg';
+import Project16 from '../../assets/pr16.jpg';
+import Project17 from '../../assets/pr17.jpg';
+import Project18 from '../../assets/pr18.jpg';
+import Project19 from '../../assets/pr19.jpg';
+import Project20 from '../../assets/pr20.jpg';
+import Project21 from '../../assets/pr21.jpg';
+import Project22 from '../../assets/pr22.jpg';
+import Project23 from '../../assets/pr23.jpg';
+import Project24 from '../../assets/pr24.jpg';
+import Project25 from '../../assets/pr25.jpg';
 
 const Hero = () => {
   // ✅ Your images (corrected array)
-const projectImages = [
-  {
-    img: Project1,
-    category: "E-Commerce",
-    link: "https://sunrayn-fragrance-project.vercel.app/",
-  },
-  {
-    img: Project2,
-    category: "E-Commerce",
-    link: "https://aromafragrance.us/",
-  },
-  {
-    img: Project3,
-    category: "Portfolio",
-    link: "https://imaginedreamworld.com/",
-  },
-  {
-    img: Project4,
-    category: "Media production",
-    link: "https://hamramediaproduction.us/",
-  },
-  {
-    img: Project5,
-    category: "Fitness",
-    link: "https://govandentalcare.co.uk/",
-  },
-  {
-    img: Project6,
-    category: "Business",
-    link: "https://divitiaetraders.com/",
-  },
-  {
-    img: Project7,
-    category: "Fitness",
-    link: "https://www.somabreath.com/",
-  },
-  {
-    img: Project8,
-    category: "Business",
-    link: "https://aspireworksholdings.com/",
-  },
-  {
-    img: Project9,
-    category: "Consulting",
-    link: "https://biztechconsult.com/",
-  },
-  {
-    img: Project10,
-    category: "Marketing",
-    link: "https://greyalpha.agency/",
-  },
-  {
-    img: Project11,
-    category: "Blog",
-    link: "https://labarbeapapa.net/",
-  },
-  {
-    img: Project12,
-    category: "Digital agency",
-    link: "https://svdigital.ae/",
-  },
-  {
-    img: Project13,
-    category: "E-Commerce",
-    link: "https://www.twinbridgelighting.com/",
-  },
+const projects = [
+  { category: "E-Commerce", 
+    image: Project1, 
+    link: "https://sunrayn-fragrance-project.vercel.app/" },
+  { category: "E-Commerce", 
+    image: Project2, 
+    link: "https://aromafragrance.us/" },
+  { category: "Portfolio", 
+    image: Project3, 
+    link: "https://imaginedreamworld.com/" },
+  { category: "Media production", 
+    image: Project4, 
+    link: "https://hamramediaproduction.us/" },
+  { category: "Fitness", 
+    image: Project5, 
+    link: "https://govandentalcare.co.uk/" },
+  { category: "Business", 
+    image: Project6, 
+    link: "https://divitiaetraders.com/" },
+  { category: "Fitness", 
+    image: Project7, 
+    link: "https://www.somabreath.com/" },
+  { category: "Business", 
+    image: Project8, 
+    link: "https://aspireworksholdings.com/" },
+  { category: "Consulting", 
+    image: Project9, 
+    link: "https://biztechconsult.com/" },
+  { category: "Marketing", 
+    image: Project10, 
+    link: "https://greyalpha.agency/" },
+  { category: "Blog", 
+    image: Project11, 
+    link: "https://labarbeapapa.net/" },
+  { category: "Digital agency", 
+    image: Project12, 
+    link: "https://svdigital.ae/" },
+  { category: "E-commerce", 
+    image: Project13, 
+    link: "https://www.twinbridgelighting.com/" },
+  { category: "Consulting", 
+    image: Project14, 
+    link: "https://clarityinformationservices.nl/" },
+  { category: "Driving site", 
+    image: Project15, 
+    link: "https://confidentdriving.uk/" },
+  { category: "Portfolio", 
+    image: Project16, 
+    link: "https://easylovefencing.com/" },
+  { category: "E-commerce", 
+    image: Project17, 
+    link: "https://ecommystery.com/" },
+  { category: "Fitness", 
+    image: Project18, 
+    link: "https://fit4blast.com//" },
+  { category: "Islamic", 
+    image: Project19, 
+    link: "https://globalummahretreats.com/" },
+  { category: "Information portal", 
+    image: Project20, 
+    link: "https://kidskulturspass.de/" },
+  { category: "Fitness", 
+    image: Project21, 
+    link: "https://reliableseniorstaffing.com/" },
+  { category: "Portfolio", 
+    image: Project22, 
+    link: "https://www.richardleegarcia.com/" },
+  { category: "Blog", 
+    image: Project23, 
+    link: "https://simplejoys.info/" },
+  { category: "Educational", 
+    image: Project24, 
+    link: "https://www.springcollege.org.uk/" },
+  { category: "Interior services", 
+    image: Project25, 
+    link: "https://tulohomedesign.com/" },
 ];
 
 
@@ -268,7 +290,7 @@ const projectImages = [
   gradient={false}
   pauseOnHover={true}
 >
-  {projectImages.map((p, i) => (
+  {projects.map((p, i) => (
     <a
       key={i}
       href={p.link}
@@ -298,7 +320,7 @@ const projectImages = [
       >
         {/* IMAGE */}
         <img
-          src={p.img}
+          src={p.image}
           alt={p.category}
           className="
             w-full

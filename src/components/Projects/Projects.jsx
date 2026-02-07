@@ -15,6 +15,18 @@ import Project10 from '../../assets/pr10.jpg';
 import Project11 from '../../assets/pr11.jpg';
 import Project12 from '../../assets/pr12.jpg';
 import Project13 from '../../assets/pr13.jpg';
+import Project14 from '../../assets/pr14.jpg';
+import Project15 from '../../assets/pr15.jpg';
+import Project16 from '../../assets/pr16.jpg';
+import Project17 from '../../assets/pr17.jpg';
+import Project18 from '../../assets/pr18.jpg';
+import Project19 from '../../assets/pr19.jpg';
+import Project20 from '../../assets/pr20.jpg';
+import Project21 from '../../assets/pr21.jpg';
+import Project22 from '../../assets/pr22.jpg';
+import Project23 from '../../assets/pr23.jpg';
+import Project24 from '../../assets/pr24.jpg';
+import Project25 from '../../assets/pr25.jpg';
 
 const projects = [
   { category: "E-Commerce", 
@@ -56,6 +68,42 @@ const projects = [
   { category: "E-commerce", 
     image: Project13, 
     link: "https://www.twinbridgelighting.com/" },
+  { category: "Consulting", 
+    image: Project14, 
+    link: "https://clarityinformationservices.nl/" },
+  { category: "Driving site", 
+    image: Project15, 
+    link: "https://confidentdriving.uk/" },
+  { category: "Portfolio", 
+    image: Project16, 
+    link: "https://easylovefencing.com/" },
+  { category: "E-commerce", 
+    image: Project17, 
+    link: "https://ecommystery.com/" },
+  { category: "Fitness", 
+    image: Project18, 
+    link: "https://fit4blast.com//" },
+  { category: "Islamic", 
+    image: Project19, 
+    link: "https://globalummahretreats.com/" },
+  { category: "Information portal", 
+    image: Project20, 
+    link: "https://kidskulturspass.de/" },
+  { category: "Fitness", 
+    image: Project21, 
+    link: "https://reliableseniorstaffing.com/" },
+  { category: "Portfolio", 
+    image: Project22, 
+    link: "https://www.richardleegarcia.com/" },
+  { category: "Blog", 
+    image: Project23, 
+    link: "https://simplejoys.info/" },
+  { category: "Educational", 
+    image: Project24, 
+    link: "https://www.springcollege.org.uk/" },
+  { category: "Interior services", 
+    image: Project25, 
+    link: "https://tulohomedesign.com/" },
 ];
 
 const Projects = () => {
