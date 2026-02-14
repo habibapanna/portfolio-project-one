@@ -42,6 +42,13 @@ import { LuArrowDownUp } from "react-icons/lu";
 import { AiOutlineFileText } from "react-icons/ai";
 import { DiGoogleAnalytics } from "react-icons/di";
 import { SiFacebook } from "react-icons/si";
+import Business from '../../assets/PORTFOLIO_Business & Growth Strategy.webp';
+import Automation from '../../assets/PORTFOLIO_AI AUTOMATION.webp';
+import Branding from '../../assets/PORTFOLIO_branding.webp';
+import Digital from '../../assets/PORTFOLIO_Digital marketing.webp';
+import SEO from '../../assets/PORTFOLIO_SEO.webp';
+import UI from '../../assets/PORTFOLIO_ui_ux.webp';
+import WebDev from '../../assets/PORTFOLIO_web design and development.webp';
 
 const techIcons = [
   SiHtml5,
@@ -100,20 +107,20 @@ const aiIcons = [
 ];
 
 const serviceCards = [
-   {
+  {
     title: "Business & Growth Strategy",
     description:
       "Strategic planning focused on sustainable growth — supported by market insights, data analysis, and AI-enhanced forecasting to improve decision-making and scalability.",
     icon: GrOptimize,
-    img: "https://framerusercontent.com/images/SG0ZbESc0TAkt6qXYHYpwhuuuME.png?width=1200&height=904",
+    img: Business,
     smallIcons: strategyIcons,
   },
-   {
+  {
     title: "Branding",
     description:
       "Strategic brand identity design that creates clarity, consistency, and recognition — helping businesses communicate their values and stand out across digital touchpoints.",
     icon: MdOutlineBrandingWatermark,
-    img: "https://framerusercontent.com/images/SG0ZbESc0TAkt6qXYHYpwhuuuME.png?width=1200&height=904",
+    img: Branding,
     smallIcons: brandingIcons,
   },
   {
@@ -121,16 +128,15 @@ const serviceCards = [
     description:
       "User-centered interfaces crafted through research, testing, and experience — with AI assisting usability analysis, pattern recognition, and faster iteration while preserving design quality.",
     icon: PiFigmaLogoDuotone,
-    img: "https://framerusercontent.com/images/8P0e6AzdnfLABVNNwGpdPbhIu5Q.png?width=1200",
+    img: UI,
     smallIcons: designIcons,
-    reverse: true,
   },
   {
     title: "Web Design & Development",
     description:
       "High-performance websites designed and built for clarity, speed, and scalability — combining modern design, clean development, and AI-enhanced testing and performance optimization.",
     icon: PiPaintBrushFill,
-    img: "https://framerusercontent.com/images/SG0ZbESc0TAkt6qXYHYpwhuuuME.png?width=1200&height=904",
+    img: WebDev,
     smallIcons: techIcons,
   },
   {
@@ -138,29 +144,27 @@ const serviceCards = [
     description:
       "Search optimization built for modern discovery — combining SEO best practices, answer-focused content (AEO), and contextual relevance, supported by AI-assisted research and continuous analysis.",
     icon: FaCogs,
-    img: "https://framerusercontent.com/images/SG0ZbESc0TAkt6qXYHYpwhuuuME.png?width=1200&height=904",
+    img: SEO,
     smallIcons: seoIcons,
   },
-   {
+  {
     title: "Digital Marketing",
     description:
       "Performance-driven digital marketing strategies supported by AI-assisted targeting, content optimization, and analytics — always guided by clear goals and human-led strategy.",
     icon: MdCampaign,
-    img: "https://framerusercontent.com/images/8P0e6AzdnfLABVNNwGpdPbhIu5Q.png?width=1200",
+    img: Digital,
     smallIcons: marketingIcons,
-    reverse: true, // makes small card appear on left
   },
   {
     title: "AI Automation and AI Agent",
     description:
       "Smart automation solutions that streamline workflows, reduce manual effort, and improve efficiency — using AI as a support tool to make systems faster, more reliable, and scalable.",
     icon: MdOutlineAutoAwesome,
-    img: "https://framerusercontent.com/images/8P0e6AzdnfLABVNNwGpdPbhIu5Q.png?width=1200",
+    img: Automation,
     smallIcons: aiIcons,
-    reverse: true,
   },
-
 ];
+
 
 const Service = () => {
   return (

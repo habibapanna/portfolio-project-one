@@ -1,15 +1,8 @@
-import React from "react";
-import { BiSolidRightArrowAlt } from "react-icons/bi";
-import { LuArrowDownUp, LuTvMinimal, LuWebhook } from "react-icons/lu";
-import {
-  PiFigmaLogoDuotone,
-  PiFramerLogo,
-  PiPaintBrushFill,
-} from "react-icons/pi";
-import { RiArrowRightUpFill, RiBox2Fill } from "react-icons/ri";
+
+import { LuWebhook } from "react-icons/lu";
+import { RiBox2Fill } from "react-icons/ri";
 import { Fade } from "react-awesome-reveal";
-import { Link } from "react-router-dom";
-import { SiAdobe, SiAdobeillustrator, SiAdobephotoshop, SiAdobexd, SiCanva, SiFacebook, SiFigma, SiFramer, SiGoogle, SiGoogleads, SiGoogleanalytics, SiGrafana, SiHubspot, SiLinkedin, SiMailchimp, SiMake, SiMeta, SiN8N, SiSemrush, SiZapier } from "react-icons/si";
+import { SiAdobeillustrator, SiAdobephotoshop, SiAdobexd, SiCanva, SiFigma, SiFramer, SiGoogle,  SiGoogleanalytics, SiHubspot, SiLinkedin, SiMailchimp, SiMake, SiMeta, SiN8N, SiSemrush, SiZapier } from "react-icons/si";
 import { 
   SiHtml5,
   SiCss3,
@@ -23,17 +16,18 @@ import {
   SiWix,
   SiWebflow,
 } from "react-icons/si";
-import { TbDashboard, TbLayoutGrid } from "react-icons/tb";
+import { TbLayoutGrid } from "react-icons/tb";
 import { FaChartBar, FaChartLine, FaClipboardCheck, FaCogs, FaFrog, FaPlug, FaProjectDiagram, FaRobot, FaSearch, FaTachometerAlt, FaTags, FaUsers } from "react-icons/fa";
-import { AiOutlineFileText, AiOutlineProject } from "react-icons/ai";
-import { MdCampaign, MdDashboard, MdOutlineBrandingWatermark, MdOutlinePeople, MdSettings } from "react-icons/md";
-import { GrOptimize } from "react-icons/gr";
-import { GiNotebook } from "react-icons/gi";
-import { DiGoogleAnalytics } from "react-icons/di";
+import { MdDashboard, MdOutlineBrandingWatermark } from "react-icons/md";
 import Industries from "../Components/Industries";
 import Processes from "../Components/Processes";
-
-
+import Business from '../../assets/PORTFOLIO_Business & Growth Strategy.webp';
+import Automation from '../../assets/PORTFOLIO_AI AUTOMATION.webp';
+import Branding from '../../assets/PORTFOLIO_branding.webp';
+import Digital from '../../assets/PORTFOLIO_Digital marketing.webp';
+import SEO from '../../assets/PORTFOLIO_SEO.webp';
+import UI from '../../assets/PORTFOLIO_ui_ux.webp';
+import WebDev from '../../assets/PORTFOLIO_web design and development.webp';
 
   const techIcons = [
   SiWordpress,
@@ -106,8 +100,6 @@ const aiIcons = [
    FaPlug, 
   LuWebhook
 ];
-
-
 
 
 const Services = () => {
@@ -199,7 +191,7 @@ const Services = () => {
 
     <div className="lg:w-1/2">
       <img
-        src="https://i.postimg.cc/xCmtZ0M2/team-meeting-with-growth-chart-overlay.jpg"
+        src={Business}
         alt=""
         className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
       />
@@ -265,7 +257,7 @@ const Services = () => {
 
     <div className="lg:w-1/2">
       <img
-        src="https://i.postimg.cc/Vsrd3JJK/ytktykk7.jpg"
+        src={Branding}
         alt=""
         className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
       />
@@ -332,7 +324,7 @@ const Services = () => {
 
     <div className="lg:w-1/2">
       <img
-        src="https://i.postimg.cc/Vsrd3JJK/ytktykk7.jpg"
+        src={UI}
         alt=""
         className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
       />
@@ -393,7 +385,7 @@ const Services = () => {
 
     <div className="lg:w-1/2">
       <img
-        src="https://i.postimg.cc/GtMXxvXk/programming-background-collage-(1).jpg"
+        src={WebDev}
         alt=""
         className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
       />
@@ -460,7 +452,7 @@ const Services = () => {
 
     <div className="lg:w-1/2">
       <img
-        src="https://i.postimg.cc/WbCFKSfk/homepage-concept-with-search-bar.jpg"
+        src={SEO}
         alt=""
         className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
       />
@@ -526,7 +518,7 @@ const Services = () => {
 
     <div className="lg:w-1/2">
       <img
-        src="https://i.postimg.cc/Fz3F1Jc5/corporate-management-strategy-solution-branding-concept.jpg"
+        src={Digital}
         alt=""
         className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
       />
@@ -591,7 +583,7 @@ const Services = () => {
 
     <div className="lg:w-1/2">
       <img
-        src="https://i.postimg.cc/Fz3F1Jc5/corporate-management-strategy-solution-branding-concept.jpg"
+        src={Automation}
         alt=""
         className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
       />

@@ -30,6 +30,9 @@ import Project22 from '../../assets/pr22.jpg';
 import Project23 from '../../assets/pr23.jpg';
 import Project24 from '../../assets/pr24.jpg';
 import Project25 from '../../assets/pr25.jpg';
+import Hero1 from '../../assets/PORTFOLIO_H BANNER PIC 1.webp';
+import Hero2 from '../../assets/PORTFOLIO_H BANNER PIC 2.webp';
+
 
 const Hero = () => {
   // ✅ Your images (corrected array)
@@ -202,17 +205,18 @@ const projects = [
 
 
           <div className="flex gap-2 pb-1">
-            <img
-              className="h-12 w-12 sm:h-14 sm:w-14 md:h-[60px] md:w-[60px] rounded-xl object-cover"
-              src="https://framerusercontent.com/images/F8rOBHbbIkzGRluKefWlxCX9WI.png?scale-down-to=512"
-              alt=""
-            />
-            <img
-              className="h-12 w-12 sm:h-14 sm:w-14 md:h-[60px] md:w-[60px] rounded-xl object-cover"
-              src="https://framerusercontent.com/images/XJP6N21SKyA8OD0sTiV9H2m0.jpg?scale-down-to=1024"
-              alt=""
-            />
-          </div>
+  <img
+    className="h-12 w-12 sm:h-14 sm:w-14 md:h-[60px] md:w-[60px] rounded-xl object-cover"
+    src={Hero1}
+    alt="Hero preview 1"
+  />
+  <img
+    className="h-12 w-12 sm:h-14 sm:w-14 md:h-[60px] md:w-[60px] rounded-xl object-cover"
+    src={Hero2}
+    alt="Hero preview 2"
+  />
+</div>
+
         </div>
       </Fade>
     </motion.h1>
