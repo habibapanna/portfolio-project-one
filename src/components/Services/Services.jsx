@@ -193,7 +193,8 @@ const Services = () => {
       <img
         src={Business}
         alt=""
-        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
+       className="rounded-2xl shadow-xl w-full object-contain"
+
       />
     </div>
 
@@ -259,7 +260,8 @@ const Services = () => {
       <img
         src={Branding}
         alt=""
-        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
+       className="rounded-2xl shadow-xl w-full object-contain"
+
       />
     </div>
 
@@ -326,7 +328,8 @@ const Services = () => {
       <img
         src={UI}
         alt=""
-        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
+       className="rounded-2xl shadow-xl w-full object-contain"
+
       />
     </div>
 
@@ -387,7 +390,8 @@ const Services = () => {
       <img
         src={WebDev}
         alt=""
-        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
+       className="rounded-2xl shadow-xl w-full object-contain"
+
       />
     </div>
 
@@ -454,7 +458,8 @@ const Services = () => {
       <img
         src={SEO}
         alt=""
-        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
+       className="rounded-2xl shadow-xl w-full object-contain"
+
       />
     </div>
 
@@ -520,7 +525,8 @@ const Services = () => {
       <img
         src={Digital}
         alt=""
-        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
+       className="rounded-2xl shadow-xl w-full object-contain"
+
       />
     </div>
 
@@ -585,7 +591,8 @@ const Services = () => {
       <img
         src={Automation}
         alt=""
-        className="rounded-2xl shadow-xl lg:h-[400px] object-cover w-full"
+       className="rounded-2xl shadow-xl w-full object-contain"
+
       />
     </div>
 
