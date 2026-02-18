@@ -28,15 +28,9 @@ import {
 } from "react-icons/si";
 import { FaChartLine, FaCheck, FaSearch } from "react-icons/fa";
 import { TbSeo } from "react-icons/tb";
-
-
 import { FaPlug, FaCode } from "react-icons/fa";
 import { TbWebhook } from "react-icons/tb";
-import { TiTick } from "react-icons/ti";
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
-import { IoClose } from "react-icons/io5";
-import { AiOutlineCheck } from "react-icons/ai";
-import { RiCloseLargeFill } from "react-icons/ri";
 import { X } from "lucide-react";
 
 const marqueeItems = [
@@ -91,7 +85,7 @@ const Pricing = () => {
   return (
     <section
       id="pricing"
-      className="py-16 md:py-20 bg-violet-200 rounded-[100px] mt-10"
+      className="py-16 md:py-20 bg-violet-200 rounded-[30px] md:rounded-[50px] lg:rounded-[80px] mt-10"
     >
       <div className="text-center">
         {/* Badge */}

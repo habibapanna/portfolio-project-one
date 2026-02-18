@@ -58,7 +58,7 @@ const faqs = [
   return (
     <div>
     
-          <section id="faq" className="py-16 text-center bg-violet-200 rounded-[100px]">
+          <section id="faq" className="py-16 text-center bg-violet-200 rounded-[30px] md:rounded-[50px] lg:rounded-[80px]">
        <Fade>
          <div className="mx-auto inline-flex items-center rounded-full px-4 py-2 bg-[#eef6f9] border border-gray-300 shadow-sm">
           <span className="w-8 h-8 flex items-center justify-center rounded-md ">

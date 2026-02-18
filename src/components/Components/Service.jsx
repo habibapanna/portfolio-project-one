@@ -168,7 +168,7 @@ const serviceCards = [
 
 const Service = () => {
   return (
-    <section id="services" className="py-16 sm:py-20 bg-violet-200 rounded-[100px] mt-10">
+    <section id="services" className="py-16 sm:py-20 bg-violet-200 rounded-[30px] md:rounded-[50px] lg:rounded-[80px] mt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* TITLE */}
         <Fade triggerOnce={false} duration={1500} cascade damping={0.2} fraction={0.15}>
